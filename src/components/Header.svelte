@@ -2,32 +2,35 @@
 	export let data;
 </script>
 
-<header class="block w100 bgw">
-	<div class="grid content mx">
-		<a id="logo" class="block bgw" href="/" rel="home">
-			<picture class="block">
-				<source srcset={data.site.logo[1]} type="image/webp" />
-				<source srcset={data.site.logo[0]} type="image/jpeg" />
-				<img src={data.site.logo[0]} alt={data.site.title} />
-			</picture>
-		</a>
-		<button id="menuToggle" />
-		<nav id="menu">
-			<ul>
-				<li class="nav-item">
-					<a class="nav-link block" href="/" rel="home">Etusivu</a>
-				</li>
-				{#each data.nav as item}
+{#if data && data.nav}
+	<header class="block w100 bgw">
+		<div class="grid content mx">
+			<a id="logo" class="block bgw" href="/" rel="home">
+				<picture class="block">
+					<source srcset={data.site.logo[1]} type="image/webp" />
+					<source srcset={data.site.logo[0]} type="image/jpeg" />
+					<img src={data.site.logo[0]} alt={data.site.title} />
+				</picture>
+			</a>
+			<button id="menuToggle" />
+			<nav id="menu">
+				<ul>
 					<li class="nav-item">
-						<a class="nav-link block" href={item.path}>
-							{item.title}
-						</a>
+						<a class="nav-link block" href="/" rel="home">Etusivu</a
+						>
 					</li>
-				{/each}
-			</ul>
-		</nav>
-	</div>
-</header>
+					{#each data.nav as item}
+						<li class="nav-item">
+							<a class="nav-link block" href={item.path}>
+								{item.title}
+							</a>
+						</li>
+					{/each}
+				</ul>
+			</nav>
+		</div>
+	</header>
+{/if}
 
 <style>
 	header {

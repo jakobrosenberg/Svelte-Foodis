@@ -1,16 +1,13 @@
 <script>
-	import { fetchInfo, info } from '../components/store.js';
+	import { api, info } from '../components/store.js';
 	import Header from '../components/Header.svelte';
-	let data;
 
-	// Get page data
-	async function getData() {
-		$fetchInfo().then((e) => {
-			info.set(e);
-		});
-	}
+	import { onMount } from 'svelte';
 
-	if (!data) getData();
+	onMount(async () => {
+		const res = await fetch($api);
+		info.set(await res.json());
+	});
 </script>
 
 {#if $info && $info.site}

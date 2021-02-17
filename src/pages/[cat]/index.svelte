@@ -1,18 +1,17 @@
 <script>
-	import { params, metatags } from '@roxi/routify';
-	import { api } from '../../components/store.js';
-	let data;
+	import { params } from '@roxi/routify';
+	import { api, data } from '../../components/store.js';
+
 	async function getResult(e) {
 		let response = await fetch($api + '?path=' + e);
-		data = await response.json();
-		return data;
+		data.set(await response.json());
 	}
 	$: if ($params.cat) getResult($params.cat);
 </script>
 
-{#if data}
+{#if $data.items}
 	<div id="products" class="tc grid up bold">
-		{#each data.items as item}
+		{#each $data.items as item}
 			<a class="block" href={item.path}>
 				<picture class="block">
 					<source srcset={item.img[1]} type="image/webp" />

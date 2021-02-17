@@ -1,9 +1,16 @@
 <script>
 	export let data;
+	let y;
+	let small;
+
+	$: if (y > 100) small = true;
+	else small = '';
 </script>
 
+<svelte:window bind:scrollY={y} />
+
 {#if data && data.nav}
-	<header class="block w100 bgw">
+	<header class="block w100 bgw" class:small>
 		<div class="grid content mx">
 			<a id="logo" class="block bgw" href="/" rel="home">
 				<picture class="block">
@@ -37,6 +44,7 @@
 		position: fixed;
 		top: 0;
 		left: 0;
+		transition: transform 300ms linear;
 	}
 	header .content {
 		position: relative;
@@ -65,6 +73,12 @@
 		}
 		#menu a:not(.active) {
 			color: var(--black);
+		}
+		header.small #menu a {
+			padding: 0 10px;
+		}
+		header.small #logo {
+			width: 150px;
 		}
 	}
 </style>

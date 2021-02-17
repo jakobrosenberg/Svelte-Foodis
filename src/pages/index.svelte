@@ -1,8 +1,7 @@
 <script>
-	import { info } from '../components/store.js';
-	import { metatags } from '@roxi/routify';
-	metatags.title = $info.site.title + ' | ' + $info.site.slogan;
-	metatags.description = 'Description coming soon...';
+	import { info, data } from '../components/store.js';
+	if ($info.site)
+		data.set({ title: $info.site.title, slogan: $info.site.slogan });
 </script>
 
 <div id="products" class="tc grid up bold">

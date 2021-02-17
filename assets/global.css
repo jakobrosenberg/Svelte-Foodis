@@ -1,3 +1,8 @@
+* {
+	box-sizing: border-box;
+	max-width: 100%
+}
+
 :root{
 	--orange: #f74c17;
 	--white: #fff;
@@ -12,10 +17,12 @@ html, body {
 
 body {
 	color: #333;
-	margin: 0;
 	padding: 0;
 	box-sizing: border-box
 }
+
+body,
+figure { margin: 0 }
 
 main a,
 .orange { color: var(--orange) }
@@ -35,7 +42,8 @@ button { font: 400 16px Poppins }
 
 .tc { text-align: center }
 
-.w100 { width: 100% }
+.w100,
+img { width: 100% }
 
 .up { text-transform: uppercase }
 
@@ -51,7 +59,8 @@ a:visited {
 	color: rgb(0,80,160);
 }
 
-label {
+label,
+img {
 	display: block;
 }
 
@@ -91,15 +100,16 @@ button:focus {
 	border-color: #666;
 }
 
-img {
-	max-width: 100%;
-}
-
 #products figcaption { padding: 10px }
+
+#products { grid-gap: 2rem }
 
 @media screen and (min-width:400px){
 	#products {
-		padding: 3rem;
 		grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+	}
+	.py {
+		padding-top: 3rem;
+		padding-bottom: 3rem
 	}
 }

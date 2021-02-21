@@ -1,0 +1,2 @@
+import{v as t,w as a}from"./main.js";const s=t("http://foodis.dataline.fi/pw/"),e=(t,s)=>{const{subscribe:e,set:o,update:r}=a(s);return{subscribe:e,set:o,update:r,useLocalStorage:()=>{const a=localStorage.getItem(t);a&&o(JSON.parse(a)),e((a=>{localStorage.setItem(t,JSON.stringify(a))}))}}},o=e("info",{}),r=e("data",{}),c=e("cart",{total:0,amount:0,products:[]});export{s as a,c,r as d,o as i};
+//# sourceMappingURL=store-4721e530.js.map

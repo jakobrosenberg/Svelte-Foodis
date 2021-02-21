@@ -273,35 +273,3 @@
 		{/if}
 	{/if}
 </div>
-
-<style type="text/scss">
-	#tables {
-		grid-template-columns: 1fr 400px;
-		grid-gap: 3rem;
-	}
-	th,
-	td {
-		padding: 5px;
-	}
-	td {
-		input {
-			width: 65px;
-		}
-		span {
-			display: none;
-		}
-	}
-	#client {
-		.grid {
-			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-			grid-gap: 1.5rem;
-		}
-	}
-	#ready {
-		margin-top: 3rem;
-		color: var(--white);
-		background-color: var(--orange);
-		padding: 1rem 2rem;
-		text-transform: uppercase;
-	}
-</style>

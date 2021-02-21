@@ -7,7 +7,6 @@ import { terser } from 'rollup-plugin-terser';
 import { copySync, removeSync } from 'fs-extra'
 import { spassr } from 'spassr'
 import getConfig from '@roxi/routify/lib/utils/config'
-import preprocess from 'svelte-preprocess';
 import { injectManifest } from 'rollup-plugin-workbox'
 
 
@@ -51,8 +50,7 @@ export default {
             dev: !production, // run-time checks
             // Extract component CSS — better performance
             css: css => css.write(`bundle.css`),
-            hot: isNollup,
-            preprocess: preprocess()
+            hot: isNollup
         }),
 
         // resolve matching modules from current working directory

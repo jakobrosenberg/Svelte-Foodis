@@ -43,25 +43,3 @@
 		{/each}
 	</div>
 {/if}
-
-<style>
-	#products .title {
-		font-size: 1.2rem;
-		padding: 0.5rem 1.5rem;
-	}
-	#products .extra {
-		margin-top: 0.5rem;
-	}
-	#products .inl {
-		display: inline-block;
-		vertical-align: center;
-		margin: 5px;
-	}
-	#products .inl .cell {
-		width: 32px;
-		height: 32px;
-		place-content: center;
-		border: 1px solid var(--orange);
-		border-radius: 50%;
-	}
-</style>

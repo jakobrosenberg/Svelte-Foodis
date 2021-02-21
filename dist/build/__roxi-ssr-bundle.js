@@ -33,10 +33,10 @@
     return __exportStar(__defProp(__create(__getProtoOf(module)), "default", {value: module, enumerable: true}), module);
   };
 
-  // dist/build/_fallback-659c727e.js
-  var require_fallback_659c727e = __commonJS((exports) => {
+  // dist/build/_fallback-4b491e2b.js
+  var require_fallback_4b491e2b = __commonJS((exports) => {
     __export(exports, {
-      default: () => fallback_659c727e_default
+      default: () => fallback_4b491e2b_default
     });
     const main2 = __toModule(require_main());
     function v(s3) {
@@ -55,17 +55,17 @@
       let t3;
       return main2.g(s3, main2.u, (s4) => e2(0, t3 = s4)), [t3];
     }
-    class fallback_659c727e_default extends main2.S {
+    class fallback_4b491e2b_default extends main2.S {
       constructor(s3) {
         super(), main2.i(this, s3, m, v, main2.s, {});
       }
     }
   });
 
-  // dist/build/[slug]-ee7bdcf0.js
-  var require_slug_ee7bdcf0 = __commonJS((exports) => {
+  // dist/build/[slug]-347d10e1.js
+  var require_slug_347d10e1 = __commonJS((exports) => {
     __export(exports, {
-      default: () => slug_ee7bdcf0_default
+      default: () => slug_347d10e1_default
     });
     const main2 = __toModule(require_main());
     function L(t3, n2, e2) {
@@ -204,49 +204,49 @@
         i3 = main2.k(this.value), e2(0, i3);
       }];
     }
-    class slug_ee7bdcf0_default extends main2.S {
+    class slug_347d10e1_default extends main2.S {
       constructor(t3) {
         super(), main2.i(this, t3, C, I, main2.s, {});
       }
     }
   });
 
-  // dist/build/index-44b7a890.js
-  var require_index_44b7a890 = __commonJS((exports) => {
+  // dist/build/index-6929997a.js
+  var require_index_6929997a = __commonJS((exports) => {
     __export(exports, {
-      default: () => index_44b7a890_default
+      default: () => index_6929997a_default
     });
     const main2 = __toModule(require_main());
-    function v(t3, e2, s3) {
-      const l2 = t3.slice();
-      return l2[4] = e2[s3], l2;
-    }
     function x(t3, e2, s3) {
       const l2 = t3.slice();
       return l2[4] = e2[s3], l2;
     }
-    function j(t3) {
+    function j(t3, e2, s3) {
+      const l2 = t3.slice();
+      return l2[4] = e2[s3], l2;
+    }
+    function v(t3) {
       let e2, s3 = t3[0].items, n2 = [];
       for (let e3 = 0; e3 < s3.length; e3 += 1)
-        n2[e3] = w(v(t3, s3, e3));
+        n2[e3] = w(x(t3, s3, e3));
       return {c() {
         e2 = main2.e("div");
         for (let t4 = 0; t4 < n2.length; t4 += 1)
           n2[t4].c();
-        main2.b(e2, "id", "products"), main2.b(e2, "class", "tc grid up bold svelte-dss212");
+        main2.b(e2, "id", "products"), main2.b(e2, "class", "tc grid up bold");
       }, m(t4, s4) {
         main2.c(t4, e2, s4);
         for (let t5 = 0; t5 < n2.length; t5 += 1)
           n2[t5].m(e2, null);
       }, p(t4, l2) {
         if (1 & l2) {
-          let c2;
-          for (s3 = t4[0].items, c2 = 0; c2 < s3.length; c2 += 1) {
-            const r2 = v(t4, s3, c2);
-            n2[c2] ? n2[c2].p(r2, l2) : (n2[c2] = w(r2), n2[c2].c(), n2[c2].m(e2, null));
+          let r2;
+          for (s3 = t4[0].items, r2 = 0; r2 < s3.length; r2 += 1) {
+            const c2 = x(t4, s3, r2);
+            n2[r2] ? n2[r2].p(c2, l2) : (n2[r2] = w(c2), n2[r2].c(), n2[r2].m(e2, null));
           }
-          for (; c2 < n2.length; c2 += 1)
-            n2[c2].d(1);
+          for (; r2 < n2.length; r2 += 1)
+            n2[r2].d(1);
           n2.length = s3.length;
         }
       }, d(t4) {
@@ -256,25 +256,25 @@
     function y(t3) {
       let e2, s3 = t3[4].extra, n2 = [];
       for (let e3 = 0; e3 < s3.length; e3 += 1)
-        n2[e3] = $(x(t3, s3, e3));
+        n2[e3] = $(j(t3, s3, e3));
       return {c() {
         e2 = main2.e("div");
         for (let t4 = 0; t4 < n2.length; t4 += 1)
           n2[t4].c();
-        main2.b(e2, "class", "extra svelte-dss212");
+        main2.b(e2, "class", "extra");
       }, m(t4, s4) {
         main2.c(t4, e2, s4);
         for (let t5 = 0; t5 < n2.length; t5 += 1)
           n2[t5].m(e2, null);
       }, p(t4, l2) {
         if (1 & l2) {
-          let c2;
-          for (s3 = t4[4].extra, c2 = 0; c2 < s3.length; c2 += 1) {
-            const r2 = x(t4, s3, c2);
-            n2[c2] ? n2[c2].p(r2, l2) : (n2[c2] = $(r2), n2[c2].c(), n2[c2].m(e2, null));
+          let r2;
+          for (s3 = t4[4].extra, r2 = 0; r2 < s3.length; r2 += 1) {
+            const c2 = j(t4, s3, r2);
+            n2[r2] ? n2[r2].p(c2, l2) : (n2[r2] = $(c2), n2[r2].c(), n2[r2].m(e2, null));
           }
-          for (; c2 < n2.length; c2 += 1)
-            n2[c2].d(1);
+          for (; r2 < n2.length; r2 += 1)
+            n2[r2].d(1);
           n2.length = s3.length;
         }
       }, d(t4) {
@@ -282,65 +282,65 @@
       }};
     }
     function $(t3) {
-      let e2, s3, u2, m2, p3 = t3[4].abbr + "";
+      let e2, s3, m2, d2, p3 = t3[4].abbr + "";
       return {c() {
-        e2 = main2.e("div"), s3 = main2.e("span"), u2 = main2.t(p3), m2 = main2.a(), main2.b(s3, "class", "grid cell svelte-dss212"), main2.b(e2, "class", "inl svelte-dss212");
+        e2 = main2.e("div"), s3 = main2.e("span"), m2 = main2.t(p3), d2 = main2.a(), main2.b(s3, "class", "grid cell"), main2.b(e2, "class", "inl");
       }, m(t4, l2) {
-        main2.c(t4, e2, l2), main2.d(e2, s3), main2.d(s3, u2), main2.d(e2, m2);
+        main2.c(t4, e2, l2), main2.d(e2, s3), main2.d(s3, m2), main2.d(e2, d2);
       }, p(t4, e3) {
-        1 & e3 && p3 !== (p3 = t4[4].abbr + "") && main2.j(u2, p3);
+        1 & e3 && p3 !== (p3 = t4[4].abbr + "") && main2.j(m2, p3);
       }, d(t4) {
         t4 && main2.f(e2);
       }};
     }
     function w(t3) {
-      let e2, s3, u2, m2, p3, f2, g2, h, b, v2, x2, j2, $2, w2, k2, F2, N, S, q, z, A, B = t3[4].title + "", C = t3[4].price.toFixed(2) + "", D = t3[4].extra && y(t3);
+      let e2, s3, m2, d2, p3, f2, g2, h, b, x2, j2, v2, $2, w2, k2, F2, N, S, q, z, A, B = t3[4].title + "", C = t3[4].price.toFixed(2) + "", D = t3[4].extra && y(t3);
       return {c() {
-        e2 = main2.e("a"), s3 = main2.e("picture"), u2 = main2.e("source"), p3 = main2.a(), f2 = main2.e("source"), h = main2.a(), b = main2.e("img"), j2 = main2.a(), $2 = main2.e("div"), w2 = main2.t(B), k2 = main2.a(), F2 = main2.e("div"), N = main2.t(C), S = main2.t(" \u20AC"), q = main2.a(), D && D.c(), z = main2.a(), main2.b(u2, "srcset", m2 = t3[4].img[1]), main2.b(u2, "type", "image/webp"), main2.b(f2, "srcset", g2 = t3[4].img[0]), main2.b(f2, "type", "image/jpeg"), b.src !== (v2 = t3[4].img[0]) && main2.b(b, "src", v2), main2.b(b, "alt", x2 = t3[4].title), main2.b(s3, "class", "block"), main2.b($2, "class", "title svelte-dss212"), main2.b(F2, "class", "price"), main2.b(e2, "class", "block"), main2.b(e2, "href", A = t3[4].path);
+        e2 = main2.e("a"), s3 = main2.e("picture"), m2 = main2.e("source"), p3 = main2.a(), f2 = main2.e("source"), h = main2.a(), b = main2.e("img"), v2 = main2.a(), $2 = main2.e("div"), w2 = main2.t(B), k2 = main2.a(), F2 = main2.e("div"), N = main2.t(C), S = main2.t(" \u20AC"), q = main2.a(), D && D.c(), z = main2.a(), main2.b(m2, "srcset", d2 = t3[4].img[1]), main2.b(m2, "type", "image/webp"), main2.b(f2, "srcset", g2 = t3[4].img[0]), main2.b(f2, "type", "image/jpeg"), b.src !== (x2 = t3[4].img[0]) && main2.b(b, "src", x2), main2.b(b, "alt", j2 = t3[4].title), main2.b(s3, "class", "block"), main2.b($2, "class", "title"), main2.b(F2, "class", "price"), main2.b(e2, "class", "block"), main2.b(e2, "href", A = t3[4].path);
       }, m(t4, l2) {
-        main2.c(t4, e2, l2), main2.d(e2, s3), main2.d(s3, u2), main2.d(s3, p3), main2.d(s3, f2), main2.d(s3, h), main2.d(s3, b), main2.d(e2, j2), main2.d(e2, $2), main2.d($2, w2), main2.d(e2, k2), main2.d(e2, F2), main2.d(F2, N), main2.d(F2, S), main2.d(e2, q), D && D.m(e2, null), main2.d(e2, z);
+        main2.c(t4, e2, l2), main2.d(e2, s3), main2.d(s3, m2), main2.d(s3, p3), main2.d(s3, f2), main2.d(s3, h), main2.d(s3, b), main2.d(e2, v2), main2.d(e2, $2), main2.d($2, w2), main2.d(e2, k2), main2.d(e2, F2), main2.d(F2, N), main2.d(F2, S), main2.d(e2, q), D && D.m(e2, null), main2.d(e2, z);
       }, p(t4, s4) {
-        1 & s4 && m2 !== (m2 = t4[4].img[1]) && main2.b(u2, "srcset", m2), 1 & s4 && g2 !== (g2 = t4[4].img[0]) && main2.b(f2, "srcset", g2), 1 & s4 && b.src !== (v2 = t4[4].img[0]) && main2.b(b, "src", v2), 1 & s4 && x2 !== (x2 = t4[4].title) && main2.b(b, "alt", x2), 1 & s4 && B !== (B = t4[4].title + "") && main2.j(w2, B), 1 & s4 && C !== (C = t4[4].price.toFixed(2) + "") && main2.j(N, C), t4[4].extra ? D ? D.p(t4, s4) : (D = y(t4), D.c(), D.m(e2, z)) : D && (D.d(1), D = null), 1 & s4 && A !== (A = t4[4].path) && main2.b(e2, "href", A);
+        1 & s4 && d2 !== (d2 = t4[4].img[1]) && main2.b(m2, "srcset", d2), 1 & s4 && g2 !== (g2 = t4[4].img[0]) && main2.b(f2, "srcset", g2), 1 & s4 && b.src !== (x2 = t4[4].img[0]) && main2.b(b, "src", x2), 1 & s4 && j2 !== (j2 = t4[4].title) && main2.b(b, "alt", j2), 1 & s4 && B !== (B = t4[4].title + "") && main2.j(w2, B), 1 & s4 && C !== (C = t4[4].price.toFixed(2) + "") && main2.j(N, C), t4[4].extra ? D ? D.p(t4, s4) : (D = y(t4), D.c(), D.m(e2, z)) : D && (D.d(1), D = null), 1 & s4 && A !== (A = t4[4].path) && main2.b(e2, "href", A);
       }, d(t4) {
         t4 && main2.f(e2), D && D.d();
       }};
     }
     function k(t3) {
-      let e2, s3 = t3[0].items && j(t3);
+      let e2, s3 = t3[0].items && v(t3);
       return {c() {
         s3 && s3.c(), e2 = main2.o();
       }, m(t4, l2) {
         s3 && s3.m(t4, l2), main2.c(t4, e2, l2);
       }, p(t4, [l2]) {
-        t4[0].items ? s3 ? s3.p(t4, l2) : (s3 = j(t4), s3.c(), s3.m(e2.parentNode, e2)) : s3 && (s3.d(1), s3 = null);
+        t4[0].items ? s3 ? s3.p(t4, l2) : (s3 = v(t4), s3.c(), s3.m(e2.parentNode, e2)) : s3 && (s3.d(1), s3 = null);
       }, i: main2.n, o: main2.n, d(t4) {
         s3 && s3.d(t4), t4 && main2.f(e2);
       }};
     }
     function F(t3, e2, s3) {
-      let l2, c2, r2;
-      return main2.g(t3, t, (t4) => s3(2, l2 = t4)), main2.g(t3, main2.p, (t4) => s3(1, c2 = t4)), main2.g(t3, i, (t4) => s3(0, r2 = t4)), t3.$$.update = () => {
-        2 & t3.$$.dirty && c2.cat && async function(t4) {
+      let l2, r2, c2;
+      return main2.g(t3, t, (t4) => s3(2, l2 = t4)), main2.g(t3, main2.p, (t4) => s3(1, r2 = t4)), main2.g(t3, i, (t4) => s3(0, c2 = t4)), t3.$$.update = () => {
+        2 & t3.$$.dirty && r2.cat && async function(t4) {
           try {
             let e3 = await fetch(l2 + "?path=" + t4);
             i.set(await e3.json());
           } catch (t5) {
             console.error(t5);
           }
-        }(c2.cat);
-      }, [r2, c2];
+        }(r2.cat);
+      }, [c2, r2];
     }
-    class index_44b7a890_default extends main2.S {
+    class index_6929997a_default extends main2.S {
       constructor(t3) {
         super(), main2.i(this, t3, F, k, main2.s, {});
       }
     }
   });
 
-  // dist/build/_layout-a9fbdbca.js
-  var require_layout_a9fbdbca = __commonJS((exports) => {
+  // dist/build/_layout-de180042.js
+  var require_layout_de180042 = __commonJS((exports) => {
     __export(exports, {
-      default: () => layout_a9fbdbca_default
+      default: () => layout_de180042_default
     });
     const main2 = __toModule(require_main());
     function c(s3) {
@@ -366,17 +366,17 @@
         "$$scope" in s4 && e2(0, o3 = s4.$$scope);
       }, [o3, n2];
     }
-    class layout_a9fbdbca_default extends main2.S {
+    class layout_de180042_default extends main2.S {
       constructor(s3) {
         super(), main2.i(this, s3, u, c, main2.s, {});
       }
     }
   });
 
-  // dist/build/index-b760118a.js
-  var require_index_b760118a = __commonJS((exports) => {
+  // dist/build/index-8c0e4d67.js
+  var require_index_8c0e4d67 = __commonJS((exports) => {
     __export(exports, {
-      default: () => index_b760118a_default
+      default: () => index_8c0e4d67_default
     });
     const main2 = __toModule(require_main());
     function p2(t3, s3, e2) {
@@ -384,13 +384,13 @@
       return l2[1] = s3[e2], l2;
     }
     function d(t3) {
-      let s3, e2, o3, g2, m2, u, f, p3, d2, h2, b2, k, j, v, x, y, H = t3[1].title + "";
+      let s3, e2, o3, g2, f2, m, u, p3, d2, h2, b2, k, j, v, x, y, H = t3[1].title + "";
       return {c() {
-        s3 = main2.e("a"), e2 = main2.e("figure"), o3 = main2.e("picture"), g2 = main2.e("source"), u = main2.a(), f = main2.e("source"), d2 = main2.a(), h2 = main2.e("img"), j = main2.a(), v = main2.e("figcaption"), x = main2.a(), main2.b(g2, "srcset", m2 = t3[1].img[1]), main2.b(g2, "type", "image/webp"), main2.b(f, "srcset", p3 = t3[1].img[0]), main2.b(f, "type", "image/jpeg"), h2.src !== (b2 = t3[1].img[0]) && main2.b(h2, "src", b2), main2.b(h2, "alt", k = t3[1].title), main2.b(o3, "class", "block"), main2.b(v, "class", "block"), main2.b(e2, "class", "block"), main2.b(s3, "class", "block"), main2.b(s3, "href", y = t3[1].path);
+        s3 = main2.e("a"), e2 = main2.e("figure"), o3 = main2.e("picture"), g2 = main2.e("source"), m = main2.a(), u = main2.e("source"), d2 = main2.a(), h2 = main2.e("img"), j = main2.a(), v = main2.e("figcaption"), x = main2.a(), main2.b(g2, "srcset", f2 = t3[1].img[1]), main2.b(g2, "type", "image/webp"), main2.b(u, "srcset", p3 = t3[1].img[0]), main2.b(u, "type", "image/jpeg"), h2.src !== (b2 = t3[1].img[0]) && main2.b(h2, "src", b2), main2.b(h2, "alt", k = t3[1].title), main2.b(o3, "class", "block"), main2.b(v, "class", "block"), main2.b(e2, "class", "block"), main2.b(s3, "class", "block"), main2.b(s3, "href", y = t3[1].path);
       }, m(t4, l2) {
-        main2.c(t4, s3, l2), main2.d(s3, e2), main2.d(e2, o3), main2.d(o3, g2), main2.d(o3, u), main2.d(o3, f), main2.d(o3, d2), main2.d(o3, h2), main2.d(e2, j), main2.d(e2, v), v.innerHTML = H, main2.d(s3, x);
+        main2.c(t4, s3, l2), main2.d(s3, e2), main2.d(e2, o3), main2.d(o3, g2), main2.d(o3, m), main2.d(o3, u), main2.d(o3, d2), main2.d(o3, h2), main2.d(e2, j), main2.d(e2, v), v.innerHTML = H, main2.d(s3, x);
       }, p(t4, e3) {
-        1 & e3 && m2 !== (m2 = t4[1].img[1]) && main2.b(g2, "srcset", m2), 1 & e3 && p3 !== (p3 = t4[1].img[0]) && main2.b(f, "srcset", p3), 1 & e3 && h2.src !== (b2 = t4[1].img[0]) && main2.b(h2, "src", b2), 1 & e3 && k !== (k = t4[1].title) && main2.b(h2, "alt", k), 1 & e3 && H !== (H = t4[1].title + "") && (v.innerHTML = H), 1 & e3 && y !== (y = t4[1].path) && main2.b(s3, "href", y);
+        1 & e3 && f2 !== (f2 = t4[1].img[1]) && main2.b(g2, "srcset", f2), 1 & e3 && p3 !== (p3 = t4[1].img[0]) && main2.b(u, "srcset", p3), 1 & e3 && h2.src !== (b2 = t4[1].img[0]) && main2.b(h2, "src", b2), 1 & e3 && k !== (k = t4[1].title) && main2.b(h2, "alt", k), 1 & e3 && H !== (H = t4[1].title + "") && (v.innerHTML = H), 1 & e3 && y !== (y = t4[1].path) && main2.b(s3, "href", y);
       }, d(t4) {
         t4 && main2.f(s3);
       }};
@@ -427,17 +427,17 @@
       let l2;
       return main2.g(t3, o, (t4) => e2(0, l2 = t4)), l2.site && i.set({title: l2.site.title, slogan: l2.site.slogan}), [l2];
     }
-    class index_b760118a_default extends main2.S {
+    class index_8c0e4d67_default extends main2.S {
       constructor(t3) {
         super(), main2.i(this, t3, b, h, main2.s, {});
       }
     }
   });
 
-  // dist/build/kassa-a42bfd0e.js
-  var require_kassa_a42bfd0e = __commonJS((exports) => {
+  // dist/build/kassa-24a22f1e.js
+  var require_kassa_24a22f1e = __commonJS((exports) => {
     __export(exports, {
-      default: () => kassa_a42bfd0e_default
+      default: () => kassa_24a22f1e_default
     });
     const main2 = __toModule(require_main());
     class N extends main2.S {
@@ -459,72 +459,72 @@
     }
     function E(t3) {
       let e2, n2, a3;
-      function r2(t4, e3) {
+      function o3(t4, e3) {
         return typeof t4[3] != "number" ? O : D;
       }
-      let c2 = r2(t3), o3 = c2(t3);
+      let c2 = o3(t3), r2 = c2(t3);
       return {c() {
-        e2 = main2.e("h1"), e2.textContent = "Kiitos tilauksesta", n2 = main2.a(), o3.c(), a3 = main2.o();
+        e2 = main2.e("h1"), e2.textContent = "Kiitos tilauksesta", n2 = main2.a(), r2.c(), a3 = main2.o();
       }, m(t4, l2) {
-        main2.c(t4, e2, l2), main2.c(t4, n2, l2), o3.m(t4, l2), main2.c(t4, a3, l2);
+        main2.c(t4, e2, l2), main2.c(t4, n2, l2), r2.m(t4, l2), main2.c(t4, a3, l2);
       }, p(t4, e3) {
-        c2 === (c2 = r2(t4)) && o3 ? o3.p(t4, e3) : (o3.d(1), o3 = c2(t4), o3 && (o3.c(), o3.m(a3.parentNode, a3)));
+        c2 === (c2 = o3(t4)) && r2 ? r2.p(t4, e3) : (r2.d(1), r2 = c2(t4), r2 && (r2.c(), r2.m(a3.parentNode, a3)));
       }, i: main2.n, o: main2.n, d(t4) {
-        t4 && main2.f(e2), t4 && main2.f(n2), o3.d(t4), t4 && main2.f(a3);
+        t4 && main2.f(e2), t4 && main2.f(n2), r2.d(t4), t4 && main2.f(a3);
       }};
     }
     function J(t3) {
-      let e2, n2, u2, m2, v2, x2, f2, h2, g2, b2, C2, $2, w2, T2, H2, M2, q, K, z, N2, A2, E2, J2, D2, O2, V2, Y2, G2, R2, Z2, _2, tt2, et, nt, lt, st, at, it, rt, ct, ot, dt, ut, mt, pt, vt, xt, ft, ht = t3[1].total.toFixed(2) + "", gt = t3[5].toFixed(2) + "", yt = t3[2].toFixed(2) + "", jt = t3[4].body && P(t3), bt = t3[1].products, Ft = [];
-      for (let e3 = 0; e3 < bt.length; e3 += 1)
-        Ft[e3] = X(B(t3, bt, e3));
-      let kt = t3[4].delivery && Q(t3), Ct = t3[0].price > 0 && U(t3), $t = t3[8], wt = [];
-      for (let e3 = 0; e3 < $t.length; e3 += 1)
-        wt[e3] = W(I(t3, $t, e3));
+      let e2, n2, d2, m2, f2, h2, y2, x2, g2, F2, $2, w2, T2, H2, M2, L2, q, K, z, N2, A2, E2, J2, D2, O2, V2, Y2, G2, R2, Z2, _2, tt2, et, nt, lt, st, at, it, ot, ct, rt, ut, dt, mt, pt, ft, ht, yt, xt = t3[1].total.toFixed(2) + "", gt = t3[5].toFixed(2) + "", vt = t3[2].toFixed(2) + "", bt = t3[4].body && P(t3), Ft = t3[1].products, kt = [];
+      for (let e3 = 0; e3 < Ft.length; e3 += 1)
+        kt[e3] = X(B(t3, Ft, e3));
+      let Ct = t3[4].delivery && Q(t3), $t = t3[0].price > 0 && U(t3), wt = t3[8], Tt = [];
+      for (let e3 = 0; e3 < wt.length; e3 += 1)
+        Tt[e3] = W(I(t3, wt, e3));
       return {c() {
-        jt && jt.c(), e2 = main2.a(), n2 = main2.e("div"), u2 = main2.e("div"), m2 = main2.e("h2"), m2.textContent = "Tuotteet", v2 = main2.a(), x2 = main2.e("table"), f2 = main2.e("thead"), f2.innerHTML = '<tr><th class="tl svelte-1gmxvjr">Tuote</th> \n							<th class="tc svelte-1gmxvjr">Hinta</th> \n							<th class="tc svelte-1gmxvjr">M\xE4\xE4r\xE4</th> \n							<th class="tc svelte-1gmxvjr">Yhteens\xE4</th> \n							<th class="svelte-1gmxvjr"></th></tr>', h2 = main2.a(), g2 = main2.e("tbody");
-        for (let t4 = 0; t4 < Ft.length; t4 += 1)
-          Ft[t4].c();
-        b2 = main2.a(), kt && kt.c(), C2 = main2.a(), $2 = main2.e("div"), w2 = main2.e("h2"), w2.textContent = "Maksutiedot", T2 = main2.a(), H2 = main2.e("table"), M2 = main2.e("tbody"), q = main2.e("tr"), K = main2.e("td"), K.textContent = "Tuotteet yhteens\xE4", z = main2.a(), N2 = main2.e("td"), A2 = main2.t(ht), E2 = main2.t(" \u20AC"), J2 = main2.a(), Ct && Ct.c(), D2 = main2.a(), O2 = main2.e("tr"), V2 = main2.e("td"), V2.textContent = "ALV 10%", Y2 = main2.a(), G2 = main2.e("td"), R2 = main2.t(gt), Z2 = main2.t(" \u20AC"), _2 = main2.a(), tt2 = main2.e("tr"), et = main2.e("td"), et.textContent = "Tilaus yhteens\xE4", nt = main2.a(), lt = main2.e("td"), st = main2.t(yt), at = main2.t(" \u20AC"), it = main2.a(), rt = main2.e("form"), ct = main2.e("div"), ot = main2.e("h2"), ot.textContent = "Asiakastiedot", dt = main2.a(), ut = main2.e("div");
-        for (let t4 = 0; t4 < wt.length; t4 += 1)
-          wt[t4].c();
-        mt = main2.a(), pt = main2.e("div"), pt.innerHTML = '<button id="ready" class="end svelte-1gmxvjr" name="ready" type="submit">Vahvista tilaus</button>', main2.b(x2, "id", "productList"), main2.b(x2, "class", "w100"), main2.b(x2, "rules", "rows"), main2.b(u2, "class", "item"), main2.b(K, "class", "label tl svelte-1gmxvjr"), main2.b(N2, "class", "value tr svelte-1gmxvjr"), main2.b(V2, "class", "label tl svelte-1gmxvjr"), main2.b(G2, "class", "value tr svelte-1gmxvjr"), main2.b(et, "class", "label tl svelte-1gmxvjr"), main2.b(lt, "class", "value tr svelte-1gmxvjr"), main2.b(H2, "class", "w100"), main2.b($2, "id", "paymentInfo"), main2.b($2, "class", "item"), main2.b(n2, "id", "tables"), main2.b(n2, "class", "grid svelte-1gmxvjr"), main2.b(ut, "class", "grid svelte-1gmxvjr"), main2.b(ct, "id", "client"), main2.b(ct, "class", "item svelte-1gmxvjr"), main2.b(pt, "id", "payment"), main2.b(pt, "class", "tc"), main2.b(rt, "class", "items");
+        bt && bt.c(), e2 = main2.a(), n2 = main2.e("div"), d2 = main2.e("div"), m2 = main2.e("h2"), m2.textContent = "Tuotteet", f2 = main2.a(), h2 = main2.e("table"), y2 = main2.e("thead"), y2.innerHTML = '<tr><th class="tl">Tuote</th> \n							<th class="tc">Hinta</th> \n							<th class="tc">M\xE4\xE4r\xE4</th> \n							<th class="tc">Yhteens\xE4</th> \n							<th></th></tr>', x2 = main2.a(), g2 = main2.e("tbody");
+        for (let t4 = 0; t4 < kt.length; t4 += 1)
+          kt[t4].c();
+        F2 = main2.a(), Ct && Ct.c(), $2 = main2.a(), w2 = main2.e("div"), T2 = main2.e("h2"), T2.textContent = "Maksutiedot", H2 = main2.a(), M2 = main2.e("table"), L2 = main2.e("tbody"), q = main2.e("tr"), K = main2.e("td"), K.textContent = "Tuotteet yhteens\xE4", z = main2.a(), N2 = main2.e("td"), A2 = main2.t(xt), E2 = main2.t(" \u20AC"), J2 = main2.a(), $t && $t.c(), D2 = main2.a(), O2 = main2.e("tr"), V2 = main2.e("td"), V2.textContent = "ALV 10%", Y2 = main2.a(), G2 = main2.e("td"), R2 = main2.t(gt), Z2 = main2.t(" \u20AC"), _2 = main2.a(), tt2 = main2.e("tr"), et = main2.e("td"), et.textContent = "Tilaus yhteens\xE4", nt = main2.a(), lt = main2.e("td"), st = main2.t(vt), at = main2.t(" \u20AC"), it = main2.a(), ot = main2.e("form"), ct = main2.e("div"), rt = main2.e("h2"), rt.textContent = "Asiakastiedot", ut = main2.a(), dt = main2.e("div");
+        for (let t4 = 0; t4 < Tt.length; t4 += 1)
+          Tt[t4].c();
+        mt = main2.a(), pt = main2.e("div"), pt.innerHTML = '<button id="ready" class="end" name="ready" type="submit">Vahvista tilaus</button>', main2.b(h2, "id", "productList"), main2.b(h2, "class", "w100"), main2.b(h2, "rules", "rows"), main2.b(d2, "class", "item"), main2.b(K, "class", "label tl"), main2.b(N2, "class", "value tr"), main2.b(V2, "class", "label tl"), main2.b(G2, "class", "value tr"), main2.b(et, "class", "label tl"), main2.b(lt, "class", "value tr"), main2.b(M2, "class", "w100"), main2.b(w2, "id", "paymentInfo"), main2.b(w2, "class", "item"), main2.b(n2, "id", "tables"), main2.b(n2, "class", "grid"), main2.b(dt, "class", "grid"), main2.b(ct, "id", "client"), main2.b(ct, "class", "item"), main2.b(pt, "id", "payment"), main2.b(pt, "class", "tc"), main2.b(ot, "class", "items");
       }, m(l2, s3) {
-        jt && jt.m(l2, s3), main2.c(l2, e2, s3), main2.c(l2, n2, s3), main2.d(n2, u2), main2.d(u2, m2), main2.d(u2, v2), main2.d(u2, x2), main2.d(x2, f2), main2.d(x2, h2), main2.d(x2, g2);
-        for (let t4 = 0; t4 < Ft.length; t4 += 1)
-          Ft[t4].m(g2, null);
-        main2.d(u2, b2), kt && kt.m(u2, null), main2.d(n2, C2), main2.d(n2, $2), main2.d($2, w2), main2.d($2, T2), main2.d($2, H2), main2.d(H2, M2), main2.d(M2, q), main2.d(q, K), main2.d(q, z), main2.d(q, N2), main2.d(N2, A2), main2.d(N2, E2), main2.d(M2, J2), Ct && Ct.m(M2, null), main2.d(M2, D2), main2.d(M2, O2), main2.d(O2, V2), main2.d(O2, Y2), main2.d(O2, G2), main2.d(G2, R2), main2.d(G2, Z2), main2.d(M2, _2), main2.d(M2, tt2), main2.d(tt2, et), main2.d(tt2, nt), main2.d(tt2, lt), main2.d(lt, st), main2.d(lt, at), main2.c(l2, it, s3), main2.c(l2, rt, s3), main2.d(rt, ct), main2.d(ct, ot), main2.d(ct, dt), main2.d(ct, ut);
-        for (let t4 = 0; t4 < wt.length; t4 += 1)
-          wt[t4].m(ut, null);
-        main2.d(rt, mt), main2.d(rt, pt), vt = true, xt || (ft = main2.l(rt, "submit", main2.K(t3[9])), xt = true);
+        bt && bt.m(l2, s3), main2.c(l2, e2, s3), main2.c(l2, n2, s3), main2.d(n2, d2), main2.d(d2, m2), main2.d(d2, f2), main2.d(d2, h2), main2.d(h2, y2), main2.d(h2, x2), main2.d(h2, g2);
+        for (let t4 = 0; t4 < kt.length; t4 += 1)
+          kt[t4].m(g2, null);
+        main2.d(d2, F2), Ct && Ct.m(d2, null), main2.d(n2, $2), main2.d(n2, w2), main2.d(w2, T2), main2.d(w2, H2), main2.d(w2, M2), main2.d(M2, L2), main2.d(L2, q), main2.d(q, K), main2.d(q, z), main2.d(q, N2), main2.d(N2, A2), main2.d(N2, E2), main2.d(L2, J2), $t && $t.m(L2, null), main2.d(L2, D2), main2.d(L2, O2), main2.d(O2, V2), main2.d(O2, Y2), main2.d(O2, G2), main2.d(G2, R2), main2.d(G2, Z2), main2.d(L2, _2), main2.d(L2, tt2), main2.d(tt2, et), main2.d(tt2, nt), main2.d(tt2, lt), main2.d(lt, st), main2.d(lt, at), main2.c(l2, it, s3), main2.c(l2, ot, s3), main2.d(ot, ct), main2.d(ct, rt), main2.d(ct, ut), main2.d(ct, dt);
+        for (let t4 = 0; t4 < Tt.length; t4 += 1)
+          Tt[t4].m(dt, null);
+        main2.d(ot, mt), main2.d(ot, pt), ft = true, ht || (yt = main2.l(ot, "submit", main2.K(t3[9])), ht = true);
       }, p(t4, n3) {
-        if (t4[4].body ? jt ? jt.p(t4, n3) : (jt = P(t4), jt.c(), jt.m(e2.parentNode, e2)) : jt && (jt.d(1), jt = null), 130 & n3) {
+        if (t4[4].body ? bt ? bt.p(t4, n3) : (bt = P(t4), bt.c(), bt.m(e2.parentNode, e2)) : bt && (bt.d(1), bt = null), 130 & n3) {
           let e3;
-          for (bt = t4[1].products, e3 = 0; e3 < bt.length; e3 += 1) {
-            const l2 = B(t4, bt, e3);
-            Ft[e3] ? Ft[e3].p(l2, n3) : (Ft[e3] = X(l2), Ft[e3].c(), Ft[e3].m(g2, null));
+          for (Ft = t4[1].products, e3 = 0; e3 < Ft.length; e3 += 1) {
+            const l2 = B(t4, Ft, e3);
+            kt[e3] ? kt[e3].p(l2, n3) : (kt[e3] = X(l2), kt[e3].c(), kt[e3].m(g2, null));
           }
-          for (; e3 < Ft.length; e3 += 1)
-            Ft[e3].d(1);
-          Ft.length = bt.length;
+          for (; e3 < kt.length; e3 += 1)
+            kt[e3].d(1);
+          kt.length = Ft.length;
         }
-        if (t4[4].delivery ? kt ? (kt.p(t4, n3), 16 & n3 && main2.z(kt, 1)) : (kt = Q(t4), kt.c(), main2.z(kt, 1), kt.m(u2, null)) : kt && (main2.D(), main2.A(kt, 1, 1, () => {
-          kt = null;
-        }), main2.B()), (!vt || 2 & n3) && ht !== (ht = t4[1].total.toFixed(2) + "") && main2.j(A2, ht), t4[0].price > 0 ? Ct ? Ct.p(t4, n3) : (Ct = U(t4), Ct.c(), Ct.m(M2, D2)) : Ct && (Ct.d(1), Ct = null), (!vt || 32 & n3) && gt !== (gt = t4[5].toFixed(2) + "") && main2.j(R2, gt), (!vt || 4 & n3) && yt !== (yt = t4[2].toFixed(2) + "") && main2.j(st, yt), 256 & n3) {
+        if (t4[4].delivery ? Ct ? (Ct.p(t4, n3), 16 & n3 && main2.z(Ct, 1)) : (Ct = Q(t4), Ct.c(), main2.z(Ct, 1), Ct.m(d2, null)) : Ct && (main2.D(), main2.A(Ct, 1, 1, () => {
+          Ct = null;
+        }), main2.B()), (!ft || 2 & n3) && xt !== (xt = t4[1].total.toFixed(2) + "") && main2.j(A2, xt), t4[0].price > 0 ? $t ? $t.p(t4, n3) : ($t = U(t4), $t.c(), $t.m(L2, D2)) : $t && ($t.d(1), $t = null), (!ft || 32 & n3) && gt !== (gt = t4[5].toFixed(2) + "") && main2.j(R2, gt), (!ft || 4 & n3) && vt !== (vt = t4[2].toFixed(2) + "") && main2.j(st, vt), 256 & n3) {
           let e3;
-          for ($t = t4[8], e3 = 0; e3 < $t.length; e3 += 1) {
-            const l2 = I(t4, $t, e3);
-            wt[e3] ? wt[e3].p(l2, n3) : (wt[e3] = W(l2), wt[e3].c(), wt[e3].m(ut, null));
+          for (wt = t4[8], e3 = 0; e3 < wt.length; e3 += 1) {
+            const l2 = I(t4, wt, e3);
+            Tt[e3] ? Tt[e3].p(l2, n3) : (Tt[e3] = W(l2), Tt[e3].c(), Tt[e3].m(dt, null));
           }
-          for (; e3 < wt.length; e3 += 1)
-            wt[e3].d(1);
-          wt.length = $t.length;
+          for (; e3 < Tt.length; e3 += 1)
+            Tt[e3].d(1);
+          Tt.length = wt.length;
         }
       }, i(t4) {
-        vt || (main2.z(kt), vt = true);
+        ft || (main2.z(Ct), ft = true);
       }, o(t4) {
-        main2.A(kt), vt = false;
+        main2.A(Ct), ft = false;
       }, d(t4) {
-        jt && jt.d(t4), t4 && main2.f(e2), t4 && main2.f(n2), main2.m(Ft, t4), kt && kt.d(), Ct && Ct.d(), t4 && main2.f(it), t4 && main2.f(rt), main2.m(wt, t4), xt = false, ft();
+        bt && bt.d(t4), t4 && main2.f(e2), t4 && main2.f(n2), main2.m(kt, t4), Ct && Ct.d(), $t && $t.d(), t4 && main2.f(it), t4 && main2.f(ot), main2.m(Tt, t4), ht = false, yt();
       }};
     }
     function D(t3) {
@@ -564,19 +564,19 @@
       }};
     }
     function V(t3) {
-      let e2, n2, r2, c2, o3, u2, m2, p3, v2, f2, h2, g2, $2, w2, T2, H2, M2, L2, S2, q, K, z, N2, I2, A2, B2, E2, J2, D2, O2 = t3[6].title + "", P2 = t3[6].price2.toFixed(2) + "", V2 = t3[6].total.toFixed(2) + "", X2 = t3[6].size && Y(t3), Q2 = t3[6].id && G(t3);
+      let e2, n2, o3, c2, r2, d2, m2, p3, f2, y2, x2, g2, w2, T2, H2, M2, L2, S2, j2, q, K, z, N2, I2, A2, B2, E2, J2, D2, O2 = t3[6].title + "", P2 = t3[6].price2.toFixed(2) + "", V2 = t3[6].total.toFixed(2) + "", X2 = t3[6].size && Y(t3), Q2 = t3[6].id && G(t3);
       function R2() {
-        t3[10].call(L2, t3[19]);
+        t3[10].call(S2, t3[19]);
       }
       function U2() {
         return t3[11](t3[19]);
       }
       return {c() {
-        e2 = main2.e("tr"), n2 = main2.e("td"), r2 = main2.e("strong"), c2 = main2.t(O2), o3 = main2.a(), X2 && X2.c(), u2 = main2.a(), m2 = main2.e("br"), p3 = main2.a(), Q2 && Q2.c(), v2 = main2.a(), f2 = main2.e("td"), h2 = main2.e("span"), h2.textContent = "Hinta:", g2 = main2.a(), $2 = main2.t(P2), w2 = main2.a(), T2 = main2.e("td"), H2 = main2.e("span"), H2.textContent = "M\xE4\xE4r\xE4:", M2 = main2.a(), L2 = main2.e("input"), S2 = main2.a(), q = main2.e("td"), K = main2.e("span"), K.textContent = "Yhteens\xE4:", z = main2.a(), N2 = main2.t(V2), I2 = main2.a(), A2 = main2.e("td"), B2 = main2.e("button"), B2.textContent = "X", E2 = main2.a(), main2.b(n2, "class", "product tl svelte-1gmxvjr"), main2.b(h2, "class", "svelte-1gmxvjr"), main2.b(f2, "class", "price tc pt svelte-1gmxvjr"), main2.b(H2, "class", "svelte-1gmxvjr"), main2.b(L2, "type", "number"), main2.b(L2, "name", "amount"), main2.b(L2, "class", "svelte-1gmxvjr"), main2.b(T2, "class", "amount tc svelte-1gmxvjr"), main2.b(K, "class", "svelte-1gmxvjr"), main2.b(q, "class", "total tc pt svelte-1gmxvjr"), main2.b(B2, "class", "del noBor"), main2.b(A2, "class", "tr pt svelte-1gmxvjr");
+        e2 = main2.e("tr"), n2 = main2.e("td"), o3 = main2.e("strong"), c2 = main2.t(O2), r2 = main2.a(), X2 && X2.c(), d2 = main2.a(), m2 = main2.e("br"), p3 = main2.a(), Q2 && Q2.c(), f2 = main2.a(), y2 = main2.e("td"), x2 = main2.e("span"), x2.textContent = "Hinta:", g2 = main2.a(), w2 = main2.t(P2), T2 = main2.a(), H2 = main2.e("td"), M2 = main2.e("span"), M2.textContent = "M\xE4\xE4r\xE4:", L2 = main2.a(), S2 = main2.e("input"), j2 = main2.a(), q = main2.e("td"), K = main2.e("span"), K.textContent = "Yhteens\xE4:", z = main2.a(), N2 = main2.t(V2), I2 = main2.a(), A2 = main2.e("td"), B2 = main2.e("button"), B2.textContent = "X", E2 = main2.a(), main2.b(n2, "class", "product tl"), main2.b(y2, "class", "price tc pt"), main2.b(S2, "type", "number"), main2.b(S2, "name", "amount"), main2.b(H2, "class", "amount tc"), main2.b(q, "class", "total tc pt"), main2.b(B2, "class", "del noBor"), main2.b(A2, "class", "tr pt");
       }, m(l2, s3) {
-        main2.c(l2, e2, s3), main2.d(e2, n2), main2.d(n2, r2), main2.d(r2, c2), main2.d(r2, o3), X2 && X2.m(r2, null), main2.d(n2, u2), main2.d(n2, m2), main2.d(n2, p3), Q2 && Q2.m(n2, null), main2.d(e2, v2), main2.d(e2, f2), main2.d(f2, h2), main2.d(f2, g2), main2.d(f2, $2), main2.d(e2, w2), main2.d(e2, T2), main2.d(T2, H2), main2.d(T2, M2), main2.d(T2, L2), main2.h(L2, t3[1].products[t3[19]].amount), main2.d(e2, S2), main2.d(e2, q), main2.d(q, K), main2.d(q, z), main2.d(q, N2), main2.d(e2, I2), main2.d(e2, A2), main2.d(A2, B2), main2.d(e2, E2), J2 || (D2 = [main2.l(L2, "input", R2), main2.l(B2, "click", U2)], J2 = true);
+        main2.c(l2, e2, s3), main2.d(e2, n2), main2.d(n2, o3), main2.d(o3, c2), main2.d(o3, r2), X2 && X2.m(o3, null), main2.d(n2, d2), main2.d(n2, m2), main2.d(n2, p3), Q2 && Q2.m(n2, null), main2.d(e2, f2), main2.d(e2, y2), main2.d(y2, x2), main2.d(y2, g2), main2.d(y2, w2), main2.d(e2, T2), main2.d(e2, H2), main2.d(H2, M2), main2.d(H2, L2), main2.d(H2, S2), main2.h(S2, t3[1].products[t3[19]].amount), main2.d(e2, j2), main2.d(e2, q), main2.d(q, K), main2.d(q, z), main2.d(q, N2), main2.d(e2, I2), main2.d(e2, A2), main2.d(A2, B2), main2.d(e2, E2), J2 || (D2 = [main2.l(S2, "input", R2), main2.l(B2, "click", U2)], J2 = true);
       }, p(e3, l2) {
-        t3 = e3, 2 & l2 && O2 !== (O2 = t3[6].title + "") && main2.j(c2, O2), t3[6].size ? X2 ? X2.p(t3, l2) : (X2 = Y(t3), X2.c(), X2.m(r2, null)) : X2 && (X2.d(1), X2 = null), t3[6].id ? Q2 ? Q2.p(t3, l2) : (Q2 = G(t3), Q2.c(), Q2.m(n2, null)) : Q2 && (Q2.d(1), Q2 = null), 2 & l2 && P2 !== (P2 = t3[6].price2.toFixed(2) + "") && main2.j($2, P2), 2 & l2 && main2.k(L2.value) !== t3[1].products[t3[19]].amount && main2.h(L2, t3[1].products[t3[19]].amount), 2 & l2 && V2 !== (V2 = t3[6].total.toFixed(2) + "") && main2.j(N2, V2);
+        t3 = e3, 2 & l2 && O2 !== (O2 = t3[6].title + "") && main2.j(c2, O2), t3[6].size ? X2 ? X2.p(t3, l2) : (X2 = Y(t3), X2.c(), X2.m(o3, null)) : X2 && (X2.d(1), X2 = null), t3[6].id ? Q2 ? Q2.p(t3, l2) : (Q2 = G(t3), Q2.c(), Q2.m(n2, null)) : Q2 && (Q2.d(1), Q2 = null), 2 & l2 && P2 !== (P2 = t3[6].price2.toFixed(2) + "") && main2.j(w2, P2), 2 & l2 && main2.k(S2.value) !== t3[1].products[t3[19]].amount && main2.h(S2, t3[1].products[t3[19]].amount), 2 & l2 && V2 !== (V2 = t3[6].total.toFixed(2) + "") && main2.j(N2, V2);
       }, d(t4) {
         t4 && main2.f(e2), X2 && X2.d(), Q2 && Q2.d(), J2 = false, main2.r(D2);
       }};
@@ -618,47 +618,47 @@
       }};
     }
     function Q(t3) {
-      let e2, n2, u2, m2, v2, x2, f2, h2, g2 = t3[4].delivery, y2 = [];
+      let e2, n2, d2, m2, f2, h2, y2, x2, g2 = t3[4].delivery, v2 = [];
       for (let e3 = 0; e3 < g2.length; e3 += 1)
-        y2[e3] = R(A(t3, g2, e3));
-      const b2 = (t4) => main2.A(y2[t4], 1, 1, () => {
-        y2[t4] = null;
+        v2[e3] = R(A(t3, g2, e3));
+      const F2 = (t4) => main2.A(v2[t4], 1, 1, () => {
+        v2[t4] = null;
       });
       return {c() {
-        e2 = main2.e("div"), n2 = main2.e("label"), u2 = main2.e("span"), u2.innerHTML = "<h2>Toimitustapa</h2>", m2 = main2.a(), v2 = main2.e("select");
-        for (let t4 = 0; t4 < y2.length; t4 += 1)
-          y2[t4].c();
-        main2.b(u2, "class", "block"), t3[6] === void 0 && main2.F(() => t3[12].call(v2)), main2.b(e2, "id", "shipping");
+        e2 = main2.e("div"), n2 = main2.e("label"), d2 = main2.e("span"), d2.innerHTML = "<h2>Toimitustapa</h2>", m2 = main2.a(), f2 = main2.e("select");
+        for (let t4 = 0; t4 < v2.length; t4 += 1)
+          v2[t4].c();
+        main2.b(d2, "class", "block"), t3[6] === void 0 && main2.F(() => t3[12].call(f2)), main2.b(e2, "id", "shipping");
       }, m(l2, s3) {
-        main2.c(l2, e2, s3), main2.d(e2, n2), main2.d(n2, u2), main2.d(n2, m2), main2.d(n2, v2);
-        for (let t4 = 0; t4 < y2.length; t4 += 1)
-          y2[t4].m(v2, null);
-        main2.G(v2, t3[6]), x2 = true, f2 || (h2 = main2.l(v2, "change", t3[12]), f2 = true);
+        main2.c(l2, e2, s3), main2.d(e2, n2), main2.d(n2, d2), main2.d(n2, m2), main2.d(n2, f2);
+        for (let t4 = 0; t4 < v2.length; t4 += 1)
+          v2[t4].m(f2, null);
+        main2.G(f2, t3[6]), h2 = true, y2 || (x2 = main2.l(f2, "change", t3[12]), y2 = true);
       }, p(t4, e3) {
         if (16 & e3) {
           let n3;
           for (g2 = t4[4].delivery, n3 = 0; n3 < g2.length; n3 += 1) {
             const l2 = A(t4, g2, n3);
-            y2[n3] ? (y2[n3].p(l2, e3), main2.z(y2[n3], 1)) : (y2[n3] = R(l2), y2[n3].c(), main2.z(y2[n3], 1), y2[n3].m(v2, null));
+            v2[n3] ? (v2[n3].p(l2, e3), main2.z(v2[n3], 1)) : (v2[n3] = R(l2), v2[n3].c(), main2.z(v2[n3], 1), v2[n3].m(f2, null));
           }
-          for (main2.D(), n3 = g2.length; n3 < y2.length; n3 += 1)
-            b2(n3);
+          for (main2.D(), n3 = g2.length; n3 < v2.length; n3 += 1)
+            F2(n3);
           main2.B();
         }
-        64 & e3 && main2.G(v2, t4[6]);
+        64 & e3 && main2.G(f2, t4[6]);
       }, i(t4) {
-        if (!x2) {
+        if (!h2) {
           for (let t5 = 0; t5 < g2.length; t5 += 1)
-            main2.z(y2[t5]);
-          x2 = true;
+            main2.z(v2[t5]);
+          h2 = true;
         }
       }, o(t4) {
-        y2 = y2.filter(Boolean);
-        for (let t5 = 0; t5 < y2.length; t5 += 1)
-          main2.A(y2[t5]);
-        x2 = false;
+        v2 = v2.filter(Boolean);
+        for (let t5 = 0; t5 < v2.length; t5 += 1)
+          main2.A(v2[t5]);
+        h2 = false;
       }, d(t4) {
-        t4 && main2.f(e2), main2.m(y2, t4), f2 = false, h2();
+        t4 && main2.f(e2), main2.m(v2, t4), y2 = false, x2();
       }};
     }
     function R(t3) {
@@ -679,98 +679,98 @@
       }};
     }
     function U(t3) {
-      let e2, n2, r2, c2, o3, u2, m2 = t3[0].price.toFixed(2) + "";
+      let e2, n2, o3, c2, r2, d2, m2 = t3[0].price.toFixed(2) + "";
       return {c() {
-        e2 = main2.e("tr"), n2 = main2.e("td"), n2.textContent = "Kuljetus", r2 = main2.a(), c2 = main2.e("td"), o3 = main2.t(m2), u2 = main2.t(" \u20AC"), main2.b(n2, "class", "label tl svelte-1gmxvjr"), main2.b(c2, "class", "value tr svelte-1gmxvjr");
+        e2 = main2.e("tr"), n2 = main2.e("td"), n2.textContent = "Kuljetus", o3 = main2.a(), c2 = main2.e("td"), r2 = main2.t(m2), d2 = main2.t(" \u20AC"), main2.b(n2, "class", "label tl"), main2.b(c2, "class", "value tr");
       }, m(t4, l2) {
-        main2.c(t4, e2, l2), main2.d(e2, n2), main2.d(e2, r2), main2.d(e2, c2), main2.d(c2, o3), main2.d(c2, u2);
+        main2.c(t4, e2, l2), main2.d(e2, n2), main2.d(e2, o3), main2.d(e2, c2), main2.d(c2, r2), main2.d(c2, d2);
       }, p(t4, e3) {
-        1 & e3 && m2 !== (m2 = t4[0].price.toFixed(2) + "") && main2.j(o3, m2);
+        1 & e3 && m2 !== (m2 = t4[0].price.toFixed(2) + "") && main2.j(r2, m2);
       }, d(t4) {
         t4 && main2.f(e2);
       }};
     }
     function W(t3) {
-      let e2, n2, r2, c2, o3, u2, m2, p3 = t3[6].title + "";
+      let e2, n2, o3, c2, r2, d2, m2, p3 = t3[6].title + "";
       return {c() {
-        e2 = main2.e("div"), n2 = main2.e("label"), r2 = main2.e("span"), c2 = main2.t(p3), o3 = main2.a(), u2 = main2.e("input"), m2 = main2.a(), main2.b(r2, "class", "block"), main2.b(u2, "id", t3[6].name), main2.b(u2, "class", "w100 svelte-1gmxvjr"), main2.b(u2, "type", t3[6].type), main2.b(u2, "name", t3[6].name), main2.b(u2, "minlength", t3[6].min), main2.b(u2, "maxlength", t3[6].max), u2.required = true, main2.b(e2, "class", "item");
+        e2 = main2.e("div"), n2 = main2.e("label"), o3 = main2.e("span"), c2 = main2.t(p3), r2 = main2.a(), d2 = main2.e("input"), m2 = main2.a(), main2.b(o3, "class", "block"), main2.b(d2, "id", t3[6].name), main2.b(d2, "class", "w100"), main2.b(d2, "type", t3[6].type), main2.b(d2, "name", t3[6].name), main2.b(d2, "minlength", t3[6].min), main2.b(d2, "maxlength", t3[6].max), d2.required = true, main2.b(e2, "class", "item");
       }, m(t4, l2) {
-        main2.c(t4, e2, l2), main2.d(e2, n2), main2.d(n2, r2), main2.d(r2, c2), main2.d(n2, o3), main2.d(n2, u2), main2.d(e2, m2);
+        main2.c(t4, e2, l2), main2.d(e2, n2), main2.d(n2, o3), main2.d(o3, c2), main2.d(n2, r2), main2.d(n2, d2), main2.d(e2, m2);
       }, p: main2.n, d(t4) {
         t4 && main2.f(e2);
       }};
     }
     function Z(t3) {
-      let e2, n2, u2, m2, v2, x2;
+      let e2, n2, d2, m2, f2, h2;
       document.title = e2 = _;
-      const f2 = [J, E], h2 = [];
+      const y2 = [J, E], x2 = [];
       function g2(t4, e3) {
         return t4[3] == 0 && t4[1].products[0] ? 0 : 1;
       }
-      return m2 = g2(t3), v2 = h2[m2] = f2[m2](t3), {c() {
-        n2 = main2.a(), u2 = main2.e("div"), v2.c(), main2.b(u2, "id", "checkout"), main2.b(u2, "class", "container rel");
+      return m2 = g2(t3), f2 = x2[m2] = y2[m2](t3), {c() {
+        n2 = main2.a(), d2 = main2.e("div"), f2.c(), main2.b(d2, "id", "checkout"), main2.b(d2, "class", "container rel");
       }, m(t4, e3) {
-        main2.c(t4, n2, e3), main2.c(t4, u2, e3), h2[m2].m(u2, null), x2 = true;
+        main2.c(t4, n2, e3), main2.c(t4, d2, e3), x2[m2].m(d2, null), h2 = true;
       }, p(t4, [n3]) {
-        (!x2 || 0 & n3) && e2 !== (e2 = _) && (document.title = e2);
+        (!h2 || 0 & n3) && e2 !== (e2 = _) && (document.title = e2);
         let l2 = m2;
-        m2 = g2(t4), m2 === l2 ? h2[m2].p(t4, n3) : (main2.D(), main2.A(h2[l2], 1, 1, () => {
-          h2[l2] = null;
-        }), main2.B(), v2 = h2[m2], v2 ? v2.p(t4, n3) : (v2 = h2[m2] = f2[m2](t4), v2.c()), main2.z(v2, 1), v2.m(u2, null));
+        m2 = g2(t4), m2 === l2 ? x2[m2].p(t4, n3) : (main2.D(), main2.A(x2[l2], 1, 1, () => {
+          x2[l2] = null;
+        }), main2.B(), f2 = x2[m2], f2 ? f2.p(t4, n3) : (f2 = x2[m2] = y2[m2](t4), f2.c()), main2.z(f2, 1), f2.m(d2, null));
       }, i(t4) {
-        x2 || (main2.z(v2), x2 = true);
+        h2 || (main2.z(f2), h2 = true);
       }, o(t4) {
-        main2.A(v2), x2 = false;
+        main2.A(f2), h2 = false;
       }, d(t4) {
-        t4 && main2.f(n2), t4 && main2.f(u2), h2[m2].d();
+        t4 && main2.f(n2), t4 && main2.f(d2), x2[m2].d();
       }};
     }
     let _ = "Kassa";
     function tt(t3, e2, n2) {
-      let l2, s3, a3, i3, r2, c2;
-      main2.g(t3, t, (t4) => n2(13, i3 = t4)), main2.g(t3, i, (t4) => n2(4, r2 = t4)), main2.g(t3, p, (t4) => n2(1, c2 = t4));
-      let o3 = 0, d2 = {price: 0};
+      let l2, s3, a3, i3, o3, c2;
+      main2.g(t3, t, (t4) => n2(13, i3 = t4)), main2.g(t3, i, (t4) => n2(4, o3 = t4)), main2.g(t3, p, (t4) => n2(1, c2 = t4));
+      let r2 = 0, u2 = {price: 0};
       function p3(t4) {
         main2.q(p, c2.products = c2.products.filter((e3, n3) => n3 !== parseInt(t4) && e3 != null).sort(), c2);
       }
       main2.C(async () => {
         try {
           const t4 = await fetch(i3 + "?type=kassa");
-          i.set(await t4.json()), n2(0, d2 = r2.delivery.items[0]);
+          i.set(await t4.json()), n2(0, u2 = o3.delivery.items[0]);
         } catch (t4) {
           console.error(t4);
         }
       });
-      let h2 = [{title: "Etunimi", type: "text", name: "name1", min: 2, max: 30, req: 1}, {title: "Sukunimi", type: "text", name: "name2", min: 2, max: 30, req: 1}, {title: "Puhelin", type: "text", name: "phone", min: 5, max: 15, req: 1}, {title: "S\xE4hk\xF6posti", type: "email", name: "email", min: 6, max: 100, req: 1}, {title: "Katuosoite", type: "text", name: "street", min: 5, max: 50}, {title: "Postinumero", type: "text", name: "postal", min: 5, max: 5}, {title: "Kaupunki", type: "text", name: "area", min: 3, max: 50}];
+      let x2 = [{title: "Etunimi", type: "text", name: "name1", min: 2, max: 30, req: 1}, {title: "Sukunimi", type: "text", name: "name2", min: 2, max: 30, req: 1}, {title: "Puhelin", type: "text", name: "phone", min: 5, max: 15, req: 1}, {title: "S\xE4hk\xF6posti", type: "email", name: "email", min: 6, max: 100, req: 1}, {title: "Katuosoite", type: "text", name: "street", min: 5, max: 50}, {title: "Postinumero", type: "text", name: "postal", min: 5, max: 5}, {title: "Kaupunki", type: "text", name: "area", min: 3, max: 50}];
       if (window.location.search) {
         let t4 = window.location.search.substr(1).split("=");
-        t4[0] == "id" && (o3 = parseInt(t4[1]));
+        t4[0] == "id" && (r2 = parseInt(t4[1]));
       }
       return t3.$$.update = () => {
-        3 & t3.$$.dirty && n2(2, s3 = c2.total + d2.price), 4 & t3.$$.dirty && n2(5, a3 = 0.1 * s3);
-      }, n2(6, l2 = ""), [d2, c2, s3, o3, r2, a3, l2, p3, h2, async function(t4) {
+        3 & t3.$$.dirty && n2(2, s3 = c2.total + u2.price), 4 & t3.$$.dirty && n2(5, a3 = 0.1 * s3);
+      }, n2(6, l2 = ""), [u2, c2, s3, r2, o3, a3, l2, p3, x2, async function(t4) {
         typeof paymentSelected != "undefined" && (main2.q(p, c2.method = paymentSelected, c2), p.set(c2));
         const e3 = new FormData();
-        h2.forEach(function(n3) {
+        x2.forEach(function(n3) {
           t4.target[n3.name] !== void 0 && e3.append(n3.name, t4.target[n3.name].value);
-        }), e3.append("cart", JSON.stringify(c2.products)), e3.append("delivery", JSON.stringify(d2)), e3.append("price", s3), e3.append("vat", a3);
+        }), e3.append("cart", JSON.stringify(c2.products)), e3.append("delivery", JSON.stringify(u2)), e3.append("price", s3), e3.append("vat", a3);
       }, function(t4) {
         c2.products[t4].amount = main2.k(this.value), p.set(c2);
       }, (t4) => p3(t4), function() {
         l2 = main2.E(this), n2(6, l2);
       }];
     }
-    class kassa_a42bfd0e_default extends main2.S {
+    class kassa_24a22f1e_default extends main2.S {
       constructor(t3) {
         super(), main2.i(this, t3, tt, Z, main2.s, {});
       }
     }
   });
 
-  // dist/build/_layout-cd71cfa6.js
-  var require_layout_cd71cfa6 = __commonJS((exports) => {
+  // dist/build/_layout-4f4796e4.js
+  var require_layout_4f4796e4 = __commonJS((exports) => {
     __export(exports, {
-      default: () => layout_cd71cfa6_default
+      default: () => layout_4f4796e4_default
     });
     const main2 = __toModule(require_main());
     function C(t3, e2, s3) {
@@ -778,7 +778,7 @@
       return a3[6] = e2[s3], a3;
     }
     function J(t3) {
-      let e2, s3, a3, p3, g2, h2, f2, v2, y2, $2, w2, b2, k2, T2, x2, O2, M2, j2, H2, L2, N2, B2;
+      let e2, s3, a3, p3, g2, h2, f2, v2, $2, w2, y2, b2, k2, T2, x2, O2, M2, j2, H2, L2, N2, B2;
       function A2(t4, e3) {
         return t4[3] ? Y : q;
       }
@@ -786,17 +786,17 @@
       for (let e3 = 0; e3 < S.length; e3 += 1)
         z[e3] = D(C(t3, S, e3));
       return {c() {
-        e2 = main2.e("header"), s3 = main2.e("div"), a3 = main2.e("a"), p3 = main2.e("picture"), g2 = main2.e("source"), f2 = main2.a(), v2 = main2.e("source"), $2 = main2.a(), w2 = main2.e("img"), T2 = main2.a(), x2 = main2.e("button"), P.c(), O2 = main2.a(), M2 = main2.e("nav"), j2 = main2.e("ul"), H2 = main2.e("li"), H2.innerHTML = '<a class="nav-link block" href="/" rel="home">Etusivu</a>', L2 = main2.a();
+        e2 = main2.e("header"), s3 = main2.e("div"), a3 = main2.e("a"), p3 = main2.e("picture"), g2 = main2.e("source"), f2 = main2.a(), v2 = main2.e("source"), w2 = main2.a(), y2 = main2.e("img"), T2 = main2.a(), x2 = main2.e("button"), P.c(), O2 = main2.a(), M2 = main2.e("nav"), j2 = main2.e("ul"), H2 = main2.e("li"), H2.innerHTML = '<a class="nav-link block" href="/" rel="home">Etusivu</a>', L2 = main2.a();
         for (let t4 = 0; t4 < z.length; t4 += 1)
           z[t4].c();
-        main2.b(g2, "srcset", h2 = t3[0].site.logo[1]), main2.b(g2, "type", "image/webp"), main2.b(v2, "srcset", y2 = t3[0].site.logo[0]), main2.b(v2, "type", "image/jpeg"), w2.src !== (b2 = t3[0].site.logo[0]) && main2.b(w2, "src", b2), main2.b(w2, "alt", k2 = t3[0].site.title), main2.b(p3, "class", "block"), main2.b(a3, "id", "logo"), main2.b(a3, "class", "block bgw"), main2.b(a3, "href", "/"), main2.b(a3, "rel", "home"), main2.b(x2, "id", "menuToggle"), main2.b(x2, "class", "noBor"), main2.b(x2, "title", "Open/close main navigation"), main2.b(H2, "class", "nav-item"), main2.b(M2, "id", "menu"), main2.L(M2, "active", t3[3]), main2.b(s3, "class", "grid content mx"), main2.b(e2, "class", "block w100 bgw"), main2.L(e2, "small", t3[2]);
-      }, m(n2, l2) {
-        main2.c(n2, e2, l2), main2.d(e2, s3), main2.d(s3, a3), main2.d(a3, p3), main2.d(p3, g2), main2.d(p3, f2), main2.d(p3, v2), main2.d(p3, $2), main2.d(p3, w2), main2.d(s3, T2), main2.d(s3, x2), P.m(x2, null), main2.d(s3, O2), main2.d(s3, M2), main2.d(M2, j2), main2.d(j2, H2), main2.d(j2, L2);
+        main2.b(g2, "srcset", h2 = t3[0].site.logo[1]), main2.b(g2, "type", "image/webp"), main2.b(v2, "srcset", $2 = t3[0].site.logo[0]), main2.b(v2, "type", "image/jpeg"), y2.src !== (b2 = t3[0].site.logo[0]) && main2.b(y2, "src", b2), main2.b(y2, "alt", k2 = t3[0].site.title), main2.b(p3, "class", "block"), main2.b(a3, "id", "logo"), main2.b(a3, "class", "block bgw"), main2.b(a3, "href", "/"), main2.b(a3, "rel", "home"), main2.b(x2, "id", "menuToggle"), main2.b(x2, "class", "noBor"), main2.b(x2, "title", "Open/close main navigation"), main2.b(H2, "class", "nav-item"), main2.b(M2, "id", "menu"), main2.L(M2, "active", t3[3]), main2.b(s3, "class", "grid content mx"), main2.b(e2, "class", "block w100 bgw"), main2.L(e2, "small", t3[2]);
+      }, m(n2, i3) {
+        main2.c(n2, e2, i3), main2.d(e2, s3), main2.d(s3, a3), main2.d(a3, p3), main2.d(p3, g2), main2.d(p3, f2), main2.d(p3, v2), main2.d(p3, w2), main2.d(p3, y2), main2.d(s3, T2), main2.d(s3, x2), P.m(x2, null), main2.d(s3, O2), main2.d(s3, M2), main2.d(M2, j2), main2.d(j2, H2), main2.d(j2, L2);
         for (let t4 = 0; t4 < z.length; t4 += 1)
           z[t4].m(j2, null);
         N2 || (B2 = main2.l(x2, "click", t3[5]), N2 = true);
       }, p(t4, s4) {
-        if (1 & s4 && h2 !== (h2 = t4[0].site.logo[1]) && main2.b(g2, "srcset", h2), 1 & s4 && y2 !== (y2 = t4[0].site.logo[0]) && main2.b(v2, "srcset", y2), 1 & s4 && w2.src !== (b2 = t4[0].site.logo[0]) && main2.b(w2, "src", b2), 1 & s4 && k2 !== (k2 = t4[0].site.title) && main2.b(w2, "alt", k2), E !== (E = A2(t4)) && (P.d(1), P = E(t4), P && (P.c(), P.m(x2, null))), 1 & s4) {
+        if (1 & s4 && h2 !== (h2 = t4[0].site.logo[1]) && main2.b(g2, "srcset", h2), 1 & s4 && $2 !== ($2 = t4[0].site.logo[0]) && main2.b(v2, "srcset", $2), 1 & s4 && y2.src !== (b2 = t4[0].site.logo[0]) && main2.b(y2, "src", b2), 1 & s4 && k2 !== (k2 = t4[0].site.title) && main2.b(y2, "alt", k2), E !== (E = A2(t4)) && (P.d(1), P = E(t4), P && (P.c(), P.m(x2, null))), 1 & s4) {
           let e3;
           for (S = t4[0].nav, e3 = 0; e3 < S.length; e3 += 1) {
             const a4 = C(t4, S, e3);
@@ -822,11 +822,11 @@
       }};
     }
     function q(t3) {
-      let e2, s3, a3, n2, l2, o3, u2, m2;
+      let e2, s3, a3, n2, i3, o3, u2, m2;
       return {c() {
-        e2 = main2.M("svg"), s3 = main2.M("title"), a3 = main2.t("Open or close navigation"), n2 = main2.M("desc"), l2 = main2.t("Pressing the button in the mobile version opens the\n							main navigation menu. Pressing again closes the\n							menu.\n						"), o3 = main2.M("rect"), u2 = main2.M("rect"), m2 = main2.M("rect"), main2.b(o3, "width", "100"), main2.b(o3, "height", "20"), main2.b(u2, "y", "30"), main2.b(u2, "width", "100"), main2.b(u2, "height", "20"), main2.b(m2, "y", "60"), main2.b(m2, "width", "100"), main2.b(m2, "height", "20"), main2.b(e2, "viewBox", "0 0 100 80"), main2.b(e2, "width", "30"), main2.b(e2, "height", "30");
-      }, m(t4, i3) {
-        main2.c(t4, e2, i3), main2.d(e2, s3), main2.d(s3, a3), main2.d(e2, n2), main2.d(n2, l2), main2.d(e2, o3), main2.d(e2, u2), main2.d(e2, m2);
+        e2 = main2.M("svg"), s3 = main2.M("title"), a3 = main2.t("Open or close navigation"), n2 = main2.M("desc"), i3 = main2.t("Pressing the button in the mobile version opens the\n							main navigation menu. Pressing again closes the\n							menu.\n						"), o3 = main2.M("rect"), u2 = main2.M("rect"), m2 = main2.M("rect"), main2.b(o3, "width", "100"), main2.b(o3, "height", "20"), main2.b(u2, "y", "30"), main2.b(u2, "width", "100"), main2.b(u2, "height", "20"), main2.b(m2, "y", "60"), main2.b(m2, "width", "100"), main2.b(m2, "height", "20"), main2.b(e2, "viewBox", "0 0 100 80"), main2.b(e2, "width", "30"), main2.b(e2, "height", "30");
+      }, m(t4, l2) {
+        main2.c(t4, e2, l2), main2.d(e2, s3), main2.d(s3, a3), main2.d(e2, n2), main2.d(n2, i3), main2.d(e2, o3), main2.d(e2, u2), main2.d(e2, m2);
       }, d(t4) {
         t4 && main2.f(e2);
       }};
@@ -844,32 +844,32 @@
       }};
     }
     function F(t3) {
-      let e2, s3, n2, l2, i3 = false, o3 = () => {
-        i3 = false;
+      let e2, s3, n2, i3, l2 = false, o3 = () => {
+        l2 = false;
       };
       main2.F(t3[4]);
       let r2 = t3[0] && t3[0].nav && J(t3);
       return {c() {
         r2 && r2.c(), s3 = main2.o();
       }, m(a3, d2) {
-        r2 && r2.m(a3, d2), main2.c(a3, s3, d2), n2 || (l2 = main2.l(window, "scroll", () => {
-          i3 = true, clearTimeout(e2), e2 = setTimeout(o3, 100), t3[4]();
+        r2 && r2.m(a3, d2), main2.c(a3, s3, d2), n2 || (i3 = main2.l(window, "scroll", () => {
+          l2 = true, clearTimeout(e2), e2 = setTimeout(o3, 100), t3[4]();
         }), n2 = true);
       }, p(t4, [a3]) {
-        2 & a3 && !i3 && (i3 = true, clearTimeout(e2), scrollTo(window.pageXOffset, t4[1]), e2 = setTimeout(o3, 100)), t4[0] && t4[0].nav ? r2 ? r2.p(t4, a3) : (r2 = J(t4), r2.c(), r2.m(s3.parentNode, s3)) : r2 && (r2.d(1), r2 = null);
+        2 & a3 && !l2 && (l2 = true, clearTimeout(e2), scrollTo(window.pageXOffset, t4[1]), e2 = setTimeout(o3, 100)), t4[0] && t4[0].nav ? r2 ? r2.p(t4, a3) : (r2 = J(t4), r2.c(), r2.m(s3.parentNode, s3)) : r2 && (r2.d(1), r2 = null);
       }, i: main2.n, o: main2.n, d(t4) {
-        r2 && r2.d(t4), t4 && main2.f(s3), n2 = false, l2();
+        r2 && r2.d(t4), t4 && main2.f(s3), n2 = false, i3();
       }};
     }
     function I(t3, e2, s3) {
-      let a3, n2, l2, {data: i3} = e2;
+      let a3, n2, i3, {data: l2} = e2;
       return t3.$$set = (t4) => {
-        "data" in t4 && s3(0, i3 = t4.data);
+        "data" in t4 && s3(0, l2 = t4.data);
       }, t3.$$.update = () => {
         2 & t3.$$.dirty && s3(2, n2 = a3 > 100 || "");
-      }, [i3, a3, n2, l2, function() {
+      }, [l2, a3, n2, i3, function() {
         s3(1, a3 = window.pageYOffset);
-      }, () => s3(3, l2 = !l2)];
+      }, () => s3(3, i3 = !i3)];
     }
     class K extends main2.S {
       constructor(t3) {
@@ -877,7 +877,7 @@
       }
     }
     function X(t3) {
-      let e2, s3, a3, o3, u2, m2, g2, h2, f2, w2, x2;
+      let e2, s3, a3, o3, u2, m2, g2, h2, f2, y2, x2;
       function O2(t4, e3) {
         return t4[0].cat ? Q : G;
       }
@@ -886,28 +886,28 @@
       const L2 = t3[7].default, N2 = main2.x(L2, t3, t3[6], null);
       let B2 = t3[3].amount > 0 && t3[4].path != "/kassa" && R(t3);
       return {c() {
-        main2.H(e2.$$.fragment), s3 = main2.a(), a3 = main2.e("main"), o3 = main2.e("div"), H2.c(), u2 = main2.a(), m2 = main2.e("div"), g2 = main2.e("div"), N2 && N2.c(), f2 = main2.a(), B2 && B2.c(), w2 = main2.o(), main2.b(o3, "id", "hero"), main2.b(o3, "class", "grid tw up tc svelte-18otry4"), main2.b(g2, "class", "container mx svelte-18otry4"), main2.b(m2, "id", "content"), main2.b(m2, "class", "bgw py"), main2.b(a3, "class", "block svelte-18otry4"), main2.b(a3, "style", h2 = "background-image:url(" + t3[1].site.hero[0] + ")");
+        main2.H(e2.$$.fragment), s3 = main2.a(), a3 = main2.e("main"), o3 = main2.e("div"), H2.c(), u2 = main2.a(), m2 = main2.e("div"), g2 = main2.e("div"), N2 && N2.c(), f2 = main2.a(), B2 && B2.c(), y2 = main2.o(), main2.b(o3, "id", "hero"), main2.b(o3, "class", "grid tw up tc"), main2.b(g2, "class", "container mx"), main2.b(m2, "id", "content"), main2.b(m2, "class", "bgw py"), main2.b(a3, "class", "block"), main2.b(a3, "style", h2 = "background-image:url(" + t3[1].site.hero[0] + ")");
       }, m(t4, n2) {
-        main2.I(e2, t4, n2), main2.c(t4, s3, n2), main2.c(t4, a3, n2), main2.d(a3, o3), H2.m(o3, null), main2.d(a3, u2), main2.d(a3, m2), main2.d(m2, g2), N2 && N2.m(g2, null), main2.c(t4, f2, n2), B2 && B2.m(t4, n2), main2.c(t4, w2, n2), x2 = true;
+        main2.I(e2, t4, n2), main2.c(t4, s3, n2), main2.c(t4, a3, n2), main2.d(a3, o3), H2.m(o3, null), main2.d(a3, u2), main2.d(a3, m2), main2.d(m2, g2), N2 && N2.m(g2, null), main2.c(t4, f2, n2), B2 && B2.m(t4, n2), main2.c(t4, y2, n2), x2 = true;
       }, p(t4, s4) {
         const n2 = {};
-        2 & s4 && (n2.data = t4[1]), e2.$set(n2), M2 === (M2 = O2(t4)) && H2 ? H2.p(t4, s4) : (H2.d(1), H2 = M2(t4), H2 && (H2.c(), H2.m(o3, null))), N2 && N2.p && 64 & s4 && main2.y(N2, L2, t4, t4[6], s4, null, null), (!x2 || 2 & s4 && h2 !== (h2 = "background-image:url(" + t4[1].site.hero[0] + ")")) && main2.b(a3, "style", h2), t4[3].amount > 0 && t4[4].path != "/kassa" ? B2 ? B2.p(t4, s4) : (B2 = R(t4), B2.c(), B2.m(w2.parentNode, w2)) : B2 && (B2.d(1), B2 = null);
+        2 & s4 && (n2.data = t4[1]), e2.$set(n2), M2 === (M2 = O2(t4)) && H2 ? H2.p(t4, s4) : (H2.d(1), H2 = M2(t4), H2 && (H2.c(), H2.m(o3, null))), N2 && N2.p && 64 & s4 && main2.y(N2, L2, t4, t4[6], s4, null, null), (!x2 || 2 & s4 && h2 !== (h2 = "background-image:url(" + t4[1].site.hero[0] + ")")) && main2.b(a3, "style", h2), t4[3].amount > 0 && t4[4].path != "/kassa" ? B2 ? B2.p(t4, s4) : (B2 = R(t4), B2.c(), B2.m(y2.parentNode, y2)) : B2 && (B2.d(1), B2 = null);
       }, i(t4) {
         x2 || (main2.z(e2.$$.fragment, t4), main2.z(N2, t4), x2 = true);
       }, o(t4) {
         main2.A(e2.$$.fragment, t4), main2.A(N2, t4), x2 = false;
       }, d(t4) {
-        main2.J(e2, t4), t4 && main2.f(s3), t4 && main2.f(a3), H2.d(), N2 && N2.d(t4), t4 && main2.f(f2), B2 && B2.d(t4), t4 && main2.f(w2);
+        main2.J(e2, t4), t4 && main2.f(s3), t4 && main2.f(a3), H2.d(), N2 && N2.d(t4), t4 && main2.f(f2), B2 && B2.d(t4), t4 && main2.f(y2);
       }};
     }
     function G(t3) {
-      let e2, s3, a3, o3, u2, m2, p3 = t3[1].site.title + "", g2 = t3[1].site.slogan + "";
+      let e2, s3, a3, l2, o3, u2, m2 = t3[1].site.title + "", p3 = t3[1].site.slogan + "";
       return {c() {
-        e2 = main2.e("div"), s3 = main2.e("h1"), a3 = main2.t(p3), o3 = main2.a(), u2 = main2.e("h3"), m2 = main2.t(g2), main2.b(s3, "class", "svelte-18otry4"), main2.b(u2, "class", "svelte-18otry4");
+        e2 = main2.e("div"), s3 = main2.e("h1"), a3 = main2.t(m2), l2 = main2.a(), o3 = main2.e("h3"), u2 = main2.t(p3);
       }, m(t4, n2) {
-        main2.c(t4, e2, n2), main2.d(e2, s3), main2.d(s3, a3), main2.d(e2, o3), main2.d(e2, u2), main2.d(u2, m2);
+        main2.c(t4, e2, n2), main2.d(e2, s3), main2.d(s3, a3), main2.d(e2, l2), main2.d(e2, o3), main2.d(o3, u2);
       }, p(t4, e3) {
-        2 & e3 && p3 !== (p3 = t4[1].site.title + "") && main2.j(a3, p3), 2 & e3 && g2 !== (g2 = t4[1].site.slogan + "") && main2.j(m2, g2);
+        2 & e3 && m2 !== (m2 = t4[1].site.title + "") && main2.j(a3, m2), 2 & e3 && p3 !== (p3 = t4[1].site.slogan + "") && main2.j(u2, p3);
       }, d(t4) {
         t4 && main2.f(e2);
       }};
@@ -915,7 +915,7 @@
     function Q(t3) {
       let e2, s3 = t3[2].title + "";
       return {c() {
-        e2 = main2.e("h1"), main2.b(e2, "class", "svelte-18otry4");
+        e2 = main2.e("h1");
       }, m(t4, a3) {
         main2.c(t4, e2, a3), e2.innerHTML = s3;
       }, p(t4, a3) {
@@ -925,11 +925,11 @@
       }};
     }
     function R(t3) {
-      let e2, s3, a3, o3, u2, m2, p3, g2, h2, v2, y2, $2, b2, k2 = t3[3].amount + "", T2 = t3[3].total + "";
+      let e2, s3, a3, o3, u2, m2, p3, g2, h2, v2, $2, w2, b2, k2 = t3[3].amount + "", T2 = t3[3].total + "";
       return {c() {
-        e2 = main2.e("div"), s3 = main2.e("div"), a3 = main2.e("div"), o3 = main2.t("Tuotteita: "), u2 = main2.t(k2), m2 = main2.t(" kpl"), p3 = main2.a(), g2 = main2.e("div"), h2 = main2.t("Yhteens\xE4: "), v2 = main2.t(T2), y2 = main2.t(" \u20AC"), $2 = main2.a(), b2 = main2.e("a"), b2.textContent = "Kassalle", main2.b(a3, "id", "cartAmount"), main2.b(g2, "id", "cartAmount"), main2.b(b2, "class", "grid svelte-18otry4"), main2.b(b2, "href", "/kassa"), main2.b(b2, "rel", "nofollow"), main2.b(e2, "id", "cart"), main2.b(e2, "class", "grid svelte-18otry4");
+        e2 = main2.e("div"), s3 = main2.e("div"), a3 = main2.e("div"), o3 = main2.t("Tuotteita: "), u2 = main2.t(k2), m2 = main2.t(" kpl"), p3 = main2.a(), g2 = main2.e("div"), h2 = main2.t("Yhteens\xE4: "), v2 = main2.t(T2), $2 = main2.t(" \u20AC"), w2 = main2.a(), b2 = main2.e("a"), b2.textContent = "Kassalle", main2.b(a3, "id", "cartAmount"), main2.b(g2, "id", "cartAmount"), main2.b(b2, "class", "grid"), main2.b(b2, "href", "/kassa"), main2.b(b2, "rel", "nofollow"), main2.b(e2, "id", "cart"), main2.b(e2, "class", "grid");
       }, m(t4, n2) {
-        main2.c(t4, e2, n2), main2.d(e2, s3), main2.d(s3, a3), main2.d(a3, o3), main2.d(a3, u2), main2.d(a3, m2), main2.d(s3, p3), main2.d(s3, g2), main2.d(g2, h2), main2.d(g2, v2), main2.d(g2, y2), main2.d(e2, $2), main2.d(e2, b2);
+        main2.c(t4, e2, n2), main2.d(e2, s3), main2.d(s3, a3), main2.d(a3, o3), main2.d(a3, u2), main2.d(a3, m2), main2.d(s3, p3), main2.d(s3, g2), main2.d(g2, h2), main2.d(g2, v2), main2.d(g2, $2), main2.d(e2, w2), main2.d(e2, b2);
       }, p(t4, e3) {
         8 & e3 && k2 !== (k2 = t4[3].amount + "") && main2.j(u2, k2), 8 & e3 && T2 !== (T2 = t4[3].total + "") && main2.j(v2, T2);
       }, d(t4) {
@@ -955,8 +955,8 @@
       }};
     }
     function V(t3, e2, s3) {
-      let a3, n2, l2, i3, o3, c2;
-      main2.g(t3, t, (t4) => s3(5, a3 = t4)), main2.g(t3, main2.p, (t4) => s3(0, n2 = t4)), main2.g(t3, o, (t4) => s3(1, l2 = t4)), main2.g(t3, i, (t4) => s3(2, i3 = t4)), main2.g(t3, p, (t4) => s3(3, o3 = t4)), main2.g(t3, main2.N, (t4) => s3(4, c2 = t4));
+      let a3, n2, i3, l2, o3, c2;
+      main2.g(t3, t, (t4) => s3(5, a3 = t4)), main2.g(t3, main2.p, (t4) => s3(0, n2 = t4)), main2.g(t3, o, (t4) => s3(1, i3 = t4)), main2.g(t3, i, (t4) => s3(2, l2 = t4)), main2.g(t3, p, (t4) => s3(3, o3 = t4)), main2.g(t3, main2.N, (t4) => s3(4, c2 = t4));
       let {$$slots: r2 = {}, $$scope: u2} = e2;
       return main2.C(async () => {
         try {
@@ -968,7 +968,7 @@
       }), t3.$$set = (t4) => {
         "$$scope" in t4 && s3(6, u2 = t4.$$scope);
       }, t3.$$.update = () => {
-        if (15 & t3.$$.dirty && n2 && ((l2.site || i3.title) && (main2.O.title = n2.cat ? i3.title + " | " + l2.site.title : l2.site.title + " | " + l2.site.slogan, (i.summary || l2.site.summary) && (main2.O.summary = i3.summary ? i3.summary : l2.site.summary)), o3.amount == 0 && i3.cart && main2.q(p, o3 = i3.cart, o3)), 40 & t3.$$.dirty && o3.products) {
+        if (15 & t3.$$.dirty && n2 && ((i3.site || l2.title) && (main2.O.title = n2.cat ? l2.title + " | " + i3.site.title : i3.site.title + " | " + i3.site.slogan, (i.summary || i3.site.summary) && (main2.O.summary = l2.summary ? l2.summary : i3.site.summary)), o3.amount == 0 && l2.cart && main2.q(p, o3 = l2.cart, o3)), 40 & t3.$$.dirty && o3.products) {
           let t4 = [0, 0];
           main2.q(p, o3.products = o3.products.filter((t5, e3) => t5.amount > 0 && t5 != null).sort(), o3), Object.values(o3.products).forEach((e3) => {
             e3.discounts && (e3.price2 = e3.price, e3.discounts.forEach(function(t5) {
@@ -976,9 +976,9 @@
             })), t4[0] += e3.total = e3.price2 * e3.amount, t4[1] += e3.amount;
           }), t4[1] == 0 || t4[1] == null ? main2.q(p, o3.products = [], o3) : (main2.q(p, o3.total = t4[0], o3), main2.q(p, o3.amount = t4[1], o3)), fetch(a3 + "?path=cart", {method: "POST", body: JSON.stringify(o3)});
         }
-      }, [n2, l2, i3, o3, c2, a3, u2, r2];
+      }, [n2, i3, l2, o3, c2, a3, u2, r2];
     }
-    class layout_cd71cfa6_default extends main2.S {
+    class layout_4f4796e4_default extends main2.S {
       constructor(t3) {
         super(), main2.i(this, t3, V, U, main2.s, {});
       }
@@ -2138,7 +2138,7 @@
       }
     }
     const Te = {...Le, restoreDefaults: ({tree: t3}) => Ie(t3), assignAPI: Re};
-    const Ae = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => Promise.resolve().then(() => __toModule(require_fallback_659c727e())).then((t3) => t3.default)}, {isDir: true, children: [{isPage: true, path: "/:cat/:slug", id: "__cat__slug", component: () => Promise.resolve().then(() => __toModule(require_slug_ee7bdcf0())).then((t3) => t3.default)}, {isIndex: true, isPage: true, path: "/:cat/index", id: "__cat_index", component: () => Promise.resolve().then(() => __toModule(require_index_44b7a890())).then((t3) => t3.default)}], isLayout: true, path: "/:cat", id: "__cat__layout", component: () => Promise.resolve().then(() => __toModule(require_layout_a9fbdbca())).then((t3) => t3.default)}, {isIndex: true, isPage: true, path: "/index", id: "_index", component: () => Promise.resolve().then(() => __toModule(require_index_b760118a())).then((t3) => t3.default)}, {isPage: true, path: "/kassa", id: "_kassa", component: () => Promise.resolve().then(() => __toModule(require_kassa_a42bfd0e())).then((t3) => t3.default)}], isLayout: true, path: "/", id: "__layout", component: () => Promise.resolve().then(() => __toModule(require_layout_cd71cfa6())).then((t3) => t3.default)};
+    const Ae = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => Promise.resolve().then(() => __toModule(require_fallback_4b491e2b())).then((t3) => t3.default)}, {isDir: true, children: [{isPage: true, path: "/:cat/:slug", id: "__cat__slug", component: () => Promise.resolve().then(() => __toModule(require_slug_347d10e1())).then((t3) => t3.default)}, {isIndex: true, isPage: true, path: "/:cat/index", id: "__cat_index", component: () => Promise.resolve().then(() => __toModule(require_index_6929997a())).then((t3) => t3.default)}], isLayout: true, path: "/:cat", id: "__cat__layout", component: () => Promise.resolve().then(() => __toModule(require_layout_de180042())).then((t3) => t3.default)}, {isIndex: true, isPage: true, path: "/index", id: "_index", component: () => Promise.resolve().then(() => __toModule(require_index_8c0e4d67())).then((t3) => t3.default)}, {isPage: true, path: "/kassa", id: "_kassa", component: () => Promise.resolve().then(() => __toModule(require_kassa_24a22f1e())).then((t3) => t3.default)}], isLayout: true, path: "/", id: "__layout", component: () => Promise.resolve().then(() => __toModule(require_layout_4f4796e4())).then((t3) => t3.default)};
     const {tree: Me, routes: qe} = function(t3) {
       const e2 = ["restoreDefaults", "setParamKeys", "setRegex", "setShortPath", "setRank", "assignLayout", "setPrototype", "addMetaChildren", "assignRelations", "setIsIndexable", "assignIndex", "assignAPI", "createFlatList"], n2 = {tree: t3, routes: []};
       for (let t4 of e2) {
@@ -2173,7 +2173,7 @@
     }, {target: document.body}, "routify-app");
   });
 
-  // dist/build/store-dcd02ba1.js
+  // dist/build/store-998211f6.js
   const main = __toModule(require_main());
   const t = main.v("http://foodis.dataline.fi/pw/");
   const o = main.w({});

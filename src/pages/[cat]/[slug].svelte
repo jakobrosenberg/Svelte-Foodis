@@ -1,35 +1,67 @@
 <script>
 	import { params } from '@roxi/routify';
-	import { api, data } from '../../components/store.js';
+	import { api, data, cart } from '../../components/store.js';
 
-	let amount = 1;
-	let total = 0;
+	$: amount = 1;
+	$: price = $data.price;
+	$: total = 0;
 
 	async function getResult(e) {
 		let response = await fetch($api + '?path=' + e);
 		data.set(await response.json());
 	}
 
+	function cartIt() {
+		let item = {
+			id: $data.id,
+			title: $data.title,
+			price: $data.price,
+			price2: price,
+			amount: amount,
+			total: total,
+			discounts: $data.amountDiscounts,
+		};
+		$cart.price += price;
+		$cart.total += total;
+		$cart.amount += amount;
+		$cart.products.push(item);
+	}
+
 	$: if ($params.slug) getResult($params.slug);
 
 	$: if ($data && amount) {
-		total = $data.price * amount;
+		// Has many discounts
+		if ($data.amountDiscounts) {
+			price = $data.price;
+			$data.amountDiscounts.forEach(function (e) {
+				if (e.amount <= amount) price = e.price;
+			});
+		}
+		total = price * amount;
 	}
 </script>
 
 {#if $data}
 	<div id="product" class="container double grid">
 		<div id="img">
-			<picture class="block">
-				<source srcset={$data.img[1]} type="image/webp" />
-				<source srcset={$data.img[0]} type="image/jpeg" />
-				<img src={$data.img[0]} alt={$data.title} />
-			</picture>
+			{#if $data.img}
+				<picture class="block">
+					<source srcset={$data.img[1]} type="image/webp" />
+					<source srcset={$data.img[0]} type="image/jpeg" />
+					<img src={$data.img[0]} alt={$data.title} />
+				</picture>
+			{/if}
 		</div>
 		<div id="productInfo">
 			{#if $data.price}
 				<div id="price">
-					Hinta: <strong>{total.toFixed(2)} €</strong>
+					Hinta: <strong>{price.toFixed(2)} €</strong>
+					{#if amount > 1}
+						<br />
+						<small>
+							Yhteensä: <strong>{total.toFixed(2)} €</strong>
+						</small>
+					{/if}
 				</div>
 			{/if}
 			<div id="cartIt" class="border grid">
@@ -43,10 +75,23 @@
 						required
 					/>
 				</div>
-				<div><button class="w100">Lisää ostoskoriin</button></div>
+				<div>
+					<button class="w100" on:click={cartIt}>
+						Lisää ostoskoriin
+					</button>
+				</div>
 			</div>
 			{#if $data.body}
 				<div id="body">{@html $data.body}</div>
+			{/if}
+			{#if $data.extra}
+				<div id="extra">
+					<ul>
+						{#each $data.extra as item}
+							<li>{@html item.name}</li>
+						{/each}
+					</ul>
+				</div>
 			{/if}
 		</div>
 	</div>
@@ -54,7 +99,6 @@
 
 <style>
 	#product {
-		grid-template-columns: 1fr 1fr;
 		grid-gap: 3em;
 	}
 	#price {
@@ -65,5 +109,8 @@
 		grid-template-columns: 80px 1fr;
 		grid-gap: 1rem;
 		max-width: 400px;
+	}
+	#extra ul {
+		padding-left: 15px;
 	}
 </style>

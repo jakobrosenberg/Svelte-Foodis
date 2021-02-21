@@ -49,7 +49,7 @@ export default {
     },
     plugins: [
         svelte({
-            dev: !production, // run-time checks      
+            dev: !production, // run-time checks
             // Extract component CSS — better performance
             css: css => css.write(`bundle.css`),
             hot: isNollup,

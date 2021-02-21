@@ -14,7 +14,7 @@
 					<img src={item.img[0]} alt={item.title} />
 				</picture>
 				<figcaption class="block">
-					{item.title}
+					{@html item.title}
 				</figcaption>
 			</figure>
 		</a>

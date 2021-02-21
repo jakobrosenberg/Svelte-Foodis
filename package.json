@@ -54,5 +54,8 @@
     "blacklist": [
       "/example/modal/basic/4"
     ]
+  },
+  "dependencies": {
+    "sass": "^1.32.8"
   }
 }

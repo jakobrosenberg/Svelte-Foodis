@@ -9,9 +9,13 @@
 	let delivery = { price: 0 };
 
 	onMount(async () => {
-		const res = await fetch($api + '?type=kassa');
-		data.set(await res.json());
-		delivery = $data.delivery.items[0];
+		try {
+			const res = await fetch($api + '?type=kassa');
+			data.set(await res.json());
+			delivery = $data.delivery.items[0];
+		} catch (error) {
+			console.error(error);
+		}
 	});
 
 	// Delete item
@@ -252,12 +256,8 @@
 			</div>
 
 			<div id="payment" class="tc">
-				<button
-					id="ready"
-					class="end"
-					name="ready"
-					type="submit"
-					on:click={() => (i = 2)}>Vahvista tilaus</button
+				<button id="ready" class="end" name="ready" type="submit"
+					>Vahvista tilaus</button
 				>
 			</div>
 		</form>

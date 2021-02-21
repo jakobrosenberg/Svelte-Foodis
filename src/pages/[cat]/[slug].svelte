@@ -7,8 +7,12 @@
 	$: total = 0;
 
 	async function getResult(e) {
-		let response = await fetch($api + '?path=' + e);
-		data.set(await response.json());
+		try {
+			let response = await fetch($api + '?path=' + e);
+			data.set(await response.json());
+		} catch (error) {
+			console.error(error);
+		}
 	}
 
 	function cartIt() {
@@ -96,21 +100,3 @@
 		</div>
 	</div>
 {/if}
-
-<style>
-	#product {
-		grid-gap: 3em;
-	}
-	#price {
-		margin-bottom: 2rem;
-		font-size: 1.4rem;
-	}
-	#cartIt {
-		grid-template-columns: 80px 1fr;
-		grid-gap: 1rem;
-		max-width: 400px;
-	}
-	#extra ul {
-		padding-left: 15px;
-	}
-</style>

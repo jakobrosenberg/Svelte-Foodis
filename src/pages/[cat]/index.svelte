@@ -3,8 +3,12 @@
 	import { api, data } from '../../components/store.js';
 
 	async function getResult(e) {
-		let response = await fetch($api + '?path=' + e);
-		data.set(await response.json());
+		try {
+			let response = await fetch($api + '?path=' + e);
+			data.set(await response.json());
+		} catch (error) {
+			console.error(error);
+		}
 	}
 	$: if ($params.cat) getResult($params.cat);
 </script>

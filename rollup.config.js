@@ -7,8 +7,7 @@ import { terser } from 'rollup-plugin-terser';
 import { copySync, removeSync } from 'fs-extra'
 import { spassr } from 'spassr'
 import getConfig from '@roxi/routify/lib/utils/config'
-import autoPreprocess from 'svelte-preprocess'
-import postcssImport from 'postcss-import'
+import preprocess from 'svelte-preprocess';
 import { injectManifest } from 'rollup-plugin-workbox'
 
 
@@ -45,7 +44,7 @@ export default {
         format: 'esm',
         dir: buildDir,
         // for performance, disabling filename hashing in development
-        chunkFileNames:`[name]${production && '-[hash]' || ''}.js`
+        chunkFileNames: `[name]${production && '-[hash]' || ''}.js`
     },
     plugins: [
         svelte({
@@ -53,12 +52,7 @@ export default {
             // Extract component CSS — better performance
             css: css => css.write(`bundle.css`),
             hot: isNollup,
-            preprocess: [
-                autoPreprocess({
-                    postcss: { plugins: [postcssImport()] },
-                    defaults: { style: 'postcss' }
-                })
-            ]
+            preprocess: preprocess()
         }),
 
         // resolve matching modules from current working directory

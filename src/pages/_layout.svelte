@@ -4,15 +4,13 @@
 	import Header from '../components/Header.svelte';
 	import { onMount } from 'svelte';
 
-	if (window) {
-		data.useLocalStorage();
-		info.useLocalStorage();
-		cart.useLocalStorage();
-	}
-
 	onMount(async () => {
-		const res = await fetch($api);
-		info.set(await res.json());
+		try {
+			const res = await fetch($api);
+			info.set(await res.json());
+		} catch (error) {
+			console.error(error);
+		}
 	});
 
 	$: if ($params) {
@@ -24,6 +22,9 @@
 				metatags.summary = $data.summary
 					? $data.summary
 					: $info.site.summary;
+		}
+		if ($cart.amount == 0 && $data.cart) {
+			$cart = $data.cart;
 		}
 	}
 
@@ -49,6 +50,11 @@
 			$cart.total = t[0];
 			$cart.amount = t[1];
 		}
+
+		fetch($api + '?path=cart', {
+			method: 'POST',
+			body: JSON.stringify($cart),
+		});
 	}
 </script>
 

@@ -1,16 +1,14 @@
 <script>
 	import { api, info, data, cart } from '../components/store.js';
+	import postData from '../components/fetch.js';
 	import { metatags, params, page } from '@roxi/routify';
 	import Header from '../components/Header.svelte';
 	import { onMount } from 'svelte';
 
 	onMount(async () => {
-		try {
-			const res = await fetch($api);
-			info.set(await res.json());
-		} catch (error) {
-			console.error(error);
-		}
+		postData().then((e) => {
+			info.set(e);
+		});
 	});
 
 	$: if ($params) {

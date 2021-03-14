@@ -36,18 +36,12 @@
  body, input, select, button {
 	 font: 400 16px Poppins;
 }
- .bold {
-	 font-weight: 700;
-}
- .block, label, img {
-	 display: block;
-}
- .grid {
-	 display: grid;
-}
- .tc {
-	 text-align: center;
-}
+.bold { font-weight: 700 }
+.block, label, img { display: block }
+.grid { display: grid }
+.tc { text-align: center }
+.tl { text-align: left }
+.tr { text-align: right }
  .w100, img {
 	 width: 100%;
 }
@@ -57,12 +51,13 @@
  a {
 	 text-decoration: none;
 }
+a,
+button,
+select { cursor: pointer }
  p a:hover {
 	 text-decoration: underline;
 }
- a:visited {
-	 color: #0050a0;
-}
+
  input, button, select, textarea {
 	 font-family: inherit;
 	 font-size: inherit;
@@ -161,6 +156,9 @@ td input {
 td span {
 	display: none;
 }
+thead {
+	background-color: #f2f2f2
+}
 #client .grid {
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-gap: 1.5rem;
@@ -199,9 +197,8 @@ td span {
 	 #menu a {
 		 padding: 20px 10px;
 	}
-	 #menu a:not(.active) {
-		 color: var(--black);
-	}
+	#menu a.active,
+	#menu a:hover { color: var(--orange) }
 	 #hero {
 		 padding-top: 96px;
 	}

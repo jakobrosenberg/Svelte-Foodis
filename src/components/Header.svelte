@@ -1,4 +1,5 @@
 <script>
+	import CartIcon from './Cart.svelte';
 	export let data;
 	let y;
 	let small;
@@ -12,7 +13,7 @@
 
 {#if data && data.nav}
 	<header class="block w100 bgw" class:small>
-		<div class="grid content mx">
+		<div class="content mx">
 			<a id="logo" class="block bgw" href="/" rel="home">
 				<picture class="block">
 					<source srcset={data.site.logo[1]} type="image/webp" />
@@ -22,18 +23,13 @@
 			</a>
 			<button
 				id="menuToggle"
-				class="noBor"
+				class="noBor m0"
 				on:click={() => (active = !active)}
 				title="Open/close main navigation"
 			>
 				{#if !active}
 					<svg viewBox="0 0 100 80" width="30" height="30">
-						<title>Open or close navigation</title>
-						<desc>
-							Pressing the button in the mobile version opens the
-							main navigation menu. Pressing again closes the
-							menu.
-						</desc>
+						<title>Avaa ja sulkee mobiilivalikon</title>
 						<rect width="100" height="20" /><rect
 							y="30"
 							width="100"
@@ -44,14 +40,15 @@
 						width="24"
 						height="24"
 						viewBox="0 0 24 24"
-						><path
+					>
+						<path
 							d="M24 3.752l-4.423-3.752-7.771 9.039-7.647-9.008-4.159 4.278c2.285 2.885 5.284 5.903 8.362 8.708l-8.165 9.447 1.343 1.487c1.978-1.335 5.981-4.373 10.205-7.958 4.304 3.67 8.306 6.663 10.229 8.006l1.449-1.278-8.254-9.724c3.287-2.973 6.584-6.354 8.831-9.245z"
 						/>
 					</svg>
 				{/if}
 			</button>
 			<nav id="menu" class:active>
-				<ul>
+				<ul class="m0">
 					<li class="nav-item">
 						<a class="nav-link block" href="/" rel="home">Etusivu</a
 						>
@@ -65,6 +62,7 @@
 					{/each}
 				</ul>
 			</nav>
+			<CartIcon />
 		</div>
 	</header>
 {/if}

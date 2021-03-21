@@ -1,102 +1,77 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-
-* {
-	 box-sizing: border-box;
-	 max-width: 100%;
-}
- :root {
+:root {
 	 --orange: #f74c17;
 	 --white: #fff;
 	 --black: #000;
 	 --bor: #999;
 }
- html, body {
+
+html, body {
 	 position: relative;
 	 width: 100%;
 	 height: 100%;
 }
- body {
-	 box-sizing: border-box;
+
+body,
+input,
+button {
+	box-sizing: border-box;
+	max-width: 100%;
+	font: 400 16px Poppins
 }
- body, #menu a {
-	 color: #333;
-}
- body, #menuToggle, #menu ul, figure {
-	 margin: 0;
-}
- body, #menu ul {
-	 padding: 0;
-}
- main a, .orange {
-	 color: var(--orange);
-}
- .bgw {
-	 background-color: var(--white);
-}
- body, input, select, button {
-	 font: 400 16px Poppins;
-}
+
+body,
+header a { color: #333 }
+
+body,
+.m0,
+figure { margin: 0 }
+
+body, #menu ul { padding: 0 }
+
+main a, .orange { color: var(--orange) }
+
+.bgw { background-color: var(--white) }
+
+.bgo { background-color: var(--orange) }
+
 .bold { font-weight: 700 }
 .block, label, img { display: block }
 .grid { display: grid }
 .tc { text-align: center }
 .tl { text-align: left }
 .tr { text-align: right }
- .w100, img {
-	 width: 100%;
+.grid.cell {
+	height: 100%;
+	place-content: center;
 }
- .up {
-	 text-transform: uppercase;
-}
- a {
-	 text-decoration: none;
-}
+
+.cell,
+.w100, img { width: 100% }
+
+.up { text-transform: uppercase }
+
+a { text-decoration: none }
+
 a,
 button,
 select { cursor: pointer }
- p a:hover {
-	 text-decoration: underline;
-}
 
- input, button, select, textarea {
-	 font-family: inherit;
-	 font-size: inherit;
-	 padding: 0.4em;
-	 margin: 0 0 0.5em 0;
-	 box-sizing: border-box;
-	 border: 1px solid #ccc;
-	 border-radius: 2px;
-}
- input:disabled {
-	 color: #ccc;
-}
- input[type=range] {
-	 height: 0;
-}
- header {
+p a:hover { text-decoration: underline }
+
+header {
 	 top: 0;
 	 left: 0;
 	 transition: transform 300ms linear;
 }
- header .content {
+
+header .content {
 	 position: relative;
 	 max-width: 1200px;
 	 margin: 0 auto;
 }
- button {
-	 color: #333;
-	 background-color: #f4f4f4;
-	 outline: none;
-}
- button:disabled {
-	 color: #999;
-}
- button:not(:disabled):active {
-	 background-color: #ddd;
-}
- button:focus {
-	 border-color: #666;
-}
+
+.abs { position: absolute }
+
  #products {
 	 grid-gap: 2rem;
 }
@@ -165,15 +140,21 @@ thead {
 }
 #ready {
 	margin-top: 3rem;
-	color: var(--white);
-	background-color: var(--orange);
 	padding: 1rem 2rem;
 	text-transform: uppercase;
 }
- @media screen and (min-width: 1200px) {
-	 header {
-		 position: fixed;
-		 text-align: right;
+
+#cartIcon,
+#menuToggle {
+	width: 48px;
+	height: 48px;
+	position: absolute
+}
+
+@media screen and (min-width: 1200px) {
+	header {
+		position: fixed;
+		text-align: right;
 	}
 	 header .small #menu a {
 		 padding: 0 10px;
@@ -191,6 +172,7 @@ thead {
 	 #menuToggle {
 		 display: none;
 	}
+	#menu { margin-right: 80px }
 	 #menu li {
 		 display: inline-block;
 	}
@@ -201,6 +183,10 @@ thead {
 	#menu a:hover { color: var(--orange) }
 	 #hero {
 		 padding-top: 96px;
+	}
+	#cartIcon {
+		right: 0;
+		top: 9px;
 	}
 }
  @media screen and (max-width: 1200px) {
@@ -262,35 +248,6 @@ thead {
 		 padding-top: 3rem;
 		 padding-bottom: 3rem;
 	}
-}
- #products .title {
-	 font-size: 1.2rem;
-	 padding: 0.5rem 1.5rem;
-}
- #products .extra {
-	 margin-top: 0.5rem;
-}
- #products .inl {
-	 display: inline-block;
-	 vertical-align: center;
-	 margin: 5px;
-}
- #products .inl .cell {
-	 width: 32px;
-	 height: 32px;
-	 place-content: center;
-	 border: 1px solid var(--orange);
-	 border-radius: 50%;
-}
- .huge.svelte-viq1pm {
-	 font-size: 12rem;
-}
- .e404.svelte-viq1pm {
-	 position: absolute;
-	 left: 50%;
-	 top: 50%;
-	 transform: translate(-50%, -50%);
-	 text-align: center;
 }
  main {
 	 background-position: left top;

@@ -1,6 +1,6 @@
 <script>
 	import { params, ready } from '@roxi/routify';
-	import { api, data, cart } from '../../../components/store.js';
+	import { data, cart } from '../../../components/store.js';
 	import postData from '../../../components/fetch.js';
 
 	$: amount = 1;
@@ -102,3 +102,13 @@
 		</div>
 	</div>
 {/if}
+
+<style>
+	#cartIt input,
+	#cartIt button {
+		border: 1px ridge var(--black);
+		background-color: transparent;
+		color: var(--black);
+		padding: 10px 15px;
+	}
+</style>

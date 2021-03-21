@@ -1,3 +1,6 @@
+@import '/global.css';
+#cartBall.svelte-hzwaq2{width:32px;height:32px;border-radius:50%;border:1px solid var(--black);font-size:0.9rem;right:-15px;top:-5px;overflow:hidden}
+#cartIt.svelte-4nnwr5 input.svelte-4nnwr5,#cartIt.svelte-4nnwr5 button.svelte-4nnwr5{border:1px ridge var(--black);background-color:transparent;color:var(--black);padding:10px 15px}
 .huge.svelte-viq1pm{font-size:12rem}.e404.svelte-viq1pm{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);text-align:center}
 
 /*# sourceMappingURL=bundle.css.map */

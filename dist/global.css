@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+	 box-sizing: border-box;
+	 max-width: 100%;
+}
+ :root {
+	 --orange: #f74c17;
+	 --white: #fff;
+	 --black: #000;
+	 --bor: #999;
+}
+ html, body {
+	 position: relative;
+	 width: 100%;
+	 height: 100%;
+}
+ body {
+	 box-sizing: border-box;
+}
+ body, #menu a {
+	 color: #333;
+}
+ body, #menuToggle, #menu ul, figure {
+	 margin: 0;
+}
+ body, #menu ul {
+	 padding: 0;
+}
+ main a, .orange {
+	 color: var(--orange);
+}
+ .bgw {
+	 background-color: var(--white);
+}
+ body, input, select, button {
+	 font: 400 16px Poppins;
+}
+.bold { font-weight: 700 }
+.block, label, img { display: block }
+.grid { display: grid }
+.tc { text-align: center }
+.tl { text-align: left }
+.tr { text-align: right }
+ .w100, img {
+	 width: 100%;
+}
+ .up {
+	 text-transform: uppercase;
+}
+ a {
+	 text-decoration: none;
+}
+a,
+button,
+select { cursor: pointer }
+ p a:hover {
+	 text-decoration: underline;
+}
+
+ input, button, select, textarea {
+	 font-family: inherit;
+	 font-size: inherit;
+	 padding: 0.4em;
+	 margin: 0 0 0.5em 0;
+	 box-sizing: border-box;
+	 border: 1px solid #ccc;
+	 border-radius: 2px;
+}
+ input:disabled {
+	 color: #ccc;
+}
+ input[type=range] {
+	 height: 0;
+}
+ header {
+	 top: 0;
+	 left: 0;
+	 transition: transform 300ms linear;
+}
+ header .content {
+	 position: relative;
+	 max-width: 1200px;
+	 margin: 0 auto;
+}
+ button {
+	 color: #333;
+	 background-color: #f4f4f4;
+	 outline: none;
+}
+ button:disabled {
+	 color: #999;
+}
+ button:not(:disabled):active {
+	 background-color: #ddd;
+}
+ button:focus {
+	 border-color: #666;
+}
+ #products {
+	 grid-gap: 2rem;
+}
+ #products figcaption {
+	 padding: 10px;
+}
+ #product {
+	 grid-gap: 3em;
+}
+
+#products .title {
+	font-size: 1.2rem;
+	padding: 0.5rem 1.5rem;
+}
+#products .extra {
+	margin-top: 0.5rem;
+}
+#products .inl {
+	display: inline-block;
+	vertical-align: center;
+	margin: 5px;
+}
+#products .inl .cell {
+	width: 32px;
+	height: 32px;
+	place-content: center;
+	border: 1px solid var(--orange);
+	border-radius: 50%;
+}
+ #price {
+	 margin-bottom: 2rem;
+	 font-size: 1.4rem;
+}
+ #cartIt {
+	 grid-template-columns: 80px 1fr;
+	 grid-gap: 1rem;
+	 max-width: 400px;
+}
+ #extra ul {
+	 padding-left: 15px;
+}
+ .noBor {
+	 border: none;
+	 background-color: transparent;
+}
+#tables {
+	grid-template-columns: 1fr 400px;
+	grid-gap: 3rem;
+}
+th,
+td {
+	padding: 5px;
+}
+td input {
+	width: 65px;
+}
+td span {
+	display: none;
+}
+thead {
+	background-color: #f2f2f2
+}
+#client .grid {
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 1.5rem;
+}
+#ready {
+	margin-top: 3rem;
+	color: var(--white);
+	background-color: var(--orange);
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+}
+ @media screen and (min-width: 1200px) {
+	 header {
+		 position: fixed;
+		 text-align: right;
+	}
+	 header .small #menu a {
+		 padding: 0 10px;
+	}
+	 header .small #logo {
+		 width: 150px;
+	}
+	 #logo {
+		 position: absolute;
+		 width: 290px;
+		 top: 0;
+		 left: 0;
+		 padding: 10px 20px 20px;
+	}
+	 #menuToggle {
+		 display: none;
+	}
+	 #menu li {
+		 display: inline-block;
+	}
+	 #menu a {
+		 padding: 20px 10px;
+	}
+	#menu a.active,
+	#menu a:hover { color: var(--orange) }
+	 #hero {
+		 padding-top: 96px;
+	}
+}
+ @media screen and (max-width: 1200px) {
+	 #menuToggle, #menu.active {
+		 display: block;
+	}
+	 #menu:not(.active) {
+		 display: none;
+	}
+	 #menu.active {
+		 margin-top: 1rem;
+	}
+	 #menu li {
+		 display: block;
+	}
+	 #menu a {
+		 padding: 1rem 1.5rem;
+		 border-top: 1px solid var(--bor);
+	}
+	 #menuToggle {
+		 width: 48px;
+		 height: 48px;
+		 position: absolute;
+		 top: 0.5rem;
+		 right: 0;
+	}
+	 #menuToggle svg {
+		 fill: var(--orange);
+	}
+	 header {
+		 position: absolute;
+		 padding: 0.5rem 1.5rem;
+	}
+	 #logo {
+		 width: 100px;
+	}
+	 #hero {
+		 padding-top: 78px;
+	}
+}
+ @media screen and (min-width: 650px) {
+	 #hero {
+		 height: 500px;
+	}
+	 #product {
+		 grid-template-columns: 1fr 1fr;
+	}
+}
+ @media screen and (max-width: 650px) {
+	 #hero {
+		 height: 350px;
+	}
+}
+ @media screen and (min-width: 400px) {
+	 #products {
+		 grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+	}
+	 .py {
+		 padding-top: 3rem;
+		 padding-bottom: 3rem;
+	}
+}
+ #products .title {
+	 font-size: 1.2rem;
+	 padding: 0.5rem 1.5rem;
+}
+ #products .extra {
+	 margin-top: 0.5rem;
+}
+ #products .inl {
+	 display: inline-block;
+	 vertical-align: center;
+	 margin: 5px;
+}
+ #products .inl .cell {
+	 width: 32px;
+	 height: 32px;
+	 place-content: center;
+	 border: 1px solid var(--orange);
+	 border-radius: 50%;
+}
+ .huge.svelte-viq1pm {
+	 font-size: 12rem;
+}
+ .e404.svelte-viq1pm {
+	 position: absolute;
+	 left: 50%;
+	 top: 50%;
+	 transform: translate(-50%, -50%);
+	 text-align: center;
+}
+ main {
+	 background-position: left top;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-attachment: fixed;
+}
+ .container {
+	 max-width: 1200px;
+	 width: 90%;
+}
+ .mx {
+	 margin-left: auto;
+	 margin-right: auto;
+}
+ #hero {
+	 padding-top: 96px;
+	 place-content: center;
+}
+ #hero h1, #hero h3 {
+	 margin: 0;
+	 line-height: 1.2;
+}
+ #hero h1 {
+	 font-size: clamp(2rem, 3.8rem, 8vw);
+	 max-width: 750px;
+}
+ #hero h3 {
+	 font-size: clamp(1.4rem, 2rem, 8vw);
+}
+ .tw {
+	 color: var(--white);
+}
+ #cart {
+	 width: 300px;
+	 grid-template-columns: 1fr 120px;
+	 padding: 1rem;
+	 background: var(--white);
+	 border: 2px solid var(--orange);
+	 position: fixed;
+	 bottom: 15px;
+	 right: 10px;
+	 z-index: 100;
+}
+ #cart a {
+	 place-content: center;
+	 background-color: var(--orange);
+	 color: var(--white);
+	 text-transform: uppercase;
+}
+ #tables {
+	 grid-template-columns: 1fr 400px;
+	 grid-gap: 3rem;
+}
+ th, td {
+	 padding: 5px;
+}
+ td input {
+	 width: 65px;
+}
+ td span {
+	 display: none;
+}
+ #client .grid {
+	 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	 grid-gap: 1.5rem;
+}
+ #ready {
+	 margin-top: 3rem;
+	 color: var(--white);
+	 background-color: var(--orange);
+	 padding: 1rem 2rem;
+	 text-transform: uppercase;
+}

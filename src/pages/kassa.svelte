@@ -25,11 +25,11 @@
 			area: 'Nokia',
 			phone: '0407746121',
 			email: 'timo@tuspe.com',
+			distance: {},
+			shipping: '',
 		};
 	$data = {};
-	$: item = '';
 	let ready = 0;
-	let title = 'Kassa';
 	let delivery = { price: 0 };
 
 	function getResult(e, body) {
@@ -38,8 +38,8 @@
 				if (typeof e.redirect !== 'undefined')
 					window.location.replace(e.redirect);
 				else if (e.message) ready = e.message;
-			} else data.set(e);
-			data.set(e);
+			} else if (e.distance) delivery.distance = e.distance;
+			else data.set(e);
 		});
 	}
 
@@ -120,7 +120,6 @@
 			price: total,
 			vat: vat,
 		};
-		console.log(body);
 
 		getResult('path=kassa&payment=1', body);
 	}
@@ -133,7 +132,8 @@
 </script>
 
 <svelte:head>
-	<title>{title}</title>
+	<title>Kassa - Tervetuloa maksamaan</title>
+	<meta name="googlebot" content="noindex" />
 </svelte:head>
 
 {#if $cart.products[0]}
@@ -201,22 +201,6 @@
 							{/each}
 						</tbody>
 					</table>
-					{#if $data.delivery}
-						<div id="shipping">
-							<label>
-								<span class="block"><h2>Toimitustapa</h2></span>
-								<select bind:value={item}>
-									{#each $data.delivery as item}
-										<Opt
-											id={item.id}
-											name={item.name}
-											price={item.price}
-										/>
-									{/each}
-								</select>
-							</label>
-						</div>
-					{/if}
 				</div>
 				<div id="paymentInfo" class="item">
 					<h2>Maksutiedot</h2>
@@ -229,9 +213,11 @@
 									{$cart.total.toFixed(2)} €
 								</td>
 							</tr>
-							{#if delivery.price > 0}
+							{#if delivery.distance}
 								<tr>
-									<td class="label tl">Kuljetus</td>
+									<td class="label tl"
+										>Toimitus, {delivery.distance.text}
+									</td>
 									<td class="value tr">
 										{delivery.price.toFixed(2)} €
 									</td>
@@ -274,13 +260,39 @@
 						{/each}
 					</div>
 				</div>
-
-				<div id="payment" class="tc">
-					<button id="ready" class="end" name="ready" type="submit"
-						>Vahvista tilaus</button
-					>
-				</div>
 			</form>
+
+			{#if $cart.customer.street && $cart.customer.postal && $cart.customer.area}
+				<div id="payment" class="tc">
+					{#if delivery.distance}
+						<button
+							id="ready"
+							class="end"
+							name="ready"
+							type="submit"
+						>
+							Vahvista tilaus
+						</button>
+					{:else}
+						<button
+							id="ready"
+							class="end"
+							name="shipping"
+							on:click={() =>
+								getResult('path=matka', {
+									address:
+										$cart.customer.street +
+										'+' +
+										$cart.customer.postal +
+										'+' +
+										$cart.customer.area,
+								})}
+						>
+							Laske tomituskulut
+						</button>
+					{/if}
+				</div>
+			{/if}
 		{:else}
 			<h1>Kiitos tilauksesta</h1>
 			{#if typeof ready !== 'number'}
@@ -296,3 +308,22 @@
 		{/if}
 	</div>
 {/if}
+
+<style>
+	#productList td {
+		padding: 10px;
+	}
+	#productList th {
+		padding: 5px 10px;
+	}
+	#productList input {
+		padding: 5px;
+	}
+	#client input {
+		padding: 0.5rem;
+		border: 1px solid var(--bor);
+	}
+	#checkout button {
+		border: 1px solid var(--black);
+	}
+</style>

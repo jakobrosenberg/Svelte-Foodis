@@ -156,19 +156,6 @@ thead {
 		position: fixed;
 		text-align: right;
 	}
-	 header .small #menu a {
-		 padding: 0 10px;
-	}
-	 header .small #logo {
-		 width: 150px;
-	}
-	 #logo {
-		 position: absolute;
-		 width: 290px;
-		 top: 0;
-		 left: 0;
-		 padding: 10px 20px 20px;
-	}
 	 #menuToggle {
 		 display: none;
 	}
@@ -188,6 +175,19 @@ thead {
 		right: 0;
 		top: 9px;
 	}
+	header.small #logo {
+		width: 80px;
+		top: 8px
+   }
+	header:not(.small) #logo {
+		top: 0;
+		width: 290px;
+		padding: 10px 20px 20px;
+   }
+   header #logo {
+	   position: absolute;
+	   left: 0;
+  }
 }
  @media screen and (max-width: 1200px) {
 	 #menuToggle, #menu.active {

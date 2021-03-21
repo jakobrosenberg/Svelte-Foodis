@@ -34,4 +34,7 @@
 		top: -5px;
 		overflow: hidden;
 	}
+	#cartIcon svg {
+		fill: var(--orange);
+	}
 </style>

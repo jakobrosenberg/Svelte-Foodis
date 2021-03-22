@@ -181,6 +181,7 @@ thead {
 #productList input {
 	padding: 5px;
 }
+#productList button { border: 0 }
 #client input {
 	padding: 0.5rem;
 	border: 1px solid var(--bor);

@@ -28,9 +28,66 @@
 			distance: {},
 			shipping: '',
 		};
+
+	let deliveryPrices = {
+		price: [
+			{
+				distance: 5,
+				price: 4.9,
+			},
+			{
+				distance: 10,
+				price: 8.9,
+			},
+			{
+				distance: 20,
+				price: 12.9,
+			},
+		],
+		pcs: [
+			{
+				amount: 5,
+				discount: 0,
+			},
+			{
+				amount: 7,
+				discount: 1,
+			},
+			{
+				amount: 10,
+				discount: 2,
+			},
+			{
+				amount: 14,
+				discount: 3,
+			},
+		],
+	};
+
 	$data = {};
 	let ready = 0;
 	let delivery = { price: 0 };
+
+	$: if (delivery.distance) {
+		if (delivery.distance.value > 20) {
+			delivery.price = 50;
+		} else {
+			deliveryPrices.price.every((v) => {
+				if (delivery.distance.value > v.distance) {
+					return false;
+				}
+				delivery.price = v.price;
+				return true;
+			});
+			deliveryPrices.pcs.every((v) => {
+				if ($cart.amount > v.amount) {
+					return false;
+				}
+				delivery.price = delivery.price - v.discount;
+				return true;
+			});
+		}
+	}
 
 	function getResult(e, body) {
 		postData(e, body).then((e) => {
@@ -38,7 +95,11 @@
 				if (typeof e.redirect !== 'undefined')
 					window.location.replace(e.redirect);
 				else if (e.message) ready = e.message;
-			} else if (e.distance) delivery.distance = e.distance;
+			} else if (e.distance)
+				delivery.distance = {
+					text: e.distance.text,
+					value: e.distance.value / 1000,
+				};
 			else data.set(e);
 		});
 	}

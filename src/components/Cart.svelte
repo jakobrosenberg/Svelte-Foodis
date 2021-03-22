@@ -22,19 +22,3 @@
 		</div>
 	</a>
 </div>
-
-<style>
-	#cartBall {
-		width: 32px;
-		height: 32px;
-		border-radius: 50%;
-		border: 1px solid var(--black);
-		font-size: 0.9rem;
-		right: -15px;
-		top: -5px;
-		overflow: hidden;
-	}
-	#cartIcon svg {
-		fill: var(--orange);
-	}
-</style>

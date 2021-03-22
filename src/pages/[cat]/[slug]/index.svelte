@@ -102,13 +102,3 @@
 		</div>
 	</div>
 {/if}
-
-<style>
-	#cartIt input,
-	#cartIt button {
-		border: 1px ridge var(--black);
-		background-color: transparent;
-		color: var(--black);
-		padding: 10px 15px;
-	}
-</style>

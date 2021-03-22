@@ -151,6 +151,44 @@ thead {
 	position: absolute
 }
 
+#cartBall {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	border: 1px solid var(--black);
+	font-size: 0.9rem;
+	right: -15px;
+	top: -5px;
+	overflow: hidden;
+}
+#cartIt input,
+#cartIt button {
+	border: 1px ridge var(--black);
+	background-color: transparent;
+	color: var(--black);
+	padding: 10px 15px;
+}
+#cartIcon svg {
+	fill: var(--orange);
+}
+
+#productList td {
+	padding: 10px;
+}
+#productList th {
+	padding: 5px 10px;
+}
+#productList input {
+	padding: 5px;
+}
+#client input {
+	padding: 0.5rem;
+	border: 1px solid var(--bor);
+}
+#checkout button {
+	border: 1px solid var(--black);
+}
+
 @media screen and (min-width: 1200px) {
 	header {
 		position: fixed;

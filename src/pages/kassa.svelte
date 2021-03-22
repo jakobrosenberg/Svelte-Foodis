@@ -308,22 +308,3 @@
 		{/if}
 	</div>
 {/if}
-
-<style>
-	#productList td {
-		padding: 10px;
-	}
-	#productList th {
-		padding: 5px 10px;
-	}
-	#productList input {
-		padding: 5px;
-	}
-	#client input {
-		padding: 0.5rem;
-		border: 1px solid var(--bor);
-	}
-	#checkout button {
-		border: 1px solid var(--black);
-	}
-</style>

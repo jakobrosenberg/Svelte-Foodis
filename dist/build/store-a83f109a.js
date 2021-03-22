@@ -1,2 +1,2 @@
 import{w as a,x as s}from"./main.js";const t=s("http://foodis.dataline.fi/pw/"),o=a({}),i=a({}),p=a({total:0,amount:0,products:[]});export{t as a,p as c,i as d,o as i};
-//# sourceMappingURL=store-30b44191.js.map
+//# sourceMappingURL=store-a83f109a.js.map

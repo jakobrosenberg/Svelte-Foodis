@@ -16,9 +16,9 @@
 		{#each $data.items as item}
 			<a class="block" href={item.path}>
 				<picture class="block">
-					<source srcset={item.img[1]} type="image/webp" />
-					<source srcset={item.img[0]} type="image/jpeg" />
-					<img src={item.img[0]} alt={item.title} />
+					<source srcset={item.img[0][1]} type="image/webp" />
+					<source srcset={item.img[0][0]} type="image/jpeg" />
+					<img src={item.img[0][0]} alt={item.title} />
 				</picture>
 				<div class="title">
 					{item.title}

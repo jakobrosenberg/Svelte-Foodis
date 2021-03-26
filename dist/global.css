@@ -110,7 +110,8 @@ header .content {
 	 grid-gap: 1rem;
 	 max-width: 400px;
 }
- #extra ul {
+#docs ul,
+#extra ul {
 	 padding-left: 15px;
 }
  .noBor {

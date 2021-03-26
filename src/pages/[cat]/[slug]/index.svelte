@@ -52,9 +52,9 @@
 		<div id="img">
 			{#if $data.img}
 				<picture class="block">
-					<source srcset={$data.img[1]} type="image/webp" />
-					<source srcset={$data.img[0]} type="image/jpeg" />
-					<img src={$data.img[0]} alt={$data.title} />
+					<source srcset={$data.img[0][1]} type="image/webp" />
+					<source srcset={$data.img[0][0]} type="image/jpeg" />
+					<img src={$data.img[0][0]} alt={$data.title} />
 				</picture>
 			{/if}
 		</div>
@@ -89,6 +89,19 @@
 			</div>
 			{#if $data.body}
 				<div id="body">{@html $data.body}</div>
+			{/if}
+			{#if $data.docs}
+				<div id="docs">
+					<ul>
+						{#each $data.docs as item}
+							<li>
+								<a href={item.value} rel="nofollow"
+									>{item.label}</a
+								>
+							</li>
+						{/each}
+					</ul>
+				</div>
 			{/if}
 			{#if $data.extra}
 				<div id="extra">

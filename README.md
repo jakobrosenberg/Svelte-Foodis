@@ -1,1 +1,1 @@
-# Svelte-Foodis
+# Verkkokauppa Foodis

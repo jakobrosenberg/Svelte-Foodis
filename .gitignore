@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+**/.history
+src/tmp/
+.routify
+.netlify
+assets/build
+.vercel
+package-lock.json

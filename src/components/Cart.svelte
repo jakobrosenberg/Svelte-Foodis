@@ -4,7 +4,7 @@
 	$: bg = $cart.amount > 0 ? 'bgo tw' : 'bgw';
 </script>
 
-<div id="cartIcon" class="abs rel">
+<div id="cartIcon" class="rel">
 	<a class="grid cell" href={link} rel="nofollow">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

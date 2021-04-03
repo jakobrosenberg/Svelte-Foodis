@@ -28,7 +28,10 @@ figure { margin: 0 }
 
 body, #menu ul { padding: 0 }
 
-main a, .orange { color: var(--orange) }
+main a,
+header a:hover,
+#menu a.active,
+.orange { color: var(--orange) }
 
 .bgw { background-color: var(--white) }
 
@@ -72,15 +75,13 @@ header .content {
 
 .abs { position: absolute }
 
- #products {
-	 grid-gap: 2rem;
-}
- #products figcaption {
-	 padding: 10px;
-}
- #product {
-	 grid-gap: 3em;
-}
+.rel { position: relative }
+
+#products { grid-gap: 2rem }
+
+#products figcaption { padding: 10px }
+
+#product { grid-gap: 3em }
 
 #products .title {
 	font-size: 1.2rem;
@@ -114,31 +115,31 @@ header .content {
 #extra ul {
 	 padding-left: 15px;
 }
- .noBor {
+
+.noBor {
 	 border: none;
 	 background-color: transparent;
 }
+
 #tables {
 	grid-template-columns: 1fr 400px;
 	grid-gap: 3rem;
 }
+
 th,
-td {
-	padding: 5px;
-}
-td input {
-	width: 65px;
-}
-td span {
-	display: none;
-}
-thead {
-	background-color: #f2f2f2
-}
+td { padding: 5px }
+
+td input { width: 65px }
+
+td span { display: none }
+
+thead { background-color: #f2f2f2 }
+
 #client .grid {
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-gap: 1.5rem;
 }
+
 #ready {
 	margin-top: 3rem;
 	padding: 1rem 2rem;
@@ -146,20 +147,28 @@ thead {
 }
 
 #cartIcon,
+#searchIcon,
 #menuToggle {
 	width: 48px;
 	height: 48px;
-	position: absolute
+}
+
+.abs { position: absolute }
+
+#icons {
+	grid-template-columns: 48px 48px;
+	top: 6px;
+	right: 0;
 }
 
 #cartBall {
-	width: 32px;
-	height: 32px;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	border: 1px solid var(--black);
-	font-size: 0.9rem;
+	font-size: .85rem;
 	right: -15px;
-	top: -5px;
+	top: -3px;
 	overflow: hidden;
 }
 #cartIt input,
@@ -169,26 +178,39 @@ thead {
 	color: var(--black);
 	padding: 10px 15px;
 }
-#cartIcon svg {
-	fill: var(--orange);
-}
 
-#productList td {
-	padding: 10px;
-}
-#productList th {
-	padding: 5px 10px;
-}
-#productList input {
-	padding: 5px;
-}
+#icons svg { fill: var(--orange) }
+
+#productList td { padding: 10px }
+
+#productList th { padding: 5px 10px }
+
+#productList input { padding: 5px }
+
 #productList button { border: 0 }
+
 #client input {
 	padding: 0.5rem;
 	border: 1px solid var(--bor);
 }
-#checkout button {
-	border: 1px solid var(--black);
+#checkout button { border: 1px solid var(--black) }
+
+#searchForm {
+	top: 100%;
+	right: 0;
+	width: 250px
+}
+
+#searchForm input { padding: .5rem }
+
+#results a { padding: .5rem 1rem }
+
+#results a + a { border-top: 1px solid #bbb }
+
+#results {
+	max-height: 400px;
+	overflow-y: auto;
+	overflow-x: hidden
 }
 
 @media screen and (min-width: 1200px) {
@@ -196,38 +218,24 @@ thead {
 		position: fixed;
 		text-align: right;
 	}
-	 #menuToggle {
-		 display: none;
-	}
-	#menu { margin-right: 80px }
-	 #menu li {
-		 display: inline-block;
-	}
-	 #menu a {
-		 padding: 20px 10px;
-	}
-	#menu a.active,
-	#menu a:hover { color: var(--orange) }
-	 #hero {
-		 padding-top: 96px;
-	}
-	#cartIcon {
-		right: 0;
-		top: 9px;
-	}
+	#menuToggle { display: none }
+	#menu { margin-right: 120px }
+	#menu li { display: inline-block }
+	#menu a { padding: 20px 10px }
+	#hero { padding-top: 96px }
 	header.small #logo {
 		width: 80px;
 		top: 8px
    }
 	header:not(.small) #logo {
 		top: 0;
-		width: 290px;
+		width: 200px;
 		padding: 10px 20px 20px;
    }
    header #logo {
-	   position: absolute;
-	   left: 0;
-  }
+		position: absolute;
+		left: 0;
+	}
 }
  @media screen and (max-width: 1200px) {
 	 #menuToggle, #menu.active {
@@ -269,7 +277,7 @@ thead {
 }
  @media screen and (min-width: 650px) {
 	 #hero {
-		 height: 500px;
+		 height: 410px;
 	}
 	 #product {
 		 grid-template-columns: 1fr 1fr;

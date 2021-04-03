@@ -1,6 +1,6 @@
 <script>
+	import { ready } from '@roxi/routify';
 	import { cart, data } from '../components/store';
-	import Opt from '../components/option.svelte';
 	import { onMount } from 'svelte';
 	import postData from '../components/fetch.js';
 
@@ -65,7 +65,7 @@
 	};
 
 	$data = {};
-	let ready = 0;
+	let done = 0;
 	let delivery = { price: 0 };
 
 	$: if (delivery.distance) {
@@ -94,13 +94,14 @@
 			if (e.redirect || e.message) {
 				if (typeof e.redirect !== 'undefined')
 					window.location.replace(e.redirect);
-				else if (e.message) ready = e.message;
+				else if (e.message) done = e.message;
 			} else if (e.distance)
 				delivery.distance = {
 					text: e.distance.text,
 					value: e.distance.value / 1000,
 				};
 			else data.set(e);
+			$ready();
 		});
 	}
 
@@ -187,8 +188,9 @@
 
 	if (window.location.search) {
 		let item = window.location.search.substr(1).split('=');
-		if (item[0] == 'id') ready = parseInt(item[1]);
-		else ready = 0;
+		if (item[0] == 'id') done = parseInt(item[1]);
+		else done = 0;
+		$ready();
 	}
 </script>
 
@@ -199,7 +201,7 @@
 
 {#if $cart.products[0]}
 	<div id="checkout" class="container rel">
-		{#if ready == 0}
+		{#if done == 0}
 			{#if $data.body}
 				<div class="body">{@html $data.body}</div>
 			{/if}
@@ -326,17 +328,12 @@
 			{#if $cart.customer.street && $cart.customer.postal && $cart.customer.area}
 				<div id="payment" class="tc">
 					{#if delivery.distance}
-						<button
-							id="ready"
-							class="end"
-							name="ready"
-							type="submit"
-						>
+						<button id="done" class="end" name="done" type="submit">
 							Vahvista tilaus
 						</button>
 					{:else}
 						<button
-							id="ready"
+							id="done"
 							class="end"
 							name="shipping"
 							on:click={() =>
@@ -356,14 +353,14 @@
 			{/if}
 		{:else}
 			<h1>Kiitos tilauksesta</h1>
-			{#if typeof ready !== 'number'}
-				<p>{ready}</p>
+			{#if typeof done !== 'number'}
+				<p>{done}</p>
 			{:else}
 				<p>
 					Tilaus on vahvistettu ja tilaustiedot on lähetetty
 					sähköpostiin.
 					<br />
-					Tilausnumerosi on {ready}.
+					Tilausnumerosi on {done}.
 				</p>
 			{/if}
 		{/if}

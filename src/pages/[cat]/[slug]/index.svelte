@@ -31,6 +31,7 @@
 		$cart.total += total;
 		$cart.amount += amount;
 		$cart.products.push(item);
+		$ready();
 	}
 
 	$: if ($params.slug) getResult('path=' + $params.slug);

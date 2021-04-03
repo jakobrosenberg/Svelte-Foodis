@@ -13,11 +13,11 @@
       __defProp(target, name, {get: all[name], enumerable: true});
   };
 
-  // dist/build/_fallback-6643b230.js
-  var require_fallback_6643b230 = __commonJS((exports) => {
+  // dist/build/_fallback-53c0020d.js
+  var require_fallback_53c0020d = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => fallback_6643b230_default2
+      default: () => fallback_53c0020d_default2
     });
     function v2(s2) {
       let a2, e2, d2, f2, v3, m3, p3, g2;
@@ -35,19 +35,19 @@
       let t3;
       return l(s2, Gt, (s3) => e2(0, t3 = s3)), [t3];
     }
-    var fallback_6643b230_default = class extends ct {
+    var fallback_53c0020d_default = class extends ct {
       constructor(s2) {
         super(), at(this, s2, m2, v2, i2, {});
       }
     };
-    var fallback_6643b230_default2 = fallback_6643b230_default;
+    var fallback_53c0020d_default2 = fallback_53c0020d_default;
   });
 
-  // dist/build/index-8a44e169.js
-  var require_index_8a44e169 = __commonJS((exports) => {
+  // dist/build/index-b0975be1.js
+  var require_index_b0975be1 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => index_8a44e169_default2
+      default: () => index_b0975be1_default2
     });
     function L2(t3, n2, e2) {
       const l2 = t3.slice();
@@ -220,24 +220,24 @@
         })), e2(4, r2 = c2 * l2));
       }, e2(0, l2 = 1), e2(3, i3 = 1), e2(4, r2 = 0), [l2, c2, o4, i3, r2, function() {
         let t4 = {id: o4.id, title: o4.title, price: o4.price, price2: c2, amount: l2, total: r2};
-        o4.amountDiscounts, d(p, u2.price += c2, u2), d(p, u2.total += r2, u2), d(p, u2.amount += l2, u2), u2.products.push(t4);
+        o4.amountDiscounts, d(p, u2.price += c2, u2), d(p, u2.total += r2, u2), d(p, u2.amount += l2, u2), u2.products.push(t4), s2();
       }, d2, function() {
         l2 = j(this.value), e2(0, l2);
       }];
     }
-    var index_8a44e169_default = class extends ct {
+    var index_b0975be1_default = class extends ct {
       constructor(t3) {
         super(), at(this, t3, Y2, S2, i2, {});
       }
     };
-    var index_8a44e169_default2 = index_8a44e169_default;
+    var index_b0975be1_default2 = index_b0975be1_default;
   });
 
-  // dist/build/index-2ae50e0b.js
-  var require_index_2ae50e0b = __commonJS((exports) => {
+  // dist/build/index-127f6161.js
+  var require_index_127f6161 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => index_2ae50e0b_default2
+      default: () => index_127f6161_default2
     });
     function v2(t3, e2, s2) {
       const l2 = t3.slice();
@@ -348,19 +348,19 @@
         }));
       }, [c2, r2];
     }
-    var index_2ae50e0b_default = class extends ct {
+    var index_127f6161_default = class extends ct {
       constructor(t3) {
         super(), at(this, t3, w2, q2, i2, {});
       }
     };
-    var index_2ae50e0b_default2 = index_2ae50e0b_default;
+    var index_127f6161_default2 = index_127f6161_default;
   });
 
-  // dist/build/_layout-2ab30e0b.js
-  var require_layout_2ab30e0b = __commonJS((exports) => {
+  // dist/build/_layout-cb8f2637.js
+  var require_layout_cb8f2637 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => layout_2ab30e0b_default2
+      default: () => layout_cb8f2637_default2
     });
     function c2(s2) {
       let t3;
@@ -385,19 +385,19 @@
         "$$scope" in s3 && e2(0, o4 = s3.$$scope);
       }, [o4, n2];
     }
-    var layout_2ab30e0b_default = class extends ct {
+    var layout_cb8f2637_default = class extends ct {
       constructor(s2) {
         super(), at(this, s2, u2, c2, i2, {});
       }
     };
-    var layout_2ab30e0b_default2 = layout_2ab30e0b_default;
+    var layout_cb8f2637_default2 = layout_cb8f2637_default;
   });
 
-  // dist/build/index-99cc7d32.js
-  var require_index_99cc7d32 = __commonJS((exports) => {
+  // dist/build/index-d0e65f28.js
+  var require_index_d0e65f28 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => index_99cc7d32_default2
+      default: () => index_d0e65f28_default2
     });
     function p3(t3, s2, e2) {
       const l2 = t3.slice();
@@ -416,63 +416,63 @@
       }};
     }
     function h2(t3) {
-      let s2, e2 = t3[0].nav, i3 = [];
+      let s2, e2 = t3[0].nav, c2 = [];
       for (let s3 = 0; s3 < e2.length; s3 += 1)
-        i3[s3] = d2(p3(t3, e2, s3));
+        c2[s3] = d2(p3(t3, e2, s3));
       return {c() {
         s2 = $("div");
-        for (let t4 = 0; t4 < i3.length; t4 += 1)
-          i3[t4].c();
+        for (let t4 = 0; t4 < c2.length; t4 += 1)
+          c2[t4].c();
         k(s2, "id", "products"), k(s2, "class", "tc grid up bold");
       }, m(t4, e3) {
         m(t4, s2, e3);
-        for (let t5 = 0; t5 < i3.length; t5 += 1)
-          i3[t5].m(s2, null);
+        for (let t5 = 0; t5 < c2.length; t5 += 1)
+          c2[t5].m(s2, null);
       }, p(t4, [l2]) {
         if (1 & l2) {
-          let r2;
-          for (e2 = t4[0].nav, r2 = 0; r2 < e2.length; r2 += 1) {
-            const c2 = p3(t4, e2, r2);
-            i3[r2] ? i3[r2].p(c2, l2) : (i3[r2] = d2(c2), i3[r2].c(), i3[r2].m(s2, null));
+          let i3;
+          for (e2 = t4[0].nav, i3 = 0; i3 < e2.length; i3 += 1) {
+            const r2 = p3(t4, e2, i3);
+            c2[i3] ? c2[i3].p(r2, l2) : (c2[i3] = d2(r2), c2[i3].c(), c2[i3].m(s2, null));
           }
-          for (; r2 < i3.length; r2 += 1)
-            i3[r2].d(1);
-          i3.length = e2.length;
+          for (; i3 < c2.length; i3 += 1)
+            c2[i3].d(1);
+          c2.length = e2.length;
         }
       }, i: t2, o: t2, d(t4) {
-        t4 && g(s2), y(i3, t4);
+        t4 && g(s2), y(c2, t4);
       }};
     }
     function b2(t3, s2, e2) {
       let l2;
       return l(t3, o, (t4) => e2(0, l2 = t4)), l2.site && i.set({title: l2.site.title, slogan: l2.site.slogan}), [l2];
     }
-    var index_99cc7d32_default = class extends ct {
+    var index_d0e65f28_default = class extends ct {
       constructor(t3) {
         super(), at(this, t3, b2, h2, i2, {});
       }
     };
-    var index_99cc7d32_default2 = index_99cc7d32_default;
+    var index_d0e65f28_default2 = index_d0e65f28_default;
   });
 
-  // dist/build/kassa-9472c17c.js
-  var require_kassa_9472c17c = __commonJS((exports) => {
+  // dist/build/kassa-5aa909ef.js
+  var require_kassa_5aa909ef = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => kassa_9472c17c_default2
+      default: () => kassa_5aa909ef_default2
     });
-    function F2(t3, e2, n2) {
-      const s2 = t3.slice();
-      return s2[15] = e2[n2], s2[16] = e2, s2[17] = n2, s2;
-    }
     function N2(t3, e2, n2) {
       const s2 = t3.slice();
-      return s2[15] = e2[n2], s2[18] = e2, s2[19] = n2, s2;
+      return s2[16] = e2[n2], s2[17] = e2, s2[18] = n2, s2;
     }
-    function $2(t3) {
+    function $2(t3, e2, n2) {
+      const s2 = t3.slice();
+      return s2[16] = e2[n2], s2[19] = e2, s2[20] = n2, s2;
+    }
+    function j2(t3) {
       let e2;
       function n2(t4, e3) {
-        return t4[3] == 0 ? L2 : j2;
+        return t4[3] == 0 ? M2 : L2;
       }
       let l2 = n2(t3), o4 = l2(t3);
       return {c() {
@@ -485,10 +485,10 @@
         t4 && g(e2), o4.d();
       }};
     }
-    function j2(t3) {
+    function L2(t3) {
       let e2, n2, a2;
       function r2(t4, e3) {
-        return typeof t4[3] != "number" ? q2 : M2;
+        return typeof t4[3] != "number" ? H2 : q2;
       }
       let u2 = r2(t3), d2 = u2(t3);
       return {c() {
@@ -501,57 +501,57 @@
         t4 && g(e2), t4 && g(n2), d2.d(t4), t4 && g(a2);
       }};
     }
-    function L2(t3) {
-      let e2, n2, u2, d2, m2, p3, f2, v2, b2, T2, C2, w2, $3, j3, L3, M3, q3, S3, z3, A3, P3, V3, Y3, B3, D2, E2, X2, G2, Q2, R2, U2, W2, Z2, _2, tt2, et2, nt2, st2, at2, it2, ct2, lt2, ot2, rt2, ut2, dt2, mt2 = t3[1].total.toFixed(2) + "", pt2 = t3[5].toFixed(2) + "", ht2 = t3[2].toFixed(2) + "", ft2 = t3[4].body && H2(t3), xt2 = t3[1].products, yt2 = [];
+    function M2(t3) {
+      let e2, n2, u2, d2, m2, p3, f2, v2, b2, T2, C2, w2, F2, j3, L3, M3, q3, H3, z3, A3, K3, V3, Y3, B3, D3, E2, X2, G2, Q2, R2, U2, W2, Z2, _2, tt2, et2, nt2, st2, at2, it2, ct2, lt2, ot2, rt2, ut2, dt2, mt2 = t3[1].total.toFixed(2) + "", pt2 = t3[5].toFixed(2) + "", ht2 = t3[2].toFixed(2) + "", ft2 = t3[4].body && S2(t3), xt2 = t3[1].products, yt2 = [];
       for (let e3 = 0; e3 < xt2.length; e3 += 1)
-        yt2[e3] = K2(N2(t3, xt2, e3));
-      let vt2 = t3[0].distance && I2(t3), bt2 = t3[8], gt2 = [];
+        yt2[e3] = I2($2(t3, xt2, e3));
+      let vt2 = t3[0].distance && J2(t3), bt2 = t3[8], gt2 = [];
       for (let e3 = 0; e3 < bt2.length; e3 += 1)
-        gt2[e3] = J2(F2(t3, bt2, e3));
-      let kt2 = t3[1].customer.street && t3[1].customer.postal && t3[1].customer.area && O2(t3);
+        gt2[e3] = O2(N2(t3, bt2, e3));
+      let kt2 = t3[1].customer.street && t3[1].customer.postal && t3[1].customer.area && P2(t3);
       return {c() {
         ft2 && ft2.c(), e2 = _(), n2 = $("div"), u2 = $("div"), d2 = $("h2"), d2.textContent = "Tuotteet", m2 = _(), p3 = $("table"), f2 = $("thead"), f2.innerHTML = '<tr><th class="tl">Tuote</th> \n								<th class="tc">Hinta</th> \n								<th class="tc">M\xE4\xE4r\xE4</th> \n								<th class="tc">Yhteens\xE4</th> \n								<th></th></tr>', v2 = _(), b2 = $("tbody");
         for (let t4 = 0; t4 < yt2.length; t4 += 1)
           yt2[t4].c();
-        T2 = _(), C2 = $("div"), w2 = $("h2"), w2.textContent = "Maksutiedot", $3 = _(), j3 = $("table"), L3 = $("tbody"), M3 = $("tr"), q3 = $("td"), q3.textContent = "Tuotteet yhteens\xE4", S3 = _(), z3 = $("td"), A3 = w(mt2), P3 = w(" \u20AC"), V3 = _(), vt2 && vt2.c(), Y3 = _(), B3 = $("tr"), D2 = $("td"), D2.textContent = "ALV 10%", E2 = _(), X2 = $("td"), G2 = w(pt2), Q2 = w(" \u20AC"), R2 = _(), U2 = $("tr"), W2 = $("td"), W2.textContent = "Tilaus yhteens\xE4", Z2 = _(), _2 = $("td"), tt2 = w(ht2), et2 = w(" \u20AC"), nt2 = _(), st2 = $("form"), at2 = $("div"), it2 = $("h2"), it2.textContent = "Asiakastiedot", ct2 = _(), lt2 = $("div");
+        T2 = _(), C2 = $("div"), w2 = $("h2"), w2.textContent = "Maksutiedot", F2 = _(), j3 = $("table"), L3 = $("tbody"), M3 = $("tr"), q3 = $("td"), q3.textContent = "Tuotteet yhteens\xE4", H3 = _(), z3 = $("td"), A3 = w(mt2), K3 = w(" \u20AC"), V3 = _(), vt2 && vt2.c(), Y3 = _(), B3 = $("tr"), D3 = $("td"), D3.textContent = "ALV 10%", E2 = _(), X2 = $("td"), G2 = w(pt2), Q2 = w(" \u20AC"), R2 = _(), U2 = $("tr"), W2 = $("td"), W2.textContent = "Tilaus yhteens\xE4", Z2 = _(), _2 = $("td"), tt2 = w(ht2), et2 = w(" \u20AC"), nt2 = _(), st2 = $("form"), at2 = $("div"), it2 = $("h2"), it2.textContent = "Asiakastiedot", ct2 = _(), lt2 = $("div");
         for (let t4 = 0; t4 < gt2.length; t4 += 1)
           gt2[t4].c();
-        ot2 = _(), kt2 && kt2.c(), rt2 = x(), k(p3, "id", "productList"), k(p3, "class", "w100"), k(p3, "rules", "rows"), k(u2, "class", "item"), k(q3, "class", "label tl"), k(z3, "class", "value tr"), k(D2, "class", "label tl"), k(X2, "class", "value tr"), k(W2, "class", "label tl"), k(_2, "class", "value tr"), k(j3, "class", "w100"), k(C2, "id", "paymentInfo"), k(C2, "class", "item"), k(n2, "id", "tables"), k(n2, "class", "grid"), k(lt2, "class", "grid"), k(at2, "id", "client"), k(at2, "class", "item"), k(st2, "class", "items");
+        ot2 = _(), kt2 && kt2.c(), rt2 = x(), k(p3, "id", "productList"), k(p3, "class", "w100"), k(p3, "rules", "rows"), k(u2, "class", "item"), k(q3, "class", "label tl"), k(z3, "class", "value tr"), k(D3, "class", "label tl"), k(X2, "class", "value tr"), k(W2, "class", "label tl"), k(_2, "class", "value tr"), k(j3, "class", "w100"), k(C2, "id", "paymentInfo"), k(C2, "class", "item"), k(n2, "id", "tables"), k(n2, "class", "grid"), k(lt2, "class", "grid"), k(at2, "id", "client"), k(at2, "class", "item"), k(st2, "class", "items");
       }, m(s2, a2) {
         ft2 && ft2.m(s2, a2), m(s2, e2, a2), m(s2, n2, a2), h(n2, u2), h(u2, d2), h(u2, m2), h(u2, p3), h(p3, f2), h(p3, v2), h(p3, b2);
         for (let t4 = 0; t4 < yt2.length; t4 += 1)
           yt2[t4].m(b2, null);
-        h(n2, T2), h(n2, C2), h(C2, w2), h(C2, $3), h(C2, j3), h(j3, L3), h(L3, M3), h(M3, q3), h(M3, S3), h(M3, z3), h(z3, A3), h(z3, P3), h(L3, V3), vt2 && vt2.m(L3, null), h(L3, Y3), h(L3, B3), h(B3, D2), h(B3, E2), h(B3, X2), h(X2, G2), h(X2, Q2), h(L3, R2), h(L3, U2), h(U2, W2), h(U2, Z2), h(U2, _2), h(_2, tt2), h(_2, et2), m(s2, nt2, a2), m(s2, st2, a2), h(st2, at2), h(at2, it2), h(at2, ct2), h(at2, lt2);
+        h(n2, T2), h(n2, C2), h(C2, w2), h(C2, F2), h(C2, j3), h(j3, L3), h(L3, M3), h(M3, q3), h(M3, H3), h(M3, z3), h(z3, A3), h(z3, K3), h(L3, V3), vt2 && vt2.m(L3, null), h(L3, Y3), h(L3, B3), h(B3, D3), h(B3, E2), h(B3, X2), h(X2, G2), h(X2, Q2), h(L3, R2), h(L3, U2), h(U2, W2), h(U2, Z2), h(U2, _2), h(_2, tt2), h(_2, et2), m(s2, nt2, a2), m(s2, st2, a2), h(st2, at2), h(at2, it2), h(at2, ct2), h(at2, lt2);
         for (let t4 = 0; t4 < gt2.length; t4 += 1)
           gt2[t4].m(lt2, null);
         m(s2, ot2, a2), kt2 && kt2.m(s2, a2), m(s2, rt2, a2), ut2 || (dt2 = v(st2, "submit", P(t3[9])), ut2 = true);
       }, p(t4, n3) {
-        if (t4[4].body ? ft2 ? ft2.p(t4, n3) : (ft2 = H2(t4), ft2.c(), ft2.m(e2.parentNode, e2)) : ft2 && (ft2.d(1), ft2 = null), 130 & n3) {
+        if (t4[4].body ? ft2 ? ft2.p(t4, n3) : (ft2 = S2(t4), ft2.c(), ft2.m(e2.parentNode, e2)) : ft2 && (ft2.d(1), ft2 = null), 130 & n3) {
           let e3;
           for (xt2 = t4[1].products, e3 = 0; e3 < xt2.length; e3 += 1) {
-            const s2 = N2(t4, xt2, e3);
-            yt2[e3] ? yt2[e3].p(s2, n3) : (yt2[e3] = K2(s2), yt2[e3].c(), yt2[e3].m(b2, null));
+            const s2 = $2(t4, xt2, e3);
+            yt2[e3] ? yt2[e3].p(s2, n3) : (yt2[e3] = I2(s2), yt2[e3].c(), yt2[e3].m(b2, null));
           }
           for (; e3 < yt2.length; e3 += 1)
             yt2[e3].d(1);
           yt2.length = xt2.length;
         }
-        if (2 & n3 && mt2 !== (mt2 = t4[1].total.toFixed(2) + "") && E(A3, mt2), t4[0].distance ? vt2 ? vt2.p(t4, n3) : (vt2 = I2(t4), vt2.c(), vt2.m(L3, Y3)) : vt2 && (vt2.d(1), vt2 = null), 32 & n3 && pt2 !== (pt2 = t4[5].toFixed(2) + "") && E(G2, pt2), 4 & n3 && ht2 !== (ht2 = t4[2].toFixed(2) + "") && E(tt2, ht2), 258 & n3) {
+        if (2 & n3 && mt2 !== (mt2 = t4[1].total.toFixed(2) + "") && E(A3, mt2), t4[0].distance ? vt2 ? vt2.p(t4, n3) : (vt2 = J2(t4), vt2.c(), vt2.m(L3, Y3)) : vt2 && (vt2.d(1), vt2 = null), 32 & n3 && pt2 !== (pt2 = t4[5].toFixed(2) + "") && E(G2, pt2), 4 & n3 && ht2 !== (ht2 = t4[2].toFixed(2) + "") && E(tt2, ht2), 258 & n3) {
           let e3;
           for (bt2 = t4[8], e3 = 0; e3 < bt2.length; e3 += 1) {
-            const s2 = F2(t4, bt2, e3);
-            gt2[e3] ? gt2[e3].p(s2, n3) : (gt2[e3] = J2(s2), gt2[e3].c(), gt2[e3].m(lt2, null));
+            const s2 = N2(t4, bt2, e3);
+            gt2[e3] ? gt2[e3].p(s2, n3) : (gt2[e3] = O2(s2), gt2[e3].c(), gt2[e3].m(lt2, null));
           }
           for (; e3 < gt2.length; e3 += 1)
             gt2[e3].d(1);
           gt2.length = bt2.length;
         }
-        t4[1].customer.street && t4[1].customer.postal && t4[1].customer.area ? kt2 ? kt2.p(t4, n3) : (kt2 = O2(t4), kt2.c(), kt2.m(rt2.parentNode, rt2)) : kt2 && (kt2.d(1), kt2 = null);
+        t4[1].customer.street && t4[1].customer.postal && t4[1].customer.area ? kt2 ? kt2.p(t4, n3) : (kt2 = P2(t4), kt2.c(), kt2.m(rt2.parentNode, rt2)) : kt2 && (kt2.d(1), kt2 = null);
       }, d(t4) {
         ft2 && ft2.d(t4), t4 && g(e2), t4 && g(n2), y(yt2, t4), vt2 && vt2.d(), t4 && g(nt2), t4 && g(st2), y(gt2, t4), t4 && g(ot2), kt2 && kt2.d(t4), t4 && g(rt2), ut2 = false, dt2();
       }};
     }
-    function M2(t3) {
+    function q2(t3) {
       let e2, n2, a2, l2, o4, u2;
       return {c() {
         e2 = $("p"), n2 = w("Tilaus on vahvistettu ja tilaustiedot on l\xE4hetetty\n					s\xE4hk\xF6postiin.\n					"), a2 = $("br"), l2 = w("\n					Tilausnumerosi on "), o4 = w(t3[3]), u2 = w(".");
@@ -563,7 +563,7 @@
         t4 && g(e2);
       }};
     }
-    function q2(t3) {
+    function H2(t3) {
       let e2, n2;
       return {c() {
         e2 = $("p"), n2 = w(t3[3]);
@@ -575,7 +575,7 @@
         t4 && g(e2);
       }};
     }
-    function H2(t3) {
+    function S2(t3) {
       let e2, n2 = t3[4].body + "";
       return {c() {
         e2 = $("div"), k(e2, "class", "body");
@@ -587,61 +587,61 @@
         t4 && g(e2);
       }};
     }
-    function S2(t3) {
-      let e2, n2, o4, u2, d2, m2, p3, g2, k2, T2, C2, w2, F3, N3, $3, j3, L3, M3, q3, H3, S3, K3, I3, J3, O3, P3, V3, Y3, B3, D2 = t3[15].title + "", E2 = t3[15].price2.toFixed(2) + "", X2 = t3[15].total.toFixed(2) + "", G2 = t3[15].size && z2(t3), Q2 = t3[15].id && A2(t3);
+    function z2(t3) {
+      let e2, n2, o4, u2, d2, m2, p3, g2, k2, T2, C2, w2, F2, N3, $3, j3, L3, M3, q3, H3, S3, z3, I3, J3, O3, P3, V3, Y3, B3, D3 = t3[16].title + "", E2 = t3[16].price2.toFixed(2) + "", X2 = t3[16].total.toFixed(2) + "", G2 = t3[16].size && A2(t3), Q2 = t3[16].id && K2(t3);
       function R2() {
-        t3[10].call(M3, t3[19]);
+        t3[10].call(M3, t3[20]);
       }
       function U2() {
-        return t3[11](t3[19]);
+        return t3[11](t3[20]);
       }
       return {c() {
-        e2 = $("tr"), n2 = $("td"), o4 = $("strong"), u2 = w(D2), d2 = _(), G2 && G2.c(), m2 = _(), p3 = $("br"), g2 = _(), Q2 && Q2.c(), k2 = _(), T2 = $("td"), C2 = $("span"), C2.textContent = "Hinta:", w2 = _(), F3 = w(E2), N3 = _(), $3 = $("td"), j3 = $("span"), j3.textContent = "M\xE4\xE4r\xE4:", L3 = _(), M3 = $("input"), q3 = _(), H3 = $("td"), S3 = $("span"), S3.textContent = "Yhteens\xE4:", K3 = _(), I3 = w(X2), J3 = _(), O3 = $("td"), P3 = $("button"), P3.textContent = "X", V3 = _(), k(n2, "class", "product tl"), k(T2, "class", "price tc pt"), k(M3, "type", "number"), k(M3, "name", "amount"), k($3, "class", "amount tc"), k(H3, "class", "total tc pt"), k(P3, "class", "del noBor"), k(O3, "class", "tr pt");
+        e2 = $("tr"), n2 = $("td"), o4 = $("strong"), u2 = w(D3), d2 = _(), G2 && G2.c(), m2 = _(), p3 = $("br"), g2 = _(), Q2 && Q2.c(), k2 = _(), T2 = $("td"), C2 = $("span"), C2.textContent = "Hinta:", w2 = _(), F2 = w(E2), N3 = _(), $3 = $("td"), j3 = $("span"), j3.textContent = "M\xE4\xE4r\xE4:", L3 = _(), M3 = $("input"), q3 = _(), H3 = $("td"), S3 = $("span"), S3.textContent = "Yhteens\xE4:", z3 = _(), I3 = w(X2), J3 = _(), O3 = $("td"), P3 = $("button"), P3.textContent = "X", V3 = _(), k(n2, "class", "product tl"), k(T2, "class", "price tc pt"), k(M3, "type", "number"), k(M3, "name", "amount"), k($3, "class", "amount tc"), k(H3, "class", "total tc pt"), k(P3, "class", "del noBor"), k(O3, "class", "tr pt");
       }, m(s2, a2) {
-        m(s2, e2, a2), h(e2, n2), h(n2, o4), h(o4, u2), h(o4, d2), G2 && G2.m(o4, null), h(n2, m2), h(n2, p3), h(n2, g2), Q2 && Q2.m(n2, null), h(e2, k2), h(e2, T2), h(T2, C2), h(T2, w2), h(T2, F3), h(e2, N3), h(e2, $3), h($3, j3), h($3, L3), h($3, M3), O(M3, t3[1].products[t3[19]].amount), h(e2, q3), h(e2, H3), h(H3, S3), h(H3, K3), h(H3, I3), h(e2, J3), h(e2, O3), h(O3, P3), h(e2, V3), Y3 || (B3 = [v(M3, "input", R2), v(P3, "click", U2)], Y3 = true);
+        m(s2, e2, a2), h(e2, n2), h(n2, o4), h(o4, u2), h(o4, d2), G2 && G2.m(o4, null), h(n2, m2), h(n2, p3), h(n2, g2), Q2 && Q2.m(n2, null), h(e2, k2), h(e2, T2), h(T2, C2), h(T2, w2), h(T2, F2), h(e2, N3), h(e2, $3), h($3, j3), h($3, L3), h($3, M3), O(M3, t3[1].products[t3[20]].amount), h(e2, q3), h(e2, H3), h(H3, S3), h(H3, z3), h(H3, I3), h(e2, J3), h(e2, O3), h(O3, P3), h(e2, V3), Y3 || (B3 = [v(M3, "input", R2), v(P3, "click", U2)], Y3 = true);
       }, p(e3, s2) {
-        t3 = e3, 2 & s2 && D2 !== (D2 = t3[15].title + "") && E(u2, D2), t3[15].size ? G2 ? G2.p(t3, s2) : (G2 = z2(t3), G2.c(), G2.m(o4, null)) : G2 && (G2.d(1), G2 = null), t3[15].id ? Q2 ? Q2.p(t3, s2) : (Q2 = A2(t3), Q2.c(), Q2.m(n2, null)) : Q2 && (Q2.d(1), Q2 = null), 2 & s2 && E2 !== (E2 = t3[15].price2.toFixed(2) + "") && E(F3, E2), 2 & s2 && j(M3.value) !== t3[1].products[t3[19]].amount && O(M3, t3[1].products[t3[19]].amount), 2 & s2 && X2 !== (X2 = t3[15].total.toFixed(2) + "") && E(I3, X2);
+        t3 = e3, 2 & s2 && D3 !== (D3 = t3[16].title + "") && E(u2, D3), t3[16].size ? G2 ? G2.p(t3, s2) : (G2 = A2(t3), G2.c(), G2.m(o4, null)) : G2 && (G2.d(1), G2 = null), t3[16].id ? Q2 ? Q2.p(t3, s2) : (Q2 = K2(t3), Q2.c(), Q2.m(n2, null)) : Q2 && (Q2.d(1), Q2 = null), 2 & s2 && E2 !== (E2 = t3[16].price2.toFixed(2) + "") && E(F2, E2), 2 & s2 && j(M3.value) !== t3[1].products[t3[20]].amount && O(M3, t3[1].products[t3[20]].amount), 2 & s2 && X2 !== (X2 = t3[16].total.toFixed(2) + "") && E(I3, X2);
       }, d(t4) {
         t4 && g(e2), G2 && G2.d(), Q2 && Q2.d(), Y3 = false, r(B3);
       }};
     }
-    function z2(t3) {
-      let e2, n2, s2 = t3[15].size + "";
+    function A2(t3) {
+      let e2, n2, s2 = t3[16].size + "";
       return {c() {
         e2 = w("- "), n2 = w(s2);
       }, m(t4, s3) {
         m(t4, e2, s3), m(t4, n2, s3);
       }, p(t4, e3) {
-        2 & e3 && s2 !== (s2 = t4[15].size + "") && E(n2, s2);
+        2 & e3 && s2 !== (s2 = t4[16].size + "") && E(n2, s2);
       }, d(t4) {
         t4 && g(e2), t4 && g(n2);
       }};
     }
-    function A2(t3) {
-      let e2, n2, a2 = t3[15].id + "";
+    function K2(t3) {
+      let e2, n2, a2 = t3[16].id + "";
       return {c() {
         e2 = $("small"), n2 = w(a2);
       }, m(t4, s2) {
         m(t4, e2, s2), h(e2, n2);
       }, p(t4, e3) {
-        2 & e3 && a2 !== (a2 = t4[15].id + "") && E(n2, a2);
+        2 & e3 && a2 !== (a2 = t4[16].id + "") && E(n2, a2);
       }, d(t4) {
         t4 && g(e2);
       }};
     }
-    function K2(t3) {
-      let e2, n2 = t3[15] != null && S2(t3);
+    function I2(t3) {
+      let e2, n2 = t3[16] != null && z2(t3);
       return {c() {
         n2 && n2.c(), e2 = x();
       }, m(t4, s2) {
         n2 && n2.m(t4, s2), m(t4, e2, s2);
       }, p(t4, s2) {
-        t4[15] != null ? n2 ? n2.p(t4, s2) : (n2 = S2(t4), n2.c(), n2.m(e2.parentNode, e2)) : n2 && (n2.d(1), n2 = null);
+        t4[16] != null ? n2 ? n2.p(t4, s2) : (n2 = z2(t4), n2.c(), n2.m(e2.parentNode, e2)) : n2 && (n2.d(1), n2 = null);
       }, d(t4) {
         n2 && n2.d(t4), t4 && g(e2);
       }};
     }
-    function I2(t3) {
+    function J2(t3) {
       let e2, n2, o4, u2, d2, m2, p3, f2, x2 = t3[0].distance.text + "", v2 = t3[0].price.toFixed(2) + "";
       return {c() {
         e2 = $("tr"), n2 = $("td"), o4 = w("Toimitus, "), u2 = w(x2), d2 = _(), m2 = $("td"), p3 = w(v2), f2 = w(" \u20AC"), k(n2, "class", "label tl"), k(m2, "class", "value tr");
@@ -653,25 +653,25 @@
         t4 && g(e2);
       }};
     }
-    function J2(t3) {
-      let e2, n2, o4, u2, d2, m2, p3, y2, v2, b2 = t3[15].title + "";
+    function O2(t3) {
+      let e2, n2, o4, u2, d2, m2, p3, y2, v2, b2 = t3[16].title + "";
       function g2() {
-        t3[12].call(m2, t3[15]);
+        t3[12].call(m2, t3[16]);
       }
       return {c() {
-        e2 = $("div"), n2 = $("label"), o4 = $("span"), u2 = w(b2), d2 = _(), m2 = $("input"), p3 = _(), k(o4, "class", "block"), k(m2, "id", t3[15].name), k(m2, "class", "w100"), k(m2, "name", t3[15].name), m2.required = true, k(e2, "class", "item");
+        e2 = $("div"), n2 = $("label"), o4 = $("span"), u2 = w(b2), d2 = _(), m2 = $("input"), p3 = _(), k(o4, "class", "block"), k(m2, "id", t3[16].name), k(m2, "class", "w100"), k(m2, "name", t3[16].name), m2.required = true, k(e2, "class", "item");
       }, m(s2, a2) {
-        m(s2, e2, a2), h(e2, n2), h(n2, o4), h(o4, u2), h(n2, d2), h(n2, m2), O(m2, t3[1].customer[t3[15].name]), h(e2, p3), y2 || (v2 = v(m2, "input", g2), y2 = true);
+        m(s2, e2, a2), h(e2, n2), h(n2, o4), h(o4, u2), h(n2, d2), h(n2, m2), O(m2, t3[1].customer[t3[16].name]), h(e2, p3), y2 || (v2 = v(m2, "input", g2), y2 = true);
       }, p(e3, n3) {
-        t3 = e3, 258 & n3 && m2.value !== t3[1].customer[t3[15].name] && O(m2, t3[1].customer[t3[15].name]);
+        t3 = e3, 258 & n3 && m2.value !== t3[1].customer[t3[16].name] && O(m2, t3[1].customer[t3[16].name]);
       }, d(t4) {
         t4 && g(e2), y2 = false, v2();
       }};
     }
-    function O2(t3) {
+    function P2(t3) {
       let e2;
       function n2(t4, e3) {
-        return t4[0].distance ? V2 : P2;
+        return t4[0].distance ? Y2 : V2;
       }
       let l2 = n2(t3), o4 = l2(t3);
       return {c() {
@@ -684,325 +684,412 @@
         t4 && g(e2), o4.d();
       }};
     }
-    function P2(t3) {
+    function V2(t3) {
       let e2, n2, l2;
       return {c() {
-        e2 = $("button"), e2.textContent = "Laske tomituskulut", k(e2, "id", "ready"), k(e2, "class", "end"), k(e2, "name", "shipping");
+        e2 = $("button"), e2.textContent = "Laske tomituskulut", k(e2, "id", "done"), k(e2, "class", "end"), k(e2, "name", "shipping");
       }, m(s2, a2) {
         m(s2, e2, a2), n2 || (l2 = v(e2, "click", t3[13]), n2 = true);
       }, p: t2, d(t4) {
         t4 && g(e2), n2 = false, l2();
       }};
     }
-    function V2(t3) {
+    function Y2(t3) {
       let e2;
       return {c() {
-        e2 = $("button"), e2.textContent = "Vahvista tilaus", k(e2, "id", "ready"), k(e2, "class", "end"), k(e2, "name", "ready"), k(e2, "type", "submit");
+        e2 = $("button"), e2.textContent = "Vahvista tilaus", k(e2, "id", "done"), k(e2, "class", "end"), k(e2, "name", "done"), k(e2, "type", "submit");
       }, m(t4, n2) {
         m(t4, e2, n2);
       }, p: t2, d(t4) {
         t4 && g(e2);
       }};
     }
-    function Y2(t3) {
-      let e2, n2, d2, m2 = t3[1].products[0] && $2(t3);
+    function B2(t3) {
+      let e2, n2, d2, m2 = t3[1].products[0] && j2(t3);
       return {c() {
         e2 = $("meta"), n2 = _(), m2 && m2.c(), d2 = x(), document.title = "Kassa - Tervetuloa maksamaan", k(e2, "name", "googlebot"), k(e2, "content", "noindex");
       }, m(t4, s2) {
         h(document.head, e2), m(t4, n2, s2), m2 && m2.m(t4, s2), m(t4, d2, s2);
       }, p(t4, [e3]) {
-        t4[1].products[0] ? m2 ? m2.p(t4, e3) : (m2 = $2(t4), m2.c(), m2.m(d2.parentNode, d2)) : m2 && (m2.d(1), m2 = null);
+        t4[1].products[0] ? m2 ? m2.p(t4, e3) : (m2 = j2(t4), m2.c(), m2.m(d2.parentNode, d2)) : m2 && (m2.d(1), m2 = null);
       }, i: t2, o: t2, d(t4) {
         g(e2), t4 && g(n2), m2 && m2.d(t4), t4 && g(d2);
       }};
     }
-    function B2(t3, e2, n2) {
-      let s2, a2, i3, c2;
-      l(t3, p, (t4) => n2(1, i3 = t4)), l(t3, i, (t4) => n2(4, c2 = t4)), i3.products[0] || window.location.replace("/"), d(p, i3.customer = {name1: "Timo", name2: "Anttila", street: "Testikuja 8", postal: 37130, area: "Nokia", phone: "0407746121", email: "timo@tuspe.com"}, i3), i3.customer || d(p, i3.customer = {name1: "Timo", name2: "Anttila", street: "Testikuja 8", postal: 37130, area: "Nokia", phone: "0407746121", email: "timo@tuspe.com", distance: {}, shipping: ""}, i3);
-      let l2 = {price: [{distance: 5, price: 4.9}, {distance: 10, price: 8.9}, {distance: 20, price: 12.9}], pcs: [{amount: 5, discount: 0}, {amount: 7, discount: 1}, {amount: 10, discount: 2}, {amount: 14, discount: 3}]};
+    function D2(t3, e2, n2) {
+      let s2, a2, i3, c2, l2;
+      l(t3, p, (t4) => n2(1, i3 = t4)), l(t3, i, (t4) => n2(4, c2 = t4)), l(t3, Ht, (t4) => n2(14, l2 = t4)), i3.products[0] || window.location.replace("/"), d(p, i3.customer = {name1: "Timo", name2: "Anttila", street: "Testikuja 8", postal: 37130, area: "Nokia", phone: "0407746121", email: "timo@tuspe.com"}, i3), i3.customer || d(p, i3.customer = {name1: "Timo", name2: "Anttila", street: "Testikuja 8", postal: 37130, area: "Nokia", phone: "0407746121", email: "timo@tuspe.com", distance: {}, shipping: ""}, i3);
+      let o4 = {price: [{distance: 5, price: 4.9}, {distance: 10, price: 8.9}, {distance: 20, price: 12.9}], pcs: [{amount: 5, discount: 0}, {amount: 7, discount: 1}, {amount: 10, discount: 2}, {amount: 14, discount: 3}]};
       d(i, c2 = {}, c2);
-      let o4 = 0, r2 = {price: 0};
-      function u2(t4, e3) {
+      let r2 = 0, u2 = {price: 0};
+      function h2(t4, e3) {
         o2(t4, e3).then((t5) => {
-          t5.redirect || t5.message ? t5.redirect !== void 0 ? window.location.replace(t5.redirect) : t5.message && n2(3, o4 = t5.message) : t5.distance ? n2(0, r2.distance = {text: t5.distance.text, value: t5.distance.value / 1e3}, r2) : i.set(t5);
+          t5.redirect || t5.message ? t5.redirect !== void 0 ? window.location.replace(t5.redirect) : t5.message && n2(3, r2 = t5.message) : t5.distance ? n2(0, u2.distance = {text: t5.distance.text, value: t5.distance.value / 1e3}, u2) : i.set(t5), l2();
         });
       }
-      function h2(t4) {
+      function f2(t4) {
         d(p, i3.products = i3.products.filter((e3, n3) => n3 !== parseInt(t4) && e3 != null).sort(), i3);
       }
       T(async () => {
-        u2("path=kassa");
+        h2("path=kassa");
       });
-      let f2 = [{title: "Etunimi", type: "text", name: "name1", min: 2, max: 30, req: 1}, {title: "Sukunimi", type: "text", name: "name2", min: 2, max: 30, req: 1}, {title: "Puhelin", type: "text", name: "phone", min: 5, max: 15, req: 1}, {title: "S\xE4hk\xF6posti", type: "email", name: "email", min: 6, max: 100, req: 1}, {title: "Katuosoite", type: "text", name: "street", min: 5, max: 50}, {title: "Postinumero", type: "text", name: "postal", min: 5, max: 5}, {title: "Kaupunki", type: "text", name: "area", min: 3, max: 50}];
+      let x2 = [{title: "Etunimi", type: "text", name: "name1", min: 2, max: 30, req: 1}, {title: "Sukunimi", type: "text", name: "name2", min: 2, max: 30, req: 1}, {title: "Puhelin", type: "text", name: "phone", min: 5, max: 15, req: 1}, {title: "S\xE4hk\xF6posti", type: "email", name: "email", min: 6, max: 100, req: 1}, {title: "Katuosoite", type: "text", name: "street", min: 5, max: 50}, {title: "Postinumero", type: "text", name: "postal", min: 5, max: 5}, {title: "Kaupunki", type: "text", name: "area", min: 3, max: 50}];
       if (window.location.search) {
         let t4 = window.location.search.substr(1).split("=");
-        o4 = t4[0] == "id" ? parseInt(t4[1]) : 0;
+        r2 = t4[0] == "id" ? parseInt(t4[1]) : 0, l2();
       }
       return t3.$$.update = () => {
-        3 & t3.$$.dirty && r2.distance && (r2.distance.value > 20 ? n2(0, r2.price = 50, r2) : (l2.price.every((t4) => !(r2.distance.value > t4.distance) && (n2(0, r2.price = t4.price, r2), true)), l2.pcs.every((t4) => !(i3.amount > t4.amount) && (n2(0, r2.price = r2.price - t4.discount, r2), true)))), 3 & t3.$$.dirty && n2(2, s2 = i3.total + r2.price), 4 & t3.$$.dirty && n2(5, a2 = 0.1 * s2);
-      }, [r2, i3, s2, o4, c2, a2, u2, h2, f2, async function(t4) {
-        u2("path=kassa&payment=1", {cart: JSON.stringify(i3.products), delivery: JSON.stringify(r2), price: s2, vat: a2});
+        3 & t3.$$.dirty && u2.distance && (u2.distance.value > 20 ? n2(0, u2.price = 50, u2) : (o4.price.every((t4) => !(u2.distance.value > t4.distance) && (n2(0, u2.price = t4.price, u2), true)), o4.pcs.every((t4) => !(i3.amount > t4.amount) && (n2(0, u2.price = u2.price - t4.discount, u2), true)))), 3 & t3.$$.dirty && n2(2, s2 = i3.total + u2.price), 4 & t3.$$.dirty && n2(5, a2 = 0.1 * s2);
+      }, [u2, i3, s2, r2, c2, a2, h2, f2, x2, async function(t4) {
+        h2("path=kassa&payment=1", {cart: JSON.stringify(i3.products), delivery: JSON.stringify(u2), price: s2, vat: a2});
       }, function(t4) {
         i3.products[t4].amount = j(this.value), p.set(i3);
-      }, (t4) => h2(t4), function(t4) {
-        i3.customer[t4.name] = this.value, p.set(i3), n2(8, f2);
-      }, () => u2("path=matka", {address: i3.customer.street + "+" + i3.customer.postal + "+" + i3.customer.area})];
+      }, (t4) => f2(t4), function(t4) {
+        i3.customer[t4.name] = this.value, p.set(i3), n2(8, x2);
+      }, () => h2("path=matka", {address: i3.customer.street + "+" + i3.customer.postal + "+" + i3.customer.area})];
     }
-    var kassa_9472c17c_default = class extends ct {
+    var kassa_5aa909ef_default = class extends ct {
       constructor(t3) {
-        super(), at(this, t3, B2, Y2, i2, {});
+        super(), at(this, t3, D2, B2, i2, {});
       }
     };
-    var kassa_9472c17c_default2 = kassa_9472c17c_default;
+    var kassa_5aa909ef_default2 = kassa_5aa909ef_default;
   });
 
-  // dist/build/_layout-74838b22.js
-  var require_layout_74838b22 = __commonJS((exports) => {
+  // dist/build/_layout-ac95fa55.js
+  var require_layout_ac95fa55 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => layout_74838b22_default2
+      default: () => layout_ac95fa55_default2
     });
-    function I2(t3) {
-      let e2, s2, h2, p3, g2, f2, v2, $2, w2, b2, y2, k2 = t3[0].amount + "";
+    function K2(t3) {
+      let e2, l2, h2, g2, p3, f2, v2, $2, w2, b2, y2, k2 = t3[0].amount + "";
       return {c() {
-        e2 = $("div"), s2 = $("a"), h2 = b("svg"), p3 = b("title"), g2 = w("Jatka kassalle"), f2 = b("path"), v2 = _(), $2 = $("div"), w2 = $("div"), b2 = w(k2), k(f2, "d", "M4.559 7l4.701-4.702c.198-.198.459-.298.72-.298.613 0 1.02.505 1.02 1.029 0 .25-.092.504-.299.711l-3.26 3.26h-2.882zm12 0h2.883l-4.702-4.702c-.198-.198-.459-.298-.72-.298-.613 0-1.02.505-1.02 1.029 0 .25.092.504.299.711l3.26 3.26zm3.703 4l-.016.041-3.598 8.959h-9.296l-3.597-8.961-.016-.039h16.523zm3.738-2h-24v2h.643c.535 0 1.021.304 1.256.784l4.101 10.216h12l4.102-10.214c.234-.481.722-.786 1.256-.786h.642v-2zm-14 5c0-.552-.447-1-1-1s-1 .448-1 1v3c0 .552.447 1 1 1s1-.448 1-1v-3zm3 0c0-.552-.447-1-1-1s-1 .448-1 1v3c0 .552.447 1 1 1s1-.448 1-1v-3zm3 0c0-.552-.447-1-1-1s-1 .448-1 1v3c0 .552.447 1 1 1s1-.448 1-1v-3z"), k(h2, "xmlns", "http://www.w3.org/2000/svg"), k(h2, "width", "38"), k(h2, "height", "38"), k(h2, "viewBox", "0 0 24 24"), k(w2, "class", y2 = "grid cell bold " + t3[2]), k($2, "id", "cartBall"), k($2, "class", "abs"), k(s2, "class", "grid cell"), k(s2, "href", t3[1]), k(s2, "rel", "nofollow"), k(e2, "id", "cartIcon"), k(e2, "class", "abs rel");
-      }, m(t4, a2) {
-        m(t4, e2, a2), h(e2, s2), h(s2, h2), h(h2, p3), h(p3, g2), h(h2, f2), h(s2, v2), h(s2, $2), h($2, w2), h(w2, b2);
+        e2 = $("div"), l2 = $("a"), h2 = b("svg"), g2 = b("title"), p3 = w("Jatka kassalle"), f2 = b("path"), v2 = _(), $2 = $("div"), w2 = $("div"), b2 = w(k2), k(f2, "d", "M4.559 7l4.701-4.702c.198-.198.459-.298.72-.298.613 0 1.02.505 1.02 1.029 0 .25-.092.504-.299.711l-3.26 3.26h-2.882zm12 0h2.883l-4.702-4.702c-.198-.198-.459-.298-.72-.298-.613 0-1.02.505-1.02 1.029 0 .25.092.504.299.711l3.26 3.26zm3.703 4l-.016.041-3.598 8.959h-9.296l-3.597-8.961-.016-.039h16.523zm3.738-2h-24v2h.643c.535 0 1.021.304 1.256.784l4.101 10.216h12l4.102-10.214c.234-.481.722-.786 1.256-.786h.642v-2zm-14 5c0-.552-.447-1-1-1s-1 .448-1 1v3c0 .552.447 1 1 1s1-.448 1-1v-3zm3 0c0-.552-.447-1-1-1s-1 .448-1 1v3c0 .552.447 1 1 1s1-.448 1-1v-3zm3 0c0-.552-.447-1-1-1s-1 .448-1 1v3c0 .552.447 1 1 1s1-.448 1-1v-3z"), k(h2, "xmlns", "http://www.w3.org/2000/svg"), k(h2, "width", "38"), k(h2, "height", "38"), k(h2, "viewBox", "0 0 24 24"), k(w2, "class", y2 = "grid cell bold " + t3[2]), k($2, "id", "cartBall"), k($2, "class", "abs"), k(l2, "class", "grid cell"), k(l2, "href", t3[1]), k(l2, "rel", "nofollow"), k(e2, "id", "cartIcon"), k(e2, "class", "rel");
+      }, m(t4, s2) {
+        m(t4, e2, s2), h(e2, l2), h(l2, h2), h(h2, g2), h(g2, p3), h(h2, f2), h(l2, v2), h(l2, $2), h($2, w2), h(w2, b2);
       }, p(t4, [e3]) {
-        1 & e3 && k2 !== (k2 = t4[0].amount + "") && E(b2, k2), 4 & e3 && y2 !== (y2 = "grid cell bold " + t4[2]) && k(w2, "class", y2), 2 & e3 && k(s2, "href", t4[1]);
+        1 & e3 && k2 !== (k2 = t4[0].amount + "") && E(b2, k2), 4 & e3 && y2 !== (y2 = "grid cell bold " + t4[2]) && k(w2, "class", y2), 2 & e3 && k(l2, "href", t4[1]);
       }, i: t2, o: t2, d(t4) {
         t4 && g(e2);
       }};
     }
-    function K2(t3, e2, s2) {
-      let a2, l2, n2;
-      return l(t3, p, (t4) => s2(0, n2 = t4)), t3.$$.update = () => {
-        1 & t3.$$.dirty && s2(1, a2 = n2.amount > 0 ? "/kassa" : "/"), 1 & t3.$$.dirty && s2(2, l2 = n2.amount > 0 ? "bgo tw" : "bgw");
-      }, [n2, a2, l2];
+    function Y2(t3, e2, l2) {
+      let s2, n2, a2;
+      return l(t3, p, (t4) => l2(0, a2 = t4)), t3.$$.update = () => {
+        1 & t3.$$.dirty && l2(1, s2 = a2.amount > 0 ? "/kassa" : "/"), 1 & t3.$$.dirty && l2(2, n2 = a2.amount > 0 ? "bgo tw" : "bgw");
+      }, [a2, s2, n2];
     }
-    var Y2 = class extends ct {
+    var q2 = class extends ct {
       constructor(t3) {
-        super(), at(this, t3, K2, I2, i2, {});
+        super(), at(this, t3, Y2, K2, i2, {});
       }
     };
-    function q2(t3, e2, s2) {
-      const a2 = t3.slice();
-      return a2[6] = e2[s2], a2;
-    }
-    function F2(t3) {
-      let e2, s2, l2, n2, u2, m2, h2, p3, T2, x2, z2, M2, j2, B2, H2, L2, O2, N2, A2, E2, J2, S2, C2, I3, K3;
-      function F3(t4, e3) {
-        return t4[3] ? G2 : P2;
-      }
-      let D3 = F3(t3), Q3 = D3(t3), R3 = t3[0].nav, U3 = [];
-      for (let e3 = 0; e3 < R3.length; e3 += 1)
-        U3[e3] = X2(q2(t3, R3, e3));
-      return S2 = new Y2({}), {c() {
-        e2 = $("header"), s2 = $("div"), l2 = $("a"), n2 = $("picture"), u2 = $("source"), h2 = _(), p3 = $("source"), x2 = _(), z2 = $("img"), B2 = _(), H2 = $("button"), Q3.c(), L2 = _(), O2 = $("nav"), N2 = $("ul"), A2 = $("li"), A2.innerHTML = '<a class="nav-link block" href="/" rel="home">Etusivu</a>', E2 = _();
-        for (let t4 = 0; t4 < U3.length; t4 += 1)
-          U3[t4].c();
-        J2 = _(), rt(S2.$$.fragment), k(u2, "srcset", m2 = t3[0].site.logo[1]), k(u2, "type", "image/webp"), k(p3, "srcset", T2 = t3[0].site.logo[0]), k(p3, "type", "image/jpeg"), z2.src !== (M2 = t3[0].site.logo[0]) && k(z2, "src", M2), k(z2, "alt", j2 = t3[0].site.title), k(n2, "class", "block"), k(l2, "id", "logo"), k(l2, "class", "block bgw"), k(l2, "href", "/"), k(l2, "rel", "home"), k(H2, "id", "menuToggle"), k(H2, "class", "noBor m0"), k(H2, "title", "Open/close main navigation"), k(A2, "class", "nav-item"), k(N2, "class", "m0"), k(O2, "id", "menu"), L(O2, "active", t3[3]), k(s2, "class", "content mx"), k(e2, "class", "block w100 bgw"), L(e2, "small", t3[2]);
-      }, m(a2, i3) {
-        m(a2, e2, i3), h(e2, s2), h(s2, l2), h(l2, n2), h(n2, u2), h(n2, h2), h(n2, p3), h(n2, x2), h(n2, z2), h(s2, B2), h(s2, H2), Q3.m(H2, null), h(s2, L2), h(s2, O2), h(O2, N2), h(N2, A2), h(N2, E2);
-        for (let t4 = 0; t4 < U3.length; t4 += 1)
-          U3[t4].m(N2, null);
-        h(s2, J2), st(S2, s2, null), C2 = true, I3 || (K3 = v(H2, "click", t3[5]), I3 = true);
-      }, p(t4, s3) {
-        if ((!C2 || 1 & s3 && m2 !== (m2 = t4[0].site.logo[1])) && k(u2, "srcset", m2), (!C2 || 1 & s3 && T2 !== (T2 = t4[0].site.logo[0])) && k(p3, "srcset", T2), (!C2 || 1 & s3 && z2.src !== (M2 = t4[0].site.logo[0])) && k(z2, "src", M2), (!C2 || 1 & s3 && j2 !== (j2 = t4[0].site.title)) && k(z2, "alt", j2), D3 !== (D3 = F3(t4)) && (Q3.d(1), Q3 = D3(t4), Q3 && (Q3.c(), Q3.m(H2, null))), 1 & s3) {
-          let e3;
-          for (R3 = t4[0].nav, e3 = 0; e3 < R3.length; e3 += 1) {
-            const a2 = q2(t4, R3, e3);
-            U3[e3] ? U3[e3].p(a2, s3) : (U3[e3] = X2(a2), U3[e3].c(), U3[e3].m(N2, null));
-          }
-          for (; e3 < U3.length; e3 += 1)
-            U3[e3].d(1);
-          U3.length = R3.length;
-        }
-        8 & s3 && L(O2, "active", t4[3]), 4 & s3 && L(e2, "small", t4[2]);
-      }, i(t4) {
-        C2 || (Y(S2.$$.fragment, t4), C2 = true);
-      }, o(t4) {
-        tt(S2.$$.fragment, t4), C2 = false;
-      }, d(t4) {
-        t4 && g(e2), Q3.d(), y(U3, t4), it(S2), I3 = false, K3();
-      }};
-    }
-    function G2(t3) {
-      let e2, s2;
-      return {c() {
-        e2 = b("svg"), s2 = b("path"), k(s2, "d", "M24 3.752l-4.423-3.752-7.771 9.039-7.647-9.008-4.159 4.278c2.285 2.885 5.284 5.903 8.362 8.708l-8.165 9.447 1.343 1.487c1.978-1.335 5.981-4.373 10.205-7.958 4.304 3.67 8.306 6.663 10.229 8.006l1.449-1.278-8.254-9.724c3.287-2.973 6.584-6.354 8.831-9.245z"), k(e2, "xmlns", "http://www.w3.org/2000/svg"), k(e2, "width", "24"), k(e2, "height", "24"), k(e2, "viewBox", "0 0 24 24");
-      }, m(t4, a2) {
-        m(t4, e2, a2), h(e2, s2);
-      }, d(t4) {
-        t4 && g(e2);
-      }};
+    function G2(t3, e2, l2) {
+      const s2 = t3.slice();
+      return s2[8] = e2[l2], s2;
     }
     function P2(t3) {
-      let e2, s2, a2, i3, u2, m2;
+      let e2, l2, n2, a2, u2, d2 = t3[1][0] && X2(t3);
       return {c() {
-        e2 = b("svg"), s2 = b("title"), a2 = w("Avaa ja sulkee mobiilivalikon"), i3 = b("rect"), u2 = b("rect"), m2 = b("rect"), k(i3, "width", "100"), k(i3, "height", "20"), k(u2, "y", "30"), k(u2, "width", "100"), k(u2, "height", "20"), k(m2, "y", "60"), k(m2, "width", "100"), k(m2, "height", "20"), k(e2, "viewBox", "0 0 100 80"), k(e2, "width", "30"), k(e2, "height", "30");
-      }, m(t4, l2) {
-        m(t4, e2, l2), h(e2, s2), h(s2, a2), h(e2, i3), h(e2, u2), h(e2, m2);
+        e2 = $("div"), l2 = $("input"), n2 = _(), d2 && d2.c(), k(l2, "type", "search"), k(l2, "placeholder", "hakusanat"), k(l2, "minlength", "3"), k(l2, "maxlength", "50"), k(e2, "id", "searchForm"), k(e2, "class", "abs");
+      }, m(s2, c2) {
+        m(s2, e2, c2), h(e2, l2), O(l2, t3[0]), h(e2, n2), d2 && d2.m(e2, null), a2 || (u2 = v(l2, "input", t3[4]), a2 = true);
+      }, p(t4, s2) {
+        1 & s2 && O(l2, t4[0]), t4[1][0] ? d2 ? d2.p(t4, s2) : (d2 = X2(t4), d2.c(), d2.m(e2, null)) : d2 && (d2.d(1), d2 = null);
       }, d(t4) {
-        t4 && g(e2);
+        t4 && g(e2), d2 && d2.d(), a2 = false, u2();
       }};
     }
     function X2(t3) {
-      let e2, s2, l2, n2, u2 = t3[6].title + "";
+      let e2, l2 = t3[1], n2 = [];
+      for (let e3 = 0; e3 < l2.length; e3 += 1)
+        n2[e3] = D2(G2(t3, l2, e3));
       return {c() {
-        e2 = $("li"), s2 = $("a"), n2 = _(), k(s2, "class", "nav-link block"), k(s2, "href", l2 = t3[6].path), k(e2, "class", "nav-item");
-      }, m(t4, a2) {
-        m(t4, e2, a2), h(e2, s2), s2.innerHTML = u2, h(e2, n2);
-      }, p(t4, e3) {
-        1 & e3 && u2 !== (u2 = t4[6].title + "") && (s2.innerHTML = u2), 1 & e3 && l2 !== (l2 = t4[6].path) && k(s2, "href", l2);
+        e2 = $("div");
+        for (let t4 = 0; t4 < n2.length; t4 += 1)
+          n2[t4].c();
+        k(e2, "id", "results"), k(e2, "class", "bgw tl");
+      }, m(t4, l3) {
+        m(t4, e2, l3);
+        for (let t5 = 0; t5 < n2.length; t5 += 1)
+          n2[t5].m(e2, null);
+      }, p(t4, s2) {
+        if (6 & s2) {
+          let a2;
+          for (l2 = t4[1], a2 = 0; a2 < l2.length; a2 += 1) {
+            const c2 = G2(t4, l2, a2);
+            n2[a2] ? n2[a2].p(c2, s2) : (n2[a2] = D2(c2), n2[a2].c(), n2[a2].m(e2, null));
+          }
+          for (; a2 < n2.length; a2 += 1)
+            n2[a2].d(1);
+          n2.length = l2.length;
+        }
       }, d(t4) {
-        t4 && g(e2);
+        t4 && g(e2), y(n2, t4);
       }};
     }
     function D2(t3) {
-      let e2, s2, a2, l2, n2, i3 = false, c2 = () => {
-        i3 = false;
-      };
-      K(t3[4]);
-      let r2 = t3[0] && t3[0].nav && F2(t3);
+      let e2, l2, n2, c2, d2, h2 = t3[8].title + "";
       return {c() {
-        r2 && r2.c(), s2 = x();
-      }, m(u2, m2) {
-        r2 && r2.m(u2, m2), m(u2, s2, m2), a2 = true, l2 || (n2 = v(window, "scroll", () => {
-          i3 = true, clearTimeout(e2), e2 = setTimeout(c2, 100), t3[4]();
-        }), l2 = true);
-      }, p(t4, [a3]) {
-        2 & a3 && !i3 && (i3 = true, clearTimeout(e2), scrollTo(window.pageXOffset, t4[1]), e2 = setTimeout(c2, 100)), t4[0] && t4[0].nav ? r2 ? (r2.p(t4, a3), 1 & a3 && Y(r2, 1)) : (r2 = F2(t4), r2.c(), Y(r2, 1), r2.m(s2.parentNode, s2)) : r2 && (Z(), tt(r2, 1, 1, () => {
-          r2 = null;
-        }), X());
-      }, i(t4) {
-        a2 || (Y(r2), a2 = true);
-      }, o(t4) {
-        tt(r2), a2 = false;
+        e2 = $("a"), l2 = w(h2), k(e2, "class", "block"), k(e2, "href", n2 = t3[8].path);
+      }, m(s2, n3) {
+        m(s2, e2, n3), h(e2, l2), c2 || (d2 = v(e2, "click", t3[5]), c2 = true);
+      }, p(t4, s2) {
+        2 & s2 && h2 !== (h2 = t4[8].title + "") && E(l2, h2), 2 & s2 && n2 !== (n2 = t4[8].path) && k(e2, "href", n2);
       }, d(t4) {
-        r2 && r2.d(t4), t4 && g(s2), l2 = false, n2();
+        t4 && g(e2), c2 = false, d2();
       }};
     }
-    function Q2(t3, e2, s2) {
-      let a2, l2, n2, {data: i3} = e2;
-      return t3.$$set = (t4) => {
-        "data" in t4 && s2(0, i3 = t4.data);
-      }, t3.$$.update = () => {
-        2 & t3.$$.dirty && s2(2, l2 = a2 > 100 || "");
-      }, [i3, a2, l2, n2, function() {
-        s2(1, a2 = window.pageYOffset);
-      }, () => s2(3, n2 = !n2)];
+    function Q2(t3) {
+      let e2, l2, n2, a2, u2, h2 = t3[2] && P2(t3);
+      return {c() {
+        e2 = $("div"), l2 = $("button"), l2.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path d="M21.172 24l-7.387-7.387c-1.388.874-3.024 1.387-4.785 1.387-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9c0 1.761-.514 3.398-1.387 4.785l7.387 7.387-2.828 2.828zm-12.172-8c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z"></path></svg>', n2 = _(), h2 && h2.c(), k(l2, "class", "grid cell noBor"), k(e2, "id", "searchIcon"), k(e2, "class", "rel");
+      }, m(s2, c2) {
+        m(s2, e2, c2), h(e2, l2), h(e2, n2), h2 && h2.m(e2, null), a2 || (u2 = v(l2, "click", t3[3]), a2 = true);
+      }, p(t4, [l3]) {
+        t4[2] ? h2 ? h2.p(t4, l3) : (h2 = P2(t4), h2.c(), h2.m(e2, null)) : h2 && (h2.d(1), h2 = null);
+      }, i: t2, o: t2, d(t4) {
+        t4 && g(e2), h2 && h2.d(), a2 = false, u2();
+      }};
     }
-    var R2 = class extends ct {
+    function R2(t3, e2, l2) {
+      let s2, n2, a2, c2;
+      l(t3, Ht, (t4) => l2(6, a2 = t4));
+      return t3.$$.update = () => {
+        1 & t3.$$.dirty && s2.length >= 3 && function() {
+          let t4 = s2.replace(/[&\/\\#,()$~%@^'"!:*?<>{}]/g, "");
+          t4 = t4.replace(" ", "+"), o2("search=" + t4).then((t5) => {
+            l2(1, n2 = t5), a2();
+          });
+        }(), 3 & t3.$$.dirty && s2.length < 3 && n2[0] && l2(1, n2 = []);
+      }, l2(0, s2 = ""), l2(1, n2 = []), [s2, n2, c2, () => l2(2, c2 = !c2), function() {
+        s2 = this.value, l2(0, s2);
+      }, () => l2(2, c2 = "")];
+    }
+    var U2 = class extends ct {
       constructor(t3) {
-        super(), at(this, t3, Q2, D2, i2, {data: 0});
+        super(), at(this, t3, R2, Q2, i2, {});
       }
     };
-    function U2(t3) {
-      let e2, s2, l2, n2, u2, m2, h2, p3, f2, $2, y2;
-      function x2(t4, e3) {
-        return t4[0].cat ? W2 : V2;
-      }
-      e2 = new R2({props: {data: t3[1]}});
-      let z2 = x2(t3), j2 = z2(t3);
-      const H2 = t3[7].default, L2 = u(H2, t3, t3[6], null);
-      let O2 = t3[3].amount > 0 && t3[4].path != "/kassa" && Z2(t3);
-      return {c() {
-        rt(e2.$$.fragment), s2 = _(), l2 = $("main"), n2 = $("div"), j2.c(), u2 = _(), m2 = $("div"), h2 = $("div"), L2 && L2.c(), f2 = _(), O2 && O2.c(), $2 = x(), k(n2, "id", "hero"), k(n2, "class", "grid tw up tc"), k(h2, "class", "container mx"), k(m2, "id", "content"), k(m2, "class", "bgw py"), k(l2, "class", "block"), k(l2, "style", p3 = "background-image:url(" + t3[1].site.hero[0] + ")");
-      }, m(t4, a2) {
-        st(e2, t4, a2), m(t4, s2, a2), m(t4, l2, a2), h(l2, n2), j2.m(n2, null), h(l2, u2), h(l2, m2), h(m2, h2), L2 && L2.m(h2, null), m(t4, f2, a2), O2 && O2.m(t4, a2), m(t4, $2, a2), y2 = true;
-      }, p(t4, s3) {
-        const a2 = {};
-        2 & s3 && (a2.data = t4[1]), e2.$set(a2), z2 === (z2 = x2(t4)) && j2 ? j2.p(t4, s3) : (j2.d(1), j2 = z2(t4), j2 && (j2.c(), j2.m(n2, null))), L2 && L2.p && 64 & s3 && f(L2, H2, t4, t4[6], s3, null, null), (!y2 || 2 & s3 && p3 !== (p3 = "background-image:url(" + t4[1].site.hero[0] + ")")) && k(l2, "style", p3), t4[3].amount > 0 && t4[4].path != "/kassa" ? O2 ? O2.p(t4, s3) : (O2 = Z2(t4), O2.c(), O2.m($2.parentNode, $2)) : O2 && (O2.d(1), O2 = null);
-      }, i(t4) {
-        y2 || (Y(e2.$$.fragment, t4), Y(L2, t4), y2 = true);
-      }, o(t4) {
-        tt(e2.$$.fragment, t4), tt(L2, t4), y2 = false;
-      }, d(t4) {
-        it(e2, t4), t4 && g(s2), t4 && g(l2), j2.d(), L2 && L2.d(t4), t4 && g(f2), O2 && O2.d(t4), t4 && g($2);
-      }};
-    }
-    function V2(t3) {
-      let e2, s2, l2, c2, m2, h2, p3 = t3[1].site.title + "", g2 = t3[1].site.slogan + "";
-      return {c() {
-        e2 = $("div"), s2 = $("h1"), l2 = w(p3), c2 = _(), m2 = $("h3"), h2 = w(g2);
-      }, m(t4, a2) {
-        m(t4, e2, a2), h(e2, s2), h(s2, l2), h(e2, c2), h(e2, m2), h(m2, h2);
-      }, p(t4, e3) {
-        2 & e3 && p3 !== (p3 = t4[1].site.title + "") && E(l2, p3), 2 & e3 && g2 !== (g2 = t4[1].site.slogan + "") && E(h2, g2);
-      }, d(t4) {
-        t4 && g(e2);
-      }};
+    function V2(t3, e2, l2) {
+      const s2 = t3.slice();
+      return s2[6] = e2[l2], s2;
     }
     function W2(t3) {
-      let e2, s2 = t3[2].title + "";
-      return {c() {
-        e2 = $("h1");
-      }, m(t4, a2) {
-        m(t4, e2, a2), e2.innerHTML = s2;
-      }, p(t4, a2) {
-        4 & a2 && s2 !== (s2 = t4[2].title + "") && (e2.innerHTML = s2);
+      let e2, l2, n2, a2, u2, d2, h2, g2, v2, $2, z2, M2, B2, j2, H2, L2, O2, N2, A2, E2, I2, J2, S2, C2, F2, K3, Y3, G3;
+      function P3(t4, e3) {
+        return t4[3] ? Z2 : _2;
+      }
+      let X3 = P3(t3), D3 = X3(t3), Q3 = t3[0].nav, R3 = [];
+      for (let e3 = 0; e3 < Q3.length; e3 += 1)
+        R3[e3] = tt2(V2(t3, Q3, e3));
+      return S2 = new U2({}), F2 = new q2({}), {c() {
+        e2 = $("header"), l2 = $("div"), n2 = $("a"), a2 = $("picture"), u2 = $("source"), h2 = _(), g2 = $("source"), $2 = _(), z2 = $("img"), j2 = _(), H2 = $("button"), D3.c(), L2 = _(), O2 = $("nav"), N2 = $("ul"), A2 = $("li"), A2.innerHTML = '<a class="nav-link block" href="/" rel="home">Etusivu</a>', E2 = _();
+        for (let t4 = 0; t4 < R3.length; t4 += 1)
+          R3[t4].c();
+        I2 = _(), J2 = $("div"), rt(S2.$$.fragment), C2 = _(), rt(F2.$$.fragment), k(u2, "srcset", d2 = t3[0].site.logo[1]), k(u2, "type", "image/webp"), k(g2, "srcset", v2 = t3[0].site.logo[0]), k(g2, "type", "image/jpeg"), z2.src !== (M2 = t3[0].site.logo[0]) && k(z2, "src", M2), k(z2, "alt", B2 = t3[0].site.title), k(a2, "class", "block"), k(n2, "id", "logo"), k(n2, "class", "block bgw"), k(n2, "href", "/"), k(n2, "rel", "home"), k(H2, "id", "menuToggle"), k(H2, "class", "noBor m0 abs"), k(H2, "title", "Open/close main navigation"), k(A2, "class", "nav-item"), k(N2, "class", "m0"), k(O2, "id", "menu"), L(O2, "active", t3[3]), k(J2, "id", "icons"), k(J2, "class", "abs grid"), k(l2, "class", "content mx"), k(e2, "class", "block w100 bgw"), L(e2, "small", t3[2]);
+      }, m(s2, c2) {
+        m(s2, e2, c2), h(e2, l2), h(l2, n2), h(n2, a2), h(a2, u2), h(a2, h2), h(a2, g2), h(a2, $2), h(a2, z2), h(l2, j2), h(l2, H2), D3.m(H2, null), h(l2, L2), h(l2, O2), h(O2, N2), h(N2, A2), h(N2, E2);
+        for (let t4 = 0; t4 < R3.length; t4 += 1)
+          R3[t4].m(N2, null);
+        h(l2, I2), h(l2, J2), st(S2, J2, null), h(J2, C2), st(F2, J2, null), K3 = true, Y3 || (G3 = v(H2, "click", t3[5]), Y3 = true);
+      }, p(t4, l3) {
+        if ((!K3 || 1 & l3 && d2 !== (d2 = t4[0].site.logo[1])) && k(u2, "srcset", d2), (!K3 || 1 & l3 && v2 !== (v2 = t4[0].site.logo[0])) && k(g2, "srcset", v2), (!K3 || 1 & l3 && z2.src !== (M2 = t4[0].site.logo[0])) && k(z2, "src", M2), (!K3 || 1 & l3 && B2 !== (B2 = t4[0].site.title)) && k(z2, "alt", B2), X3 !== (X3 = P3(t4)) && (D3.d(1), D3 = X3(t4), D3 && (D3.c(), D3.m(H2, null))), 1 & l3) {
+          let e3;
+          for (Q3 = t4[0].nav, e3 = 0; e3 < Q3.length; e3 += 1) {
+            const s2 = V2(t4, Q3, e3);
+            R3[e3] ? R3[e3].p(s2, l3) : (R3[e3] = tt2(s2), R3[e3].c(), R3[e3].m(N2, null));
+          }
+          for (; e3 < R3.length; e3 += 1)
+            R3[e3].d(1);
+          R3.length = Q3.length;
+        }
+        8 & l3 && L(O2, "active", t4[3]), 4 & l3 && L(e2, "small", t4[2]);
+      }, i(t4) {
+        K3 || (Y(S2.$$.fragment, t4), Y(F2.$$.fragment, t4), K3 = true);
+      }, o(t4) {
+        tt(S2.$$.fragment, t4), tt(F2.$$.fragment, t4), K3 = false;
       }, d(t4) {
-        t4 && g(e2);
+        t4 && g(e2), D3.d(), y(R3, t4), it(S2), it(F2), Y3 = false, G3();
       }};
     }
     function Z2(t3) {
-      let e2, s2, l2, m2, h2, p3, g2, f2, v2, $2, w2, b2, y2, k2 = t3[3].amount + "", T2 = t3[3].total + "";
+      let e2, l2;
       return {c() {
-        e2 = $("div"), s2 = $("div"), l2 = $("div"), m2 = w("Tuotteita: "), h2 = w(k2), p3 = w(" kpl"), g2 = _(), f2 = $("div"), v2 = w("Yhteens\xE4: "), $2 = w(T2), w2 = w(" \u20AC"), b2 = _(), y2 = $("a"), y2.textContent = "Kassalle", k(l2, "id", "cartAmount"), k(f2, "id", "cartAmount"), k(y2, "class", "grid"), k(y2, "href", "/kassa"), k(y2, "rel", "nofollow"), k(e2, "id", "cart"), k(e2, "class", "grid");
-      }, m(t4, a2) {
-        m(t4, e2, a2), h(e2, s2), h(s2, l2), h(l2, m2), h(l2, h2), h(l2, p3), h(s2, g2), h(s2, f2), h(f2, v2), h(f2, $2), h(f2, w2), h(e2, b2), h(e2, y2);
-      }, p(t4, e3) {
-        8 & e3 && k2 !== (k2 = t4[3].amount + "") && E(h2, k2), 8 & e3 && T2 !== (T2 = t4[3].total + "") && E($2, T2);
+        e2 = b("svg"), l2 = b("path"), k(l2, "d", "M24 3.752l-4.423-3.752-7.771 9.039-7.647-9.008-4.159 4.278c2.285 2.885 5.284 5.903 8.362 8.708l-8.165 9.447 1.343 1.487c1.978-1.335 5.981-4.373 10.205-7.958 4.304 3.67 8.306 6.663 10.229 8.006l1.449-1.278-8.254-9.724c3.287-2.973 6.584-6.354 8.831-9.245z"), k(e2, "xmlns", "http://www.w3.org/2000/svg"), k(e2, "width", "24"), k(e2, "height", "24"), k(e2, "viewBox", "0 0 24 24");
+      }, m(t4, s2) {
+        m(t4, e2, s2), h(e2, l2);
       }, d(t4) {
         t4 && g(e2);
       }};
     }
     function _2(t3) {
-      let e2, s2, a2 = t3[1] && t3[1].site && U2(t3);
+      let e2, l2, s2, c2, u2, d2;
       return {c() {
-        a2 && a2.c(), e2 = x();
-      }, m(t4, l2) {
-        a2 && a2.m(t4, l2), m(t4, e2, l2), s2 = true;
-      }, p(t4, [s3]) {
-        t4[1] && t4[1].site ? a2 ? (a2.p(t4, s3), 2 & s3 && Y(a2, 1)) : (a2 = U2(t4), a2.c(), Y(a2, 1), a2.m(e2.parentNode, e2)) : a2 && (Z(), tt(a2, 1, 1, () => {
-          a2 = null;
-        }), X());
-      }, i(t4) {
-        s2 || (Y(a2), s2 = true);
-      }, o(t4) {
-        tt(a2), s2 = false;
+        e2 = b("svg"), l2 = b("title"), s2 = w("Avaa ja sulkee mobiilivalikon"), c2 = b("rect"), u2 = b("rect"), d2 = b("rect"), k(c2, "width", "100"), k(c2, "height", "20"), k(u2, "y", "30"), k(u2, "width", "100"), k(u2, "height", "20"), k(d2, "y", "60"), k(d2, "width", "100"), k(d2, "height", "20"), k(e2, "viewBox", "0 0 100 80"), k(e2, "width", "30"), k(e2, "height", "30");
+      }, m(t4, n2) {
+        m(t4, e2, n2), h(e2, l2), h(l2, s2), h(e2, c2), h(e2, u2), h(e2, d2);
       }, d(t4) {
-        a2 && a2.d(t4), t4 && g(e2);
+        t4 && g(e2);
       }};
     }
-    function tt2(t3, e2, s2) {
-      let a2, l2, n2, i3, c2, o4;
-      l(t3, Wt, (t4) => s2(0, a2 = t4)), l(t3, o, (t4) => s2(1, l2 = t4)), l(t3, i, (t4) => s2(2, n2 = t4)), l(t3, p, (t4) => s2(3, i3 = t4)), l(t3, t, (t4) => s2(5, c2 = t4)), l(t3, Dt, (t4) => s2(4, o4 = t4));
-      let {$$slots: r2 = {}, $$scope: u2} = e2;
+    function tt2(t3) {
+      let e2, l2, n2, a2, u2 = t3[6].title + "";
+      return {c() {
+        e2 = $("li"), l2 = $("a"), a2 = _(), k(l2, "class", "nav-link block"), k(l2, "href", n2 = t3[6].path), k(e2, "class", "nav-item");
+      }, m(t4, s2) {
+        m(t4, e2, s2), h(e2, l2), l2.innerHTML = u2, h(e2, a2);
+      }, p(t4, e3) {
+        1 & e3 && u2 !== (u2 = t4[6].title + "") && (l2.innerHTML = u2), 1 & e3 && n2 !== (n2 = t4[6].path) && k(l2, "href", n2);
+      }, d(t4) {
+        t4 && g(e2);
+      }};
+    }
+    function et2(t3) {
+      let e2, l2, s2, n2, a2, c2 = false, i3 = () => {
+        c2 = false;
+      };
+      K(t3[4]);
+      let o4 = t3[0] && t3[0].nav && W2(t3);
+      return {c() {
+        o4 && o4.c(), l2 = x();
+      }, m(u2, d2) {
+        o4 && o4.m(u2, d2), m(u2, l2, d2), s2 = true, n2 || (a2 = v(window, "scroll", () => {
+          c2 = true, clearTimeout(e2), e2 = setTimeout(i3, 100), t3[4]();
+        }), n2 = true);
+      }, p(t4, [s3]) {
+        2 & s3 && !c2 && (c2 = true, clearTimeout(e2), scrollTo(window.pageXOffset, t4[1]), e2 = setTimeout(i3, 100)), t4[0] && t4[0].nav ? o4 ? (o4.p(t4, s3), 1 & s3 && Y(o4, 1)) : (o4 = W2(t4), o4.c(), Y(o4, 1), o4.m(l2.parentNode, l2)) : o4 && (Z(), tt(o4, 1, 1, () => {
+          o4 = null;
+        }), X());
+      }, i(t4) {
+        s2 || (Y(o4), s2 = true);
+      }, o(t4) {
+        tt(o4), s2 = false;
+      }, d(t4) {
+        o4 && o4.d(t4), t4 && g(l2), n2 = false, a2();
+      }};
+    }
+    function lt2(t3, e2, l2) {
+      let s2, n2, a2, {data: c2} = e2;
+      return t3.$$set = (t4) => {
+        "data" in t4 && l2(0, c2 = t4.data);
+      }, t3.$$.update = () => {
+        2 & t3.$$.dirty && l2(2, n2 = s2 > 100 || "");
+      }, [c2, s2, n2, a2, function() {
+        l2(1, s2 = window.pageYOffset);
+      }, () => l2(3, a2 = !a2)];
+    }
+    var st2 = class extends ct {
+      constructor(t3) {
+        super(), at(this, t3, lt2, et2, i2, {data: 0});
+      }
+    };
+    function nt2(t3) {
+      let e2, l2, n2, a2, u2, d2, h2, g2, p3, f2, v2;
+      function $2(t4, e3) {
+        return t4[0].cat ? ct2 : at2;
+      }
+      e2 = new st2({props: {data: t3[1]}});
+      let b2 = $2(t3), M2 = b2(t3);
+      const B2 = t3[7].default, H2 = u(B2, t3, t3[6], null);
+      let O2 = t3[3].amount > 0 && t3[4].path != "/kassa" && it2(t3);
+      return {c() {
+        rt(e2.$$.fragment), l2 = _(), n2 = $("main"), a2 = $("div"), M2.c(), u2 = _(), d2 = $("div"), h2 = $("div"), H2 && H2.c(), p3 = _(), O2 && O2.c(), f2 = x(), k(a2, "id", "hero"), k(a2, "class", "grid tw up tc"), k(h2, "class", "container mx"), k(d2, "id", "content"), k(d2, "class", "bgw py"), k(n2, "class", "block"), k(n2, "style", g2 = "background-image:url(" + t3[1].site.hero[0] + ")");
+      }, m(t4, s2) {
+        st(e2, t4, s2), m(t4, l2, s2), m(t4, n2, s2), h(n2, a2), M2.m(a2, null), h(n2, u2), h(n2, d2), h(d2, h2), H2 && H2.m(h2, null), m(t4, p3, s2), O2 && O2.m(t4, s2), m(t4, f2, s2), v2 = true;
+      }, p(t4, l3) {
+        const s2 = {};
+        2 & l3 && (s2.data = t4[1]), e2.$set(s2), b2 === (b2 = $2(t4)) && M2 ? M2.p(t4, l3) : (M2.d(1), M2 = b2(t4), M2 && (M2.c(), M2.m(a2, null))), H2 && H2.p && 64 & l3 && f(H2, B2, t4, t4[6], l3, null, null), (!v2 || 2 & l3 && g2 !== (g2 = "background-image:url(" + t4[1].site.hero[0] + ")")) && k(n2, "style", g2), t4[3].amount > 0 && t4[4].path != "/kassa" ? O2 ? O2.p(t4, l3) : (O2 = it2(t4), O2.c(), O2.m(f2.parentNode, f2)) : O2 && (O2.d(1), O2 = null);
+      }, i(t4) {
+        v2 || (Y(e2.$$.fragment, t4), Y(H2, t4), v2 = true);
+      }, o(t4) {
+        tt(e2.$$.fragment, t4), tt(H2, t4), v2 = false;
+      }, d(t4) {
+        it(e2, t4), t4 && g(l2), t4 && g(n2), M2.d(), H2 && H2.d(t4), t4 && g(p3), O2 && O2.d(t4), t4 && g(f2);
+      }};
+    }
+    function at2(t3) {
+      let e2, l2, n2, i3, d2, h2, g2 = t3[1].site.title + "", p3 = t3[1].site.slogan + "";
+      return {c() {
+        e2 = $("div"), l2 = $("h1"), n2 = w(g2), i3 = _(), d2 = $("h3"), h2 = w(p3);
+      }, m(t4, s2) {
+        m(t4, e2, s2), h(e2, l2), h(l2, n2), h(e2, i3), h(e2, d2), h(d2, h2);
+      }, p(t4, e3) {
+        2 & e3 && g2 !== (g2 = t4[1].site.title + "") && E(n2, g2), 2 & e3 && p3 !== (p3 = t4[1].site.slogan + "") && E(h2, p3);
+      }, d(t4) {
+        t4 && g(e2);
+      }};
+    }
+    function ct2(t3) {
+      let e2, l2 = t3[2].title + "";
+      return {c() {
+        e2 = $("h1");
+      }, m(t4, s2) {
+        m(t4, e2, s2), e2.innerHTML = l2;
+      }, p(t4, s2) {
+        4 & s2 && l2 !== (l2 = t4[2].title + "") && (e2.innerHTML = l2);
+      }, d(t4) {
+        t4 && g(e2);
+      }};
+    }
+    function it2(t3) {
+      let e2, l2, n2, d2, h2, g2, p3, f2, v2, $2, w2, b2, y2, k2 = t3[3].amount + "", x2 = t3[3].total + "";
+      return {c() {
+        e2 = $("div"), l2 = $("div"), n2 = $("div"), d2 = w("Tuotteita: "), h2 = w(k2), g2 = w(" kpl"), p3 = _(), f2 = $("div"), v2 = w("Yhteens\xE4: "), $2 = w(x2), w2 = w(" \u20AC"), b2 = _(), y2 = $("a"), y2.textContent = "Kassalle", k(n2, "id", "cartAmount"), k(f2, "id", "cartAmount"), k(y2, "class", "grid"), k(y2, "href", "/kassa"), k(y2, "rel", "nofollow"), k(e2, "id", "cart"), k(e2, "class", "grid");
+      }, m(t4, s2) {
+        m(t4, e2, s2), h(e2, l2), h(l2, n2), h(n2, d2), h(n2, h2), h(n2, g2), h(l2, p3), h(l2, f2), h(f2, v2), h(f2, $2), h(f2, w2), h(e2, b2), h(e2, y2);
+      }, p(t4, e3) {
+        8 & e3 && k2 !== (k2 = t4[3].amount + "") && E(h2, k2), 8 & e3 && x2 !== (x2 = t4[3].total + "") && E($2, x2);
+      }, d(t4) {
+        t4 && g(e2);
+      }};
+    }
+    function rt2(t3) {
+      let e2, l2, s2 = t3[1] && t3[1].site && nt2(t3);
+      return {c() {
+        s2 && s2.c(), e2 = x();
+      }, m(t4, n2) {
+        s2 && s2.m(t4, n2), m(t4, e2, n2), l2 = true;
+      }, p(t4, [l3]) {
+        t4[1] && t4[1].site ? s2 ? (s2.p(t4, l3), 2 & l3 && Y(s2, 1)) : (s2 = nt2(t4), s2.c(), Y(s2, 1), s2.m(e2.parentNode, e2)) : s2 && (Z(), tt(s2, 1, 1, () => {
+          s2 = null;
+        }), X());
+      }, i(t4) {
+        l2 || (Y(s2), l2 = true);
+      }, o(t4) {
+        tt(s2), l2 = false;
+      }, d(t4) {
+        s2 && s2.d(t4), t4 && g(e2);
+      }};
+    }
+    function ot2(t3, e2, l2) {
+      let s2, n2, a2, c2, i3, r2;
+      l(t3, Wt, (t4) => l2(0, s2 = t4)), l(t3, o, (t4) => l2(1, n2 = t4)), l(t3, i, (t4) => l2(2, a2 = t4)), l(t3, p, (t4) => l2(3, c2 = t4)), l(t3, t, (t4) => l2(5, i3 = t4)), l(t3, Dt, (t4) => l2(4, r2 = t4));
+      let {$$slots: o4 = {}, $$scope: u2} = e2;
       return T(async () => {
         o2().then((t4) => {
           o.set(t4);
         });
       }), t3.$$set = (t4) => {
-        "$$scope" in t4 && s2(6, u2 = t4.$$scope);
+        "$$scope" in t4 && l2(6, u2 = t4.$$scope);
       }, t3.$$.update = () => {
-        if (15 & t3.$$.dirty && a2 && ((l2.site || n2.title) && (Vt.title = a2.cat ? n2.title + " | " + l2.site.title : l2.site.title + " | " + l2.site.slogan, (i.summary || l2.site.summary) && (Vt.summary = n2.summary ? n2.summary : l2.site.summary)), i3.amount == 0 && n2.cart && d(p, i3 = n2.cart, i3)), 40 & t3.$$.dirty && i3.products) {
+        if (15 & t3.$$.dirty && s2 && ((n2.site || a2.title) && (Vt.title = s2.cat ? a2.title + " | " + n2.site.title : n2.site.title + " | " + n2.site.slogan, (i.summary || n2.site.summary) && (Vt.summary = a2.summary ? a2.summary : n2.site.summary)), c2.amount == 0 && a2.cart && d(p, c2 = a2.cart, c2)), 40 & t3.$$.dirty && c2.products) {
           let t4 = [0, 0];
-          d(p, i3.products = i3.products.filter((t5, e3) => t5.amount > 0 && t5 != null).sort(), i3), Object.values(i3.products).forEach((e3) => {
+          d(p, c2.products = c2.products.filter((t5, e3) => t5.amount > 0 && t5 != null).sort(), c2), Object.values(c2.products).forEach((e3) => {
             e3.discounts && (e3.price2 = e3.price, e3.discounts.forEach(function(t5) {
               t5.amount <= e3.amount && (e3.price2 = t5.price);
             })), t4[0] += e3.total = e3.price2 * e3.amount, t4[1] += e3.amount;
-          }), t4[1] == 0 || t4[1] == null ? d(p, i3.products = [], i3) : (d(p, i3.total = t4[0], i3), d(p, i3.amount = t4[1], i3)), fetch(c2 + "?path=cart", {method: "POST", body: JSON.stringify(i3)});
+          }), t4[1] == 0 || t4[1] == null ? d(p, c2.products = [], c2) : (d(p, c2.total = t4[0], c2), d(p, c2.amount = t4[1], c2)), fetch(i3 + "?path=cart", {method: "POST", body: JSON.stringify(c2)});
         }
-      }, [a2, l2, n2, i3, o4, c2, u2, r2];
+      }, [s2, n2, a2, c2, r2, i3, u2, o4];
     }
-    var layout_74838b22_default = class extends ct {
+    var layout_ac95fa55_default = class extends ct {
       constructor(t3) {
-        super(), at(this, t3, tt2, _2, i2, {});
+        super(), at(this, t3, ot2, rt2, i2, {});
       }
     };
-    var layout_74838b22_default2 = layout_74838b22_default;
+    var layout_ac95fa55_default2 = layout_ac95fa55_default;
   });
 
   // dist/build/main.js
@@ -1260,7 +1347,7 @@
   function at(e2, n2, s2, i3, a2, c2, l2 = [-1]) {
     const u2 = I;
     S(e2);
-    const p3 = e2.$$ = {fragment: null, ctx: null, props: c2, update: t2, not_equal: a2, bound: o3(), on_mount: [], on_destroy: [], on_disconnect: [], before_update: [], after_update: [], context: new Map(u2 ? u2.$$.context : []), callbacks: o3(), dirty: l2, skip_bound: false};
+    const p3 = e2.$$ = {fragment: null, ctx: null, props: c2, update: t2, not_equal: a2, bound: o3(), on_mount: [], on_destroy: [], on_disconnect: [], before_update: [], after_update: [], context: new Map(u2 ? u2.$$.context : n2.context || []), callbacks: o3(), dirty: l2, skip_bound: false};
     let f2 = false;
     if (p3.ctx = s2 ? s2(e2, n2.props || {}, (t3, n3, ...o4) => {
       const r2 = o4.length ? o4[0] : n3;
@@ -2125,7 +2212,7 @@
   }
   var Ae = {...Le, restoreDefaults: ({tree: t3}) => Se(t3), assignAPI: Ne};
 
-  // dist/build/store-75c3a32f.js
+  // dist/build/store-7c55fc9d.js
   var t = xt("http://foodis.dataline.fi/pw/");
   var o = vt({});
   var i = vt({});
@@ -2139,7 +2226,7 @@
   }
 
   // dist/build/main.js
-  var Re = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => Promise.resolve().then(() => require_fallback_6643b230()).then((t3) => t3.default)}, {isDir: true, children: [{isDir: true, ext: "", children: [{isIndex: true, isPage: true, path: "/:cat/:slug/index", id: "__cat__slug_index", component: () => Promise.resolve().then(() => require_index_8a44e169()).then((t3) => t3.default)}], path: "/:cat/:slug"}, {isIndex: true, isPage: true, path: "/:cat/index", id: "__cat_index", component: () => Promise.resolve().then(() => require_index_2ae50e0b()).then((t3) => t3.default)}], isLayout: true, path: "/:cat", id: "__cat__layout", component: () => Promise.resolve().then(() => require_layout_2ab30e0b()).then((t3) => t3.default)}, {isIndex: true, isPage: true, path: "/index", id: "_index", component: () => Promise.resolve().then(() => require_index_99cc7d32()).then((t3) => t3.default)}, {isPage: true, path: "/kassa", id: "_kassa", component: () => Promise.resolve().then(() => require_kassa_9472c17c()).then((t3) => t3.default)}], isLayout: true, path: "/", id: "__layout", component: () => Promise.resolve().then(() => require_layout_74838b22()).then((t3) => t3.default)};
+  var Re = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => Promise.resolve().then(() => require_fallback_53c0020d()).then((t3) => t3.default)}, {isDir: true, children: [{isDir: true, ext: "", children: [{isIndex: true, isPage: true, path: "/:cat/:slug/index", id: "__cat__slug_index", component: () => Promise.resolve().then(() => require_index_b0975be1()).then((t3) => t3.default)}], path: "/:cat/:slug"}, {isIndex: true, isPage: true, path: "/:cat/index", id: "__cat_index", component: () => Promise.resolve().then(() => require_index_127f6161()).then((t3) => t3.default)}], isLayout: true, path: "/:cat", id: "__cat__layout", component: () => Promise.resolve().then(() => require_layout_cb8f2637()).then((t3) => t3.default)}, {isIndex: true, isPage: true, path: "/index", id: "_index", component: () => Promise.resolve().then(() => require_index_d0e65f28()).then((t3) => t3.default)}, {isPage: true, path: "/kassa", id: "_kassa", component: () => Promise.resolve().then(() => require_kassa_5aa909ef()).then((t3) => t3.default)}], isLayout: true, path: "/", id: "__layout", component: () => Promise.resolve().then(() => require_layout_ac95fa55()).then((t3) => t3.default)};
   var {tree: Me, routes: Ce} = function(t3) {
     const e2 = ["restoreDefaults", "setParamKeys", "setRegex", "setShortPath", "setRank", "assignLayout", "setPrototype", "addMetaChildren", "assignRelations", "setIsIndexable", "assignIndex", "assignAPI", "createFlatList"], n2 = {tree: t3, routes: []};
     for (let t4 of e2) {

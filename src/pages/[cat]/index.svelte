@@ -1,7 +1,8 @@
 <script>
 	import { params, ready } from '@roxi/routify';
-	import { api, data } from '../../components/store.js';
+	import { data } from '../../components/store.js';
 	import postData from '../../components/fetch.js';
+
 	function getResult(e) {
 		postData(e).then((e) => {
 			data.set(e);

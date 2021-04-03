@@ -1,5 +1,6 @@
 <script>
 	import CartIcon from './Cart.svelte';
+	import Search from './Search.svelte';
 	export let data;
 	let y;
 	let small;
@@ -23,7 +24,7 @@
 			</a>
 			<button
 				id="menuToggle"
-				class="noBor m0"
+				class="noBor m0 abs"
 				on:click={() => (active = !active)}
 				title="Open/close main navigation"
 			>
@@ -62,7 +63,10 @@
 					{/each}
 				</ul>
 			</nav>
-			<CartIcon />
+			<div id="icons" class="abs grid">
+				<Search />
+				<CartIcon />
+			</div>
 		</div>
 	</header>
 {/if}

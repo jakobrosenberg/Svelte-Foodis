@@ -13,7 +13,8 @@ html, body {
 
 body,
 input,
-button {
+button,
+header {
 	box-sizing: border-box;
 	max-width: 100%;
 	font: 400 16px Poppins
@@ -226,13 +227,13 @@ thead { background-color: #f2f2f2 }
 	header.small #logo {
 		width: 80px;
 		top: 8px
-   }
+	}
 	header:not(.small) #logo {
 		top: 0;
 		width: 200px;
 		padding: 10px 20px 20px;
-   }
-   header #logo {
+	}
+	header #logo {
 		position: absolute;
 		left: 0;
 	}
@@ -274,6 +275,7 @@ thead { background-color: #f2f2f2 }
 	 #hero {
 		 padding-top: 78px;
 	}
+	#icons { right: 90px }
 }
  @media screen and (min-width: 650px) {
 	 #hero {

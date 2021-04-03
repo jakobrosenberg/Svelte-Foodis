@@ -25,7 +25,7 @@
 			<button
 				id="menuToggle"
 				class="noBor m0 abs"
-				on:click={() => (active = !active)}
+				on:click={() => active = !active}
 				title="Open/close main navigation"
 			>
 				{#if !active}

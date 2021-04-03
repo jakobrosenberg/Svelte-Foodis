@@ -9,10 +9,14 @@
 	function getResult() {
 		let item = search.replace(/[&\/\\#,()$~%@^'"!:*?<>{}]/g, '');
 		item = item.replace(' ', '+');
-		postData('search=' + item).then((e) => {
-			results = e;
-			$ready();
-		});
+		postData('search=' + item)
+			.then((e) => {
+				results = e;
+			})
+			.catch((err) => {
+				console.log(err);
+			});
+		$ready();
 	}
 
 	$: if (search.length >= 3) getResult();
@@ -20,7 +24,7 @@
 </script>
 
 <div id="searchIcon" class="rel">
-	<button class="grid cell noBor" on:click={() => (active = !active)}>
+	<button class="grid cell noBor" on:click={() => active = !active}>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			width="28"
@@ -47,7 +51,7 @@
 						<a
 							class="block"
 							href={item.path}
-							on:click={() => (active = '')}>{item.title}</a
+							on:click={() => active = ''}>{item.title}</a
 						>
 					{/each}
 				</div>

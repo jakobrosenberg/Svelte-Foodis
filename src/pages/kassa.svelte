@@ -4,7 +4,10 @@
 	import { onMount } from 'svelte';
 	import postData from '../components/fetch.js';
 
-	if (!$cart.products[0]) window.location.replace('/');
+	if (!$cart.products[0]) {
+		window.location.replace('/');
+		$ready();
+	}
 
 	$cart.customer = {
 		name1: 'Timo',
@@ -90,19 +93,23 @@
 	}
 
 	function getResult(e, body) {
-		postData(e, body).then((e) => {
-			if (e.redirect || e.message) {
-				if (typeof e.redirect !== 'undefined')
-					window.location.replace(e.redirect);
-				else if (e.message) done = e.message;
-			} else if (e.distance)
-				delivery.distance = {
-					text: e.distance.text,
-					value: e.distance.value / 1000,
-				};
-			else data.set(e);
-		});
-		$ready();
+		postData(e, body)
+			.then((e) => {
+				if (e.redirect || e.message) {
+					if (typeof e.redirect !== 'undefined')
+						window.location.replace(e.redirect);
+					else if (e.message) done = e.message;
+				} else if (e.distance)
+					delivery.distance = {
+						text: e.distance.text,
+						value: e.distance.value / 1000,
+					};
+				else data.set(e);
+				$ready();
+			})
+			.catch((err) => {
+				console.log(err);
+			});
 	}
 
 	onMount(async () => {

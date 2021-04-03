@@ -10,9 +10,6 @@ async function postData(url = "", data = "", token = "") {
 		},
 		body: data ? JSON.stringify(data) : null,
 	});
-	let item = await response.json();
-	if (item) {
-		return item;
-	} else throw new Error(item);
+	return await response.json()
 }
 export default postData;

@@ -4,10 +4,14 @@
 	import postData from '../../components/fetch.js';
 
 	function getResult(e) {
-		postData(e).then((e) => {
-			data.set(e);
-			$ready();
-		});
+		postData(e)
+			.then((e) => {
+				data.set(e);
+				$ready();
+			})
+			.catch((err) => {
+				console.log(err);
+			});
 	}
 	$: if ($params.cat) getResult('path=' + $params.cat);
 </script>

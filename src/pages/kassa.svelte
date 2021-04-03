@@ -101,8 +101,8 @@
 					value: e.distance.value / 1000,
 				};
 			else data.set(e);
-			$ready();
 		});
+		$ready();
 	}
 
 	onMount(async () => {

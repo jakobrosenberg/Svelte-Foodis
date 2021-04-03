@@ -9,12 +9,16 @@
 	$: total = 0;
 
 	function getResult(e) {
-		postData(e).then((e) => {
-			data.set(e);
-			if ($data.amountDiscounts && $data.amountDiscounts[0])
-				amount = min = $data.amountDiscounts[0].amount;
-			$ready();
-		});
+		postData(e)
+			.then((e) => {
+				data.set(e);
+				if ($data.amountDiscounts && $data.amountDiscounts[0])
+					amount = min = $data.amountDiscounts[0].amount;
+				$ready();
+			})
+			.catch((err) => {
+				console.log(err);
+			});
 	}
 
 	function cartIt() {
@@ -31,7 +35,6 @@
 		$cart.total += total;
 		$cart.amount += amount;
 		$cart.products.push(item);
-		$ready();
 	}
 
 	$: if ($params.slug) getResult('path=' + $params.slug);

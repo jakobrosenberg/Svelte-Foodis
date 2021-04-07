@@ -13,11 +13,11 @@
       __defProp(target, name, {get: all[name], enumerable: true});
   };
 
-  // dist/build/_fallback-64a8248a.js
-  var require_fallback_64a8248a = __commonJS((exports) => {
+  // dist/build/_fallback-dd21a702.js
+  var require_fallback_dd21a702 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => fallback_64a8248a_default2
+      default: () => fallback_dd21a702_default2
     });
     function m2(s2) {
       let a2, e2, d2, f2, v2, m3, p4, g2;
@@ -35,19 +35,19 @@
       let t3, n2;
       return l(s2, Ht, (s3) => e2(1, t3 = s3)), l(s2, Gt, (s3) => e2(0, n2 = s3)), t3(), [n2];
     }
-    var fallback_64a8248a_default = class extends ct {
+    var fallback_dd21a702_default = class extends ct {
       constructor(s2) {
         super(), at(this, s2, p3, m2, i2, {});
       }
     };
-    var fallback_64a8248a_default2 = fallback_64a8248a_default;
+    var fallback_dd21a702_default2 = fallback_dd21a702_default;
   });
 
-  // dist/build/index-fc0d2204.js
-  var require_index_fc0d2204 = __commonJS((exports) => {
+  // dist/build/index-c787834e.js
+  var require_index_c787834e = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => index_fc0d2204_default2
+      default: () => index_c787834e_default2
     });
     function L2(t3, n2, e2) {
       const l2 = t3.slice();
@@ -58,13 +58,13 @@
       return l2[11] = n2[e2], l2;
     }
     function F2(t3) {
-      let n2, e2, a2, m2, f2, h2, b2, v2, x2, y2, $2, D2, j2, H2, L3, k3, F3 = t3[2].img && M2(t3), w3 = t3[2].price && T2(t3), C3 = t3[2].body && q2(t3), N3 = t3[2].docs && I2(t3), S3 = t3[2].extra && E2(t3);
+      let n2, e2, a2, m2, f2, h2, v2, b2, x2, y2, $2, D2, j2, H2, L3, k3, F3 = t3[2].img && M2(t3), w3 = t3[2].price && T2(t3), C3 = t3[2].body && q2(t3), N3 = t3[2].docs && I2(t3), S3 = t3[2].extra && E2(t3);
       return {c() {
-        n2 = $("div"), e2 = $("div"), F3 && F3.c(), a2 = _(), m2 = $("div"), w3 && w3.c(), f2 = _(), h2 = $("div"), b2 = $("div"), v2 = $("input"), x2 = _(), y2 = $("div"), $2 = $("button"), $2.textContent = "Lis\xE4\xE4 ostoskoriin", D2 = _(), C3 && C3.c(), j2 = _(), N3 && N3.c(), H2 = _(), S3 && S3.c(), k(e2, "id", "img"), k(v2, "name", "amount"), k(v2, "type", "number"), k(v2, "min", t3[3]), k(v2, "step", "1"), v2.required = true, k($2, "class", "w100"), k(h2, "id", "cartIt"), k(h2, "class", "border grid"), k(m2, "id", "productInfo"), k(n2, "id", "product"), k(n2, "class", "container double grid");
+        n2 = $("div"), e2 = $("div"), F3 && F3.c(), a2 = _(), m2 = $("div"), w3 && w3.c(), f2 = _(), h2 = $("div"), v2 = $("div"), b2 = $("input"), x2 = _(), y2 = $("div"), $2 = $("button"), $2.textContent = "Lis\xE4\xE4 ostoskoriin", D2 = _(), C3 && C3.c(), j2 = _(), N3 && N3.c(), H2 = _(), S3 && S3.c(), k(e2, "id", "img"), k(b2, "name", "amount"), k(b2, "type", "number"), k(b2, "min", t3[3]), k(b2, "step", "1"), b2.required = true, k($2, "class", "w100"), k(h2, "id", "cartIt"), k(h2, "class", "border grid"), k(m2, "id", "productInfo"), k(n2, "id", "product"), k(n2, "class", "container double grid");
       }, m(l2, i3) {
-        m(l2, n2, i3), h(n2, e2), F3 && F3.m(e2, null), h(n2, a2), h(n2, m2), w3 && w3.m(m2, null), h(m2, f2), h(m2, h2), h(h2, b2), h(b2, v2), O(v2, t3[0]), h(h2, x2), h(h2, y2), h(y2, $2), h(m2, D2), C3 && C3.m(m2, null), h(m2, j2), N3 && N3.m(m2, null), h(m2, H2), S3 && S3.m(m2, null), L3 || (k3 = [v(v2, "input", t3[7]), v($2, "click", t3[5])], L3 = true);
+        m(l2, n2, i3), h(n2, e2), F3 && F3.m(e2, null), h(n2, a2), h(n2, m2), w3 && w3.m(m2, null), h(m2, f2), h(m2, h2), h(h2, v2), h(v2, b2), O(b2, t3[0]), h(h2, x2), h(h2, y2), h(y2, $2), h(m2, D2), C3 && C3.m(m2, null), h(m2, j2), N3 && N3.m(m2, null), h(m2, H2), S3 && S3.m(m2, null), L3 || (k3 = [v(b2, "input", t3[7]), v($2, "click", t3[5])], L3 = true);
       }, p(t4, n3) {
-        t4[2].img ? F3 ? F3.p(t4, n3) : (F3 = M2(t4), F3.c(), F3.m(e2, null)) : F3 && (F3.d(1), F3 = null), t4[2].price ? w3 ? w3.p(t4, n3) : (w3 = T2(t4), w3.c(), w3.m(m2, f2)) : w3 && (w3.d(1), w3 = null), 8 & n3 && k(v2, "min", t4[3]), 1 & n3 && j(v2.value) !== t4[0] && O(v2, t4[0]), t4[2].body ? C3 ? C3.p(t4, n3) : (C3 = q2(t4), C3.c(), C3.m(m2, j2)) : C3 && (C3.d(1), C3 = null), t4[2].docs ? N3 ? N3.p(t4, n3) : (N3 = I2(t4), N3.c(), N3.m(m2, H2)) : N3 && (N3.d(1), N3 = null), t4[2].extra ? S3 ? S3.p(t4, n3) : (S3 = E2(t4), S3.c(), S3.m(m2, null)) : S3 && (S3.d(1), S3 = null);
+        t4[2].img ? F3 ? F3.p(t4, n3) : (F3 = M2(t4), F3.c(), F3.m(e2, null)) : F3 && (F3.d(1), F3 = null), t4[2].price ? w3 ? w3.p(t4, n3) : (w3 = T2(t4), w3.c(), w3.m(m2, f2)) : w3 && (w3.d(1), w3 = null), 8 & n3 && k(b2, "min", t4[3]), 1 & n3 && j(b2.value) !== t4[0] && O(b2, t4[0]), t4[2].body ? C3 ? C3.p(t4, n3) : (C3 = q2(t4), C3.c(), C3.m(m2, j2)) : C3 && (C3.d(1), C3 = null), t4[2].docs ? N3 ? N3.p(t4, n3) : (N3 = I2(t4), N3.c(), N3.m(m2, H2)) : N3 && (N3.d(1), N3 = null), t4[2].extra ? S3 ? S3.p(t4, n3) : (S3 = E2(t4), S3.c(), S3.m(m2, null)) : S3 && (S3.d(1), S3 = null);
       }, d(t4) {
         t4 && g(n2), F3 && F3.d(), w3 && w3.d(), C3 && C3.d(), N3 && N3.d(), S3 && S3.d(), L3 = false, r(k3);
       }};
@@ -227,156 +227,168 @@
         l2 = j(this.value), e2(0, l2);
       }];
     }
-    var index_fc0d2204_default = class extends ct {
+    var index_c787834e_default = class extends ct {
       constructor(t3) {
         super(), at(this, t3, Y2, S2, i2, {});
       }
     };
-    var index_fc0d2204_default2 = index_fc0d2204_default;
+    var index_c787834e_default2 = index_c787834e_default;
   });
 
-  // dist/build/index-aa3fa76c.js
-  var require_index_aa3fa76c = __commonJS((exports) => {
+  // dist/build/index-f1e37d24.js
+  var require_index_f1e37d24 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => index_aa3fa76c_default2
+      default: () => index_f1e37d24_default2
     });
-    function y2(t3, e2, s2) {
-      const l2 = t3.slice();
-      return l2[4] = e2[s2], l2;
+    function y2(t3, e2, l2) {
+      const r2 = t3.slice();
+      return r2[4] = e2[l2], r2;
     }
-    function v2(t3, e2, s2) {
-      const l2 = t3.slice();
-      return l2[4] = e2[s2], l2;
+    function v2(t3, e2, l2) {
+      const r2 = t3.slice();
+      return r2[4] = e2[l2], r2;
     }
     function j2(t3) {
-      let e2, s2 = t3[0].body + "";
+      let e2, l2 = t3[0].body + "";
       return {c() {
         e2 = $("div"), k(e2, "id", "body");
-      }, m(t4, l2) {
-        m(t4, e2, l2), e2.innerHTML = s2;
-      }, p(t4, l2) {
-        1 & l2 && s2 !== (s2 = t4[0].body + "") && (e2.innerHTML = s2);
+      }, m(t4, r2) {
+        m(t4, e2, r2), e2.innerHTML = l2;
+      }, p(t4, r2) {
+        1 & r2 && l2 !== (l2 = t4[0].body + "") && (e2.innerHTML = l2);
       }, d(t4) {
         t4 && g(e2);
       }};
     }
     function $2(t3) {
-      let e2, s2 = t3[0].items, i3 = [];
-      for (let e3 = 0; e3 < s2.length; e3 += 1)
-        i3[e3] = H2(y2(t3, s2, e3));
+      let e2, l2 = t3[0].items, i3 = [];
+      for (let e3 = 0; e3 < l2.length; e3 += 1)
+        i3[e3] = H2(y2(t3, l2, e3));
       return {c() {
         e2 = $("div");
         for (let t4 = 0; t4 < i3.length; t4 += 1)
           i3[t4].c();
         k(e2, "id", "products"), k(e2, "class", "tc grid bold");
-      }, m(t4, s3) {
-        m(t4, e2, s3);
+      }, m(t4, l3) {
+        m(t4, e2, l3);
         for (let t5 = 0; t5 < i3.length; t5 += 1)
           i3[t5].m(e2, null);
-      }, p(t4, l2) {
-        if (1 & l2) {
-          let r2;
-          for (s2 = t4[0].items, r2 = 0; r2 < s2.length; r2 += 1) {
-            const c2 = y2(t4, s2, r2);
-            i3[r2] ? i3[r2].p(c2, l2) : (i3[r2] = H2(c2), i3[r2].c(), i3[r2].m(e2, null));
+      }, p(t4, r2) {
+        if (1 & r2) {
+          let s2;
+          for (l2 = t4[0].items, s2 = 0; s2 < l2.length; s2 += 1) {
+            const c2 = y2(t4, l2, s2);
+            i3[s2] ? i3[s2].p(c2, r2) : (i3[s2] = H2(c2), i3[s2].c(), i3[s2].m(e2, null));
           }
-          for (; r2 < i3.length; r2 += 1)
-            i3[r2].d(1);
-          i3.length = s2.length;
+          for (; s2 < i3.length; s2 += 1)
+            i3[s2].d(1);
+          i3.length = l2.length;
         }
       }, d(t4) {
         t4 && g(e2), y(i3, t4);
       }};
     }
+    function N2(t3) {
+      let e2, l2, i3, p3, u2, f2, g2, h2, b2, x2, y3, v3, j3, $3, N3, F3, H3, L3, M3, T2, q2, w2 = t3[4].title + "", S2 = t3[4].price.toFixed(2) + "", z2 = t3[4].extra && k2(t3);
+      return {c() {
+        e2 = $("a"), l2 = $("picture"), i3 = $("source"), u2 = _(), f2 = $("source"), h2 = _(), b2 = $("img"), v3 = _(), j3 = $("div"), $3 = w(w2), N3 = _(), F3 = $("div"), H3 = w(S2), L3 = w(" \u20AC"), M3 = _(), z2 && z2.c(), T2 = _(), k(i3, "srcset", p3 = t3[4].img[1]), k(i3, "type", "image/webp"), k(f2, "srcset", g2 = t3[4].img[0]), k(f2, "type", "image/jpeg"), b2.src !== (x2 = t3[4].img[0]) && k(b2, "src", x2), k(b2, "alt", y3 = t3[4].title), k(l2, "class", "block"), k(j3, "class", "title"), k(F3, "class", "price"), k(e2, "class", "block"), k(e2, "href", q2 = t3[4].path);
+      }, m(t4, r2) {
+        m(t4, e2, r2), h(e2, l2), h(l2, i3), h(l2, u2), h(l2, f2), h(l2, h2), h(l2, b2), h(e2, v3), h(e2, j3), h(j3, $3), h(e2, N3), h(e2, F3), h(F3, H3), h(F3, L3), h(e2, M3), z2 && z2.m(e2, null), h(e2, T2);
+      }, p(t4, l3) {
+        1 & l3 && p3 !== (p3 = t4[4].img[1]) && k(i3, "srcset", p3), 1 & l3 && g2 !== (g2 = t4[4].img[0]) && k(f2, "srcset", g2), 1 & l3 && b2.src !== (x2 = t4[4].img[0]) && k(b2, "src", x2), 1 & l3 && y3 !== (y3 = t4[4].title) && k(b2, "alt", y3), 1 & l3 && w2 !== (w2 = t4[4].title + "") && E($3, w2), 1 & l3 && S2 !== (S2 = t4[4].price.toFixed(2) + "") && E(H3, S2), t4[4].extra ? z2 ? z2.p(t4, l3) : (z2 = k2(t4), z2.c(), z2.m(e2, T2)) : z2 && (z2.d(1), z2 = null), 1 & l3 && q2 !== (q2 = t4[4].path) && k(e2, "href", q2);
+      }, d(t4) {
+        t4 && g(e2), z2 && z2.d();
+      }};
+    }
     function k2(t3) {
-      let e2, s2 = t3[4].extra, i3 = [];
-      for (let e3 = 0; e3 < s2.length; e3 += 1)
-        i3[e3] = F2(v2(t3, s2, e3));
+      let e2, l2 = t3[4].extra, i3 = [];
+      for (let e3 = 0; e3 < l2.length; e3 += 1)
+        i3[e3] = F2(v2(t3, l2, e3));
       return {c() {
         e2 = $("div");
         for (let t4 = 0; t4 < i3.length; t4 += 1)
           i3[t4].c();
         k(e2, "class", "extra");
-      }, m(t4, s3) {
-        m(t4, e2, s3);
+      }, m(t4, l3) {
+        m(t4, e2, l3);
         for (let t5 = 0; t5 < i3.length; t5 += 1)
           i3[t5].m(e2, null);
-      }, p(t4, l2) {
-        if (1 & l2) {
-          let r2;
-          for (s2 = t4[4].extra, r2 = 0; r2 < s2.length; r2 += 1) {
-            const c2 = v2(t4, s2, r2);
-            i3[r2] ? i3[r2].p(c2, l2) : (i3[r2] = F2(c2), i3[r2].c(), i3[r2].m(e2, null));
+      }, p(t4, r2) {
+        if (1 & r2) {
+          let s2;
+          for (l2 = t4[4].extra, s2 = 0; s2 < l2.length; s2 += 1) {
+            const c2 = v2(t4, l2, s2);
+            i3[s2] ? i3[s2].p(c2, r2) : (i3[s2] = F2(c2), i3[s2].c(), i3[s2].m(e2, null));
           }
-          for (; r2 < i3.length; r2 += 1)
-            i3[r2].d(1);
-          i3.length = s2.length;
+          for (; s2 < i3.length; s2 += 1)
+            i3[s2].d(1);
+          i3.length = l2.length;
         }
       }, d(t4) {
         t4 && g(e2), y(i3, t4);
       }};
     }
     function F2(t3) {
-      let e2, s2, m2, p3, u2 = t3[4].abbr + "";
+      let e2, l2, i3, p3, u2 = t3[4].abbr + "";
       return {c() {
-        e2 = $("div"), s2 = $("span"), m2 = w(u2), p3 = _(), k(s2, "class", "grid cell"), k(e2, "class", "inl");
-      }, m(t4, l2) {
-        m(t4, e2, l2), h(e2, s2), h(s2, m2), h(e2, p3);
+        e2 = $("div"), l2 = $("span"), i3 = w(u2), p3 = _(), k(l2, "class", "grid cell"), k(e2, "class", "inl");
+      }, m(t4, r2) {
+        m(t4, e2, r2), h(e2, l2), h(l2, i3), h(e2, p3);
       }, p(t4, e3) {
-        1 & e3 && u2 !== (u2 = t4[4].abbr + "") && E(m2, u2);
+        1 & e3 && u2 !== (u2 = t4[4].abbr + "") && E(i3, u2);
       }, d(t4) {
         t4 && g(e2);
       }};
     }
     function H2(t3) {
-      let e2, s2, m2, p3, u2, f2, g2, h2, b2, x2, y3, v3, j3, $3, F3, H3, L3, M3, N2, T2, q2, w2 = t3[4].title + "", S2 = t3[4].price.toFixed(2) + "", z2 = t3[4].extra && k2(t3);
+      let e2, l2 = t3[4].img && N2(t3);
       return {c() {
-        e2 = $("a"), s2 = $("picture"), m2 = $("source"), u2 = _(), f2 = $("source"), h2 = _(), b2 = $("img"), v3 = _(), j3 = $("div"), $3 = w(w2), F3 = _(), H3 = $("div"), L3 = w(S2), M3 = w(" \u20AC"), N2 = _(), z2 && z2.c(), T2 = _(), k(m2, "srcset", p3 = t3[4].img[0][1]), k(m2, "type", "image/webp"), k(f2, "srcset", g2 = t3[4].img[0][0]), k(f2, "type", "image/jpeg"), b2.src !== (x2 = t3[4].img[0][0]) && k(b2, "src", x2), k(b2, "alt", y3 = t3[4].title), k(s2, "class", "block"), k(j3, "class", "title"), k(H3, "class", "price"), k(e2, "class", "block"), k(e2, "href", q2 = t3[4].path);
-      }, m(t4, l2) {
-        m(t4, e2, l2), h(e2, s2), h(s2, m2), h(s2, u2), h(s2, f2), h(s2, h2), h(s2, b2), h(e2, v3), h(e2, j3), h(j3, $3), h(e2, F3), h(e2, H3), h(H3, L3), h(H3, M3), h(e2, N2), z2 && z2.m(e2, null), h(e2, T2);
-      }, p(t4, s3) {
-        1 & s3 && p3 !== (p3 = t4[4].img[0][1]) && k(m2, "srcset", p3), 1 & s3 && g2 !== (g2 = t4[4].img[0][0]) && k(f2, "srcset", g2), 1 & s3 && b2.src !== (x2 = t4[4].img[0][0]) && k(b2, "src", x2), 1 & s3 && y3 !== (y3 = t4[4].title) && k(b2, "alt", y3), 1 & s3 && w2 !== (w2 = t4[4].title + "") && E($3, w2), 1 & s3 && S2 !== (S2 = t4[4].price.toFixed(2) + "") && E(L3, S2), t4[4].extra ? z2 ? z2.p(t4, s3) : (z2 = k2(t4), z2.c(), z2.m(e2, T2)) : z2 && (z2.d(1), z2 = null), 1 & s3 && q2 !== (q2 = t4[4].path) && k(e2, "href", q2);
+        l2 && l2.c(), e2 = x();
+      }, m(t4, r2) {
+        l2 && l2.m(t4, r2), m(t4, e2, r2);
+      }, p(t4, r2) {
+        t4[4].img ? l2 ? l2.p(t4, r2) : (l2 = N2(t4), l2.c(), l2.m(e2.parentNode, e2)) : l2 && (l2.d(1), l2 = null);
       }, d(t4) {
-        t4 && g(e2), z2 && z2.d();
+        l2 && l2.d(t4), t4 && g(e2);
       }};
     }
     function L2(t3) {
-      let e2, s2, l2 = t3[0].body && j2(t3), r2 = t3[0].items && $2(t3);
+      let e2, l2, r2 = t3[0].body && j2(t3), s2 = t3[0].items && $2(t3);
       return {c() {
-        l2 && l2.c(), e2 = _(), r2 && r2.c(), s2 = x();
+        r2 && r2.c(), e2 = _(), s2 && s2.c(), l2 = x();
       }, m(t4, n2) {
-        l2 && l2.m(t4, n2), m(t4, e2, n2), r2 && r2.m(t4, n2), m(t4, s2, n2);
+        r2 && r2.m(t4, n2), m(t4, e2, n2), s2 && s2.m(t4, n2), m(t4, l2, n2);
       }, p(t4, [c2]) {
-        t4[0].body ? l2 ? l2.p(t4, c2) : (l2 = j2(t4), l2.c(), l2.m(e2.parentNode, e2)) : l2 && (l2.d(1), l2 = null), t4[0].items ? r2 ? r2.p(t4, c2) : (r2 = $2(t4), r2.c(), r2.m(s2.parentNode, s2)) : r2 && (r2.d(1), r2 = null);
+        t4[0].body ? r2 ? r2.p(t4, c2) : (r2 = j2(t4), r2.c(), r2.m(e2.parentNode, e2)) : r2 && (r2.d(1), r2 = null), t4[0].items ? s2 ? s2.p(t4, c2) : (s2 = $2(t4), s2.c(), s2.m(l2.parentNode, l2)) : s2 && (s2.d(1), s2 = null);
       }, i: t2, o: t2, d(t4) {
-        l2 && l2.d(t4), t4 && g(e2), r2 && r2.d(t4), t4 && g(s2);
+        r2 && r2.d(t4), t4 && g(e2), s2 && s2.d(t4), t4 && g(l2);
       }};
     }
-    function M2(t3, e2, s2) {
-      let l2, r2, c2;
-      return l(t3, Ht, (t4) => s2(2, l2 = t4)), l(t3, Wt, (t4) => s2(1, r2 = t4)), l(t3, i, (t4) => s2(0, c2 = t4)), t3.$$.update = () => {
+    function M2(t3, e2, l2) {
+      let r2, s2, c2;
+      return l(t3, Ht, (t4) => l2(2, r2 = t4)), l(t3, Wt, (t4) => l2(1, s2 = t4)), l(t3, i, (t4) => l2(0, c2 = t4)), t3.$$.update = () => {
         var e3;
-        2 & t3.$$.dirty && r2.cat && (e3 = "path=" + r2.cat, o2(e3).then((t4) => {
-          i.set(t4), l2();
+        2 & t3.$$.dirty && s2.cat && (e3 = "path=" + s2.cat, o2(e3).then((t4) => {
+          i.set(t4), r2();
         }).catch((t4) => {
           console.log(t4);
         }));
-      }, [c2, r2];
+      }, [c2, s2];
     }
-    var index_aa3fa76c_default = class extends ct {
+    var index_f1e37d24_default = class extends ct {
       constructor(t3) {
         super(), at(this, t3, M2, L2, i2, {});
       }
     };
-    var index_aa3fa76c_default2 = index_aa3fa76c_default;
+    var index_f1e37d24_default2 = index_f1e37d24_default;
   });
 
-  // dist/build/_layout-a3089746.js
-  var require_layout_a3089746 = __commonJS((exports) => {
+  // dist/build/_layout-d8b4af71.js
+  var require_layout_d8b4af71 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => layout_a3089746_default2
+      default: () => layout_d8b4af71_default2
     });
     function c2(s2) {
       let t3;
@@ -401,93 +413,93 @@
         "$$scope" in s3 && e2(0, o4 = s3.$$scope);
       }, [o4, n2];
     }
-    var layout_a3089746_default = class extends ct {
+    var layout_d8b4af71_default = class extends ct {
       constructor(s2) {
         super(), at(this, s2, u2, c2, i2, {});
       }
     };
-    var layout_a3089746_default2 = layout_a3089746_default;
+    var layout_d8b4af71_default2 = layout_d8b4af71_default;
   });
 
-  // dist/build/index-62fd7c19.js
-  var require_index_62fd7c19 = __commonJS((exports) => {
+  // dist/build/index-06527d68.js
+  var require_index_06527d68 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => index_62fd7c19_default2
+      default: () => index_06527d68_default2
     });
-    function d2(t3, s2, e2) {
+    function d2(t3, e2, s2) {
       const l2 = t3.slice();
-      return l2[1] = s2[e2], l2;
+      return l2[1] = e2[s2], l2;
     }
     function h2(t3) {
-      let s2, e2, l2, g2, m2, u2, p3, f2, d3, h3, b3, k3, j3, v2, x2, y2, H2 = t3[1].title + "";
+      let e2, s2, l2, g2, m2, u2, p3, f2, d3, h3, b3, k3, j3, v2, x2, y2, H2 = t3[1].title + "";
       return {c() {
-        s2 = $("a"), e2 = $("figure"), l2 = $("picture"), g2 = $("source"), u2 = _(), p3 = $("source"), d3 = _(), h3 = $("img"), j3 = _(), v2 = $("figcaption"), x2 = _(), k(g2, "srcset", m2 = t3[1].img[1]), k(g2, "type", "image/webp"), k(p3, "srcset", f2 = t3[1].img[0]), k(p3, "type", "image/jpeg"), h3.src !== (b3 = t3[1].img[0]) && k(h3, "src", b3), k(h3, "alt", k3 = t3[1].title), k(l2, "class", "block"), k(v2, "class", "block"), k(e2, "class", "block"), k(s2, "class", "block"), k(s2, "href", y2 = t3[1].path);
-      }, m(t4, i3) {
-        m(t4, s2, i3), h(s2, e2), h(e2, l2), h(l2, g2), h(l2, u2), h(l2, p3), h(l2, d3), h(l2, h3), h(e2, j3), h(e2, v2), v2.innerHTML = H2, h(s2, x2);
-      }, p(t4, e3) {
-        1 & e3 && m2 !== (m2 = t4[1].img[1]) && k(g2, "srcset", m2), 1 & e3 && f2 !== (f2 = t4[1].img[0]) && k(p3, "srcset", f2), 1 & e3 && h3.src !== (b3 = t4[1].img[0]) && k(h3, "src", b3), 1 & e3 && k3 !== (k3 = t4[1].title) && k(h3, "alt", k3), 1 & e3 && H2 !== (H2 = t4[1].title + "") && (v2.innerHTML = H2), 1 & e3 && y2 !== (y2 = t4[1].path) && k(s2, "href", y2);
+        e2 = $("a"), s2 = $("figure"), l2 = $("picture"), g2 = $("source"), u2 = _(), p3 = $("source"), d3 = _(), h3 = $("img"), j3 = _(), v2 = $("figcaption"), x2 = _(), k(g2, "srcset", m2 = t3[1].img[1]), k(g2, "type", "image/webp"), k(p3, "srcset", f2 = t3[1].img[0]), k(p3, "type", "image/jpeg"), h3.src !== (b3 = t3[1].img[0]) && k(h3, "src", b3), k(h3, "alt", k3 = t3[1].title), k(l2, "class", "block"), k(v2, "class", "block"), k(s2, "class", "block"), k(e2, "class", "block"), k(e2, "href", y2 = t3[1].path);
+      }, m(t4, r2) {
+        m(t4, e2, r2), h(e2, s2), h(s2, l2), h(l2, g2), h(l2, u2), h(l2, p3), h(l2, d3), h(l2, h3), h(s2, j3), h(s2, v2), v2.innerHTML = H2, h(e2, x2);
+      }, p(t4, s3) {
+        1 & s3 && m2 !== (m2 = t4[1].img[1]) && k(g2, "srcset", m2), 1 & s3 && f2 !== (f2 = t4[1].img[0]) && k(p3, "srcset", f2), 1 & s3 && h3.src !== (b3 = t4[1].img[0]) && k(h3, "src", b3), 1 & s3 && k3 !== (k3 = t4[1].title) && k(h3, "alt", k3), 1 & s3 && H2 !== (H2 = t4[1].title + "") && (v2.innerHTML = H2), 1 & s3 && y2 !== (y2 = t4[1].path) && k(e2, "href", y2);
       }, d(t4) {
-        t4 && g(s2);
+        t4 && g(e2);
       }};
     }
     function b2(t3) {
-      let s2, e2 = t3[1].img && h2(t3);
+      let e2, s2 = t3[1].img && h2(t3);
       return {c() {
-        e2 && e2.c(), s2 = x();
+        s2 && s2.c(), e2 = x();
       }, m(t4, l2) {
-        e2 && e2.m(t4, l2), m(t4, s2, l2);
+        s2 && s2.m(t4, l2), m(t4, e2, l2);
       }, p(t4, l2) {
-        t4[1].img ? e2 ? e2.p(t4, l2) : (e2 = h2(t4), e2.c(), e2.m(s2.parentNode, s2)) : e2 && (e2.d(1), e2 = null);
+        t4[1].img ? s2 ? s2.p(t4, l2) : (s2 = h2(t4), s2.c(), s2.m(e2.parentNode, e2)) : s2 && (s2.d(1), s2 = null);
       }, d(t4) {
-        e2 && e2.d(t4), t4 && g(s2);
+        s2 && s2.d(t4), t4 && g(e2);
       }};
     }
     function k2(t3) {
-      let s2, e2 = t3[0].nav, l2 = [];
-      for (let s3 = 0; s3 < e2.length; s3 += 1)
-        l2[s3] = b2(d2(t3, e2, s3));
+      let e2, s2 = t3[0].nav, l2 = [];
+      for (let e3 = 0; e3 < s2.length; e3 += 1)
+        l2[e3] = b2(d2(t3, s2, e3));
       return {c() {
-        s2 = $("div");
+        e2 = $("div");
         for (let t4 = 0; t4 < l2.length; t4 += 1)
           l2[t4].c();
-        k(s2, "id", "products"), k(s2, "class", "tc grid up bold");
-      }, m(t4, e3) {
-        m(t4, s2, e3);
+        k(e2, "id", "products"), k(e2, "class", "tc grid up bold");
+      }, m(t4, s3) {
+        m(t4, e2, s3);
         for (let t5 = 0; t5 < l2.length; t5 += 1)
-          l2[t5].m(s2, null);
-      }, p(t4, [c2]) {
-        if (1 & c2) {
-          let i3;
-          for (e2 = t4[0].nav, i3 = 0; i3 < e2.length; i3 += 1) {
-            const r2 = d2(t4, e2, i3);
-            l2[i3] ? l2[i3].p(r2, c2) : (l2[i3] = b2(r2), l2[i3].c(), l2[i3].m(s2, null));
+          l2[t5].m(e2, null);
+      }, p(t4, [i3]) {
+        if (1 & i3) {
+          let r2;
+          for (s2 = t4[0].nav, r2 = 0; r2 < s2.length; r2 += 1) {
+            const c2 = d2(t4, s2, r2);
+            l2[r2] ? l2[r2].p(c2, i3) : (l2[r2] = b2(c2), l2[r2].c(), l2[r2].m(e2, null));
           }
-          for (; i3 < l2.length; i3 += 1)
-            l2[i3].d(1);
-          l2.length = e2.length;
+          for (; r2 < l2.length; r2 += 1)
+            l2[r2].d(1);
+          l2.length = s2.length;
         }
       }, i: t2, o: t2, d(t4) {
-        t4 && g(s2), y(l2, t4);
+        t4 && g(e2), y(l2, t4);
       }};
     }
-    function j2(t3, s2, e2) {
+    function j2(t3, e2, s2) {
       let l2;
-      return l(t3, o, (t4) => e2(0, l2 = t4)), l2.site && i.set({title: l2.site.title, slogan: l2.site.slogan}), [l2];
+      return l(t3, o, (t4) => s2(0, l2 = t4)), l2.site && i.set({title: l2.site.title, slogan: l2.site.slogan}), [l2];
     }
-    var index_62fd7c19_default = class extends ct {
+    var index_06527d68_default = class extends ct {
       constructor(t3) {
         super(), at(this, t3, j2, k2, i2, {});
       }
     };
-    var index_62fd7c19_default2 = index_62fd7c19_default;
+    var index_06527d68_default2 = index_06527d68_default;
   });
 
-  // dist/build/kassa-89c5bd3f.js
-  var require_kassa_89c5bd3f = __commonJS((exports) => {
+  // dist/build/kassa-59eb8722.js
+  var require_kassa_59eb8722 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => kassa_89c5bd3f_default2
+      default: () => kassa_59eb8722_default2
     });
     function N2(t3, e2, n2) {
       const s2 = t3.slice();
@@ -778,19 +790,19 @@
         i3.customer[t4.name] = this.value, p.set(i3), n2(8, x2);
       }, () => h2("path=matka", {address: i3.customer.street + "+" + i3.customer.postal + "+" + i3.customer.area})];
     }
-    var kassa_89c5bd3f_default = class extends ct {
+    var kassa_59eb8722_default = class extends ct {
       constructor(t3) {
         super(), at(this, t3, D2, B2, i2, {});
       }
     };
-    var kassa_89c5bd3f_default2 = kassa_89c5bd3f_default;
+    var kassa_59eb8722_default2 = kassa_59eb8722_default;
   });
 
-  // dist/build/_layout-84e1e226.js
-  var require_layout_84e1e226 = __commonJS((exports) => {
+  // dist/build/_layout-d2376e5b.js
+  var require_layout_d2376e5b = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => layout_84e1e226_default2
+      default: () => layout_d2376e5b_default2
     });
     function K2(t3) {
       let e2, s2, p3, h2, g2, f2, v2, $2, w2, y2, b2, k2 = t3[0].amount + "";
@@ -1128,12 +1140,12 @@
         }
       }, [l2, n2, a2, c2, r2, i3, u2, o4];
     }
-    var layout_84e1e226_default = class extends ct {
+    var layout_d2376e5b_default = class extends ct {
       constructor(t3) {
         super(), at(this, t3, ut2, ot2, i2, {});
       }
     };
-    var layout_84e1e226_default2 = layout_84e1e226_default;
+    var layout_d2376e5b_default2 = layout_d2376e5b_default;
   });
 
   // dist/build/main.js
@@ -2256,7 +2268,7 @@
   }
   var Ae = {...Le, restoreDefaults: ({tree: t3}) => Se(t3), assignAPI: Ne};
 
-  // dist/build/store-6cfb6130.js
+  // dist/build/store-e4f31793.js
   var t = xt("http://foodis.dataline.fi/pw/");
   var o = vt({});
   var i = vt({});
@@ -2270,7 +2282,7 @@
   }
 
   // dist/build/main.js
-  var Re = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => Promise.resolve().then(() => require_fallback_64a8248a()).then((t3) => t3.default)}, {isDir: true, children: [{isDir: true, ext: "", children: [{isIndex: true, isPage: true, path: "/:cat/:slug/index", id: "__cat__slug_index", component: () => Promise.resolve().then(() => require_index_fc0d2204()).then((t3) => t3.default)}], path: "/:cat/:slug"}, {isIndex: true, isPage: true, path: "/:cat/index", id: "__cat_index", component: () => Promise.resolve().then(() => require_index_aa3fa76c()).then((t3) => t3.default)}], isLayout: true, path: "/:cat", id: "__cat__layout", component: () => Promise.resolve().then(() => require_layout_a3089746()).then((t3) => t3.default)}, {isIndex: true, isPage: true, path: "/index", id: "_index", component: () => Promise.resolve().then(() => require_index_62fd7c19()).then((t3) => t3.default)}, {isPage: true, path: "/kassa", id: "_kassa", component: () => Promise.resolve().then(() => require_kassa_89c5bd3f()).then((t3) => t3.default)}], isLayout: true, path: "/", id: "__layout", component: () => Promise.resolve().then(() => require_layout_84e1e226()).then((t3) => t3.default)};
+  var Re = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => Promise.resolve().then(() => require_fallback_dd21a702()).then((t3) => t3.default)}, {isDir: true, children: [{isDir: true, ext: "", children: [{isIndex: true, isPage: true, path: "/:cat/:slug/index", id: "__cat__slug_index", component: () => Promise.resolve().then(() => require_index_c787834e()).then((t3) => t3.default)}], path: "/:cat/:slug"}, {isIndex: true, isPage: true, path: "/:cat/index", id: "__cat_index", component: () => Promise.resolve().then(() => require_index_f1e37d24()).then((t3) => t3.default)}], isLayout: true, path: "/:cat", id: "__cat__layout", component: () => Promise.resolve().then(() => require_layout_d8b4af71()).then((t3) => t3.default)}, {isIndex: true, isPage: true, path: "/index", id: "_index", component: () => Promise.resolve().then(() => require_index_06527d68()).then((t3) => t3.default)}, {isPage: true, path: "/kassa", id: "_kassa", component: () => Promise.resolve().then(() => require_kassa_59eb8722()).then((t3) => t3.default)}], isLayout: true, path: "/", id: "__layout", component: () => Promise.resolve().then(() => require_layout_d2376e5b()).then((t3) => t3.default)};
   var {tree: Me, routes: Ce} = function(t3) {
     const e2 = ["restoreDefaults", "setParamKeys", "setRegex", "setShortPath", "setRank", "assignLayout", "setPrototype", "addMetaChildren", "assignRelations", "setIsIndexable", "assignIndex", "assignAPI", "createFlatList"], n2 = {tree: t3, routes: []};
     for (let t4 of e2) {

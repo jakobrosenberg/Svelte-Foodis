@@ -333,15 +333,20 @@
 			</form>
 
 			{#if $cart.customer.street && $cart.customer.postal && $cart.customer.area}
-				<div id="payment" class="tc">
+				<div id="payment" class="tc pad">
 					{#if delivery.distance}
-						<button id="done" class="end" name="done" type="submit">
+						<button
+							id="done"
+							class="end up"
+							name="done"
+							type="submit"
+						>
 							Vahvista tilaus
 						</button>
 					{:else}
 						<button
 							id="done"
-							class="end"
+							class="end up"
 							name="shipping"
 							on:click={() =>
 								getResult('path=matka', {

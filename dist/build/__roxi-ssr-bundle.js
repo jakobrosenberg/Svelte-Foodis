@@ -13,11 +13,11 @@
       __defProp(target, name, {get: all[name], enumerable: true});
   };
 
-  // dist/build/_fallback-dd21a702.js
-  var require_fallback_dd21a702 = __commonJS((exports) => {
+  // dist/build/_fallback-99f01b66.js
+  var require_fallback_99f01b66 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => fallback_dd21a702_default2
+      default: () => fallback_99f01b66_default2
     });
     function m2(s2) {
       let a2, e2, d2, f2, v2, m3, p4, g2;
@@ -35,19 +35,19 @@
       let t3, n2;
       return l(s2, Ht, (s3) => e2(1, t3 = s3)), l(s2, Gt, (s3) => e2(0, n2 = s3)), t3(), [n2];
     }
-    var fallback_dd21a702_default = class extends ct {
+    var fallback_99f01b66_default = class extends ct {
       constructor(s2) {
         super(), at(this, s2, p3, m2, i2, {});
       }
     };
-    var fallback_dd21a702_default2 = fallback_dd21a702_default;
+    var fallback_99f01b66_default2 = fallback_99f01b66_default;
   });
 
-  // dist/build/index-c787834e.js
-  var require_index_c787834e = __commonJS((exports) => {
+  // dist/build/index-12124a5b.js
+  var require_index_12124a5b = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => index_c787834e_default2
+      default: () => index_12124a5b_default2
     });
     function L2(t3, n2, e2) {
       const l2 = t3.slice();
@@ -227,19 +227,19 @@
         l2 = j(this.value), e2(0, l2);
       }];
     }
-    var index_c787834e_default = class extends ct {
+    var index_12124a5b_default = class extends ct {
       constructor(t3) {
         super(), at(this, t3, Y2, S2, i2, {});
       }
     };
-    var index_c787834e_default2 = index_c787834e_default;
+    var index_12124a5b_default2 = index_12124a5b_default;
   });
 
-  // dist/build/index-f1e37d24.js
-  var require_index_f1e37d24 = __commonJS((exports) => {
+  // dist/build/index-ff6772a6.js
+  var require_index_ff6772a6 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => index_f1e37d24_default2
+      default: () => index_ff6772a6_default2
     });
     function y2(t3, e2, l2) {
       const r2 = t3.slice();
@@ -376,19 +376,19 @@
         }));
       }, [c2, s2];
     }
-    var index_f1e37d24_default = class extends ct {
+    var index_ff6772a6_default = class extends ct {
       constructor(t3) {
         super(), at(this, t3, M2, L2, i2, {});
       }
     };
-    var index_f1e37d24_default2 = index_f1e37d24_default;
+    var index_ff6772a6_default2 = index_ff6772a6_default;
   });
 
-  // dist/build/_layout-d8b4af71.js
-  var require_layout_d8b4af71 = __commonJS((exports) => {
+  // dist/build/_layout-7af0807e.js
+  var require_layout_7af0807e = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => layout_d8b4af71_default2
+      default: () => layout_7af0807e_default2
     });
     function c2(s2) {
       let t3;
@@ -413,93 +413,93 @@
         "$$scope" in s3 && e2(0, o4 = s3.$$scope);
       }, [o4, n2];
     }
-    var layout_d8b4af71_default = class extends ct {
+    var layout_7af0807e_default = class extends ct {
       constructor(s2) {
         super(), at(this, s2, u2, c2, i2, {});
       }
     };
-    var layout_d8b4af71_default2 = layout_d8b4af71_default;
+    var layout_7af0807e_default2 = layout_7af0807e_default;
   });
 
-  // dist/build/index-06527d68.js
-  var require_index_06527d68 = __commonJS((exports) => {
+  // dist/build/index-23bcef4b.js
+  var require_index_23bcef4b = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => index_06527d68_default2
+      default: () => index_23bcef4b_default2
     });
-    function d2(t3, e2, s2) {
+    function d2(t3, s2, e2) {
       const l2 = t3.slice();
-      return l2[1] = e2[s2], l2;
+      return l2[1] = s2[e2], l2;
     }
     function h2(t3) {
-      let e2, s2, l2, g2, m2, u2, p3, f2, d3, h3, b3, k3, j3, v2, x2, y2, H2 = t3[1].title + "";
+      let s2, e2, l2, g2, m2, u2, p3, f2, d3, h3, b3, k3, j3, v2, x2, y2, H2 = t3[1].title + "";
       return {c() {
-        e2 = $("a"), s2 = $("figure"), l2 = $("picture"), g2 = $("source"), u2 = _(), p3 = $("source"), d3 = _(), h3 = $("img"), j3 = _(), v2 = $("figcaption"), x2 = _(), k(g2, "srcset", m2 = t3[1].img[1]), k(g2, "type", "image/webp"), k(p3, "srcset", f2 = t3[1].img[0]), k(p3, "type", "image/jpeg"), h3.src !== (b3 = t3[1].img[0]) && k(h3, "src", b3), k(h3, "alt", k3 = t3[1].title), k(l2, "class", "block"), k(v2, "class", "block"), k(s2, "class", "block"), k(e2, "class", "block"), k(e2, "href", y2 = t3[1].path);
+        s2 = $("a"), e2 = $("figure"), l2 = $("picture"), g2 = $("source"), u2 = _(), p3 = $("source"), d3 = _(), h3 = $("img"), j3 = _(), v2 = $("figcaption"), x2 = _(), k(g2, "srcset", m2 = t3[1].img[1]), k(g2, "type", "image/webp"), k(p3, "srcset", f2 = t3[1].img[0]), k(p3, "type", "image/jpeg"), h3.src !== (b3 = t3[1].img[0]) && k(h3, "src", b3), k(h3, "alt", k3 = t3[1].title), k(l2, "class", "block"), k(v2, "class", "block"), k(e2, "class", "block"), k(s2, "class", "block"), k(s2, "href", y2 = t3[1].path);
       }, m(t4, r2) {
-        m(t4, e2, r2), h(e2, s2), h(s2, l2), h(l2, g2), h(l2, u2), h(l2, p3), h(l2, d3), h(l2, h3), h(s2, j3), h(s2, v2), v2.innerHTML = H2, h(e2, x2);
-      }, p(t4, s3) {
-        1 & s3 && m2 !== (m2 = t4[1].img[1]) && k(g2, "srcset", m2), 1 & s3 && f2 !== (f2 = t4[1].img[0]) && k(p3, "srcset", f2), 1 & s3 && h3.src !== (b3 = t4[1].img[0]) && k(h3, "src", b3), 1 & s3 && k3 !== (k3 = t4[1].title) && k(h3, "alt", k3), 1 & s3 && H2 !== (H2 = t4[1].title + "") && (v2.innerHTML = H2), 1 & s3 && y2 !== (y2 = t4[1].path) && k(e2, "href", y2);
+        m(t4, s2, r2), h(s2, e2), h(e2, l2), h(l2, g2), h(l2, u2), h(l2, p3), h(l2, d3), h(l2, h3), h(e2, j3), h(e2, v2), v2.innerHTML = H2, h(s2, x2);
+      }, p(t4, e3) {
+        1 & e3 && m2 !== (m2 = t4[1].img[1]) && k(g2, "srcset", m2), 1 & e3 && f2 !== (f2 = t4[1].img[0]) && k(p3, "srcset", f2), 1 & e3 && h3.src !== (b3 = t4[1].img[0]) && k(h3, "src", b3), 1 & e3 && k3 !== (k3 = t4[1].title) && k(h3, "alt", k3), 1 & e3 && H2 !== (H2 = t4[1].title + "") && (v2.innerHTML = H2), 1 & e3 && y2 !== (y2 = t4[1].path) && k(s2, "href", y2);
       }, d(t4) {
-        t4 && g(e2);
+        t4 && g(s2);
       }};
     }
     function b2(t3) {
-      let e2, s2 = t3[1].img && h2(t3);
+      let s2, e2 = t3[1].img && h2(t3);
       return {c() {
-        s2 && s2.c(), e2 = x();
+        e2 && e2.c(), s2 = x();
       }, m(t4, l2) {
-        s2 && s2.m(t4, l2), m(t4, e2, l2);
+        e2 && e2.m(t4, l2), m(t4, s2, l2);
       }, p(t4, l2) {
-        t4[1].img ? s2 ? s2.p(t4, l2) : (s2 = h2(t4), s2.c(), s2.m(e2.parentNode, e2)) : s2 && (s2.d(1), s2 = null);
+        t4[1].img ? e2 ? e2.p(t4, l2) : (e2 = h2(t4), e2.c(), e2.m(s2.parentNode, s2)) : e2 && (e2.d(1), e2 = null);
       }, d(t4) {
-        s2 && s2.d(t4), t4 && g(e2);
+        e2 && e2.d(t4), t4 && g(s2);
       }};
     }
     function k2(t3) {
-      let e2, s2 = t3[0].nav, l2 = [];
-      for (let e3 = 0; e3 < s2.length; e3 += 1)
-        l2[e3] = b2(d2(t3, s2, e3));
+      let s2, e2 = t3[0].nav, l2 = [];
+      for (let s3 = 0; s3 < e2.length; s3 += 1)
+        l2[s3] = b2(d2(t3, e2, s3));
       return {c() {
-        e2 = $("div");
+        s2 = $("div");
         for (let t4 = 0; t4 < l2.length; t4 += 1)
           l2[t4].c();
-        k(e2, "id", "products"), k(e2, "class", "tc grid up bold");
-      }, m(t4, s3) {
-        m(t4, e2, s3);
+        k(s2, "id", "products"), k(s2, "class", "tc grid up bold");
+      }, m(t4, e3) {
+        m(t4, s2, e3);
         for (let t5 = 0; t5 < l2.length; t5 += 1)
-          l2[t5].m(e2, null);
+          l2[t5].m(s2, null);
       }, p(t4, [i3]) {
         if (1 & i3) {
           let r2;
-          for (s2 = t4[0].nav, r2 = 0; r2 < s2.length; r2 += 1) {
-            const c2 = d2(t4, s2, r2);
-            l2[r2] ? l2[r2].p(c2, i3) : (l2[r2] = b2(c2), l2[r2].c(), l2[r2].m(e2, null));
+          for (e2 = t4[0].nav, r2 = 0; r2 < e2.length; r2 += 1) {
+            const c2 = d2(t4, e2, r2);
+            l2[r2] ? l2[r2].p(c2, i3) : (l2[r2] = b2(c2), l2[r2].c(), l2[r2].m(s2, null));
           }
           for (; r2 < l2.length; r2 += 1)
             l2[r2].d(1);
-          l2.length = s2.length;
+          l2.length = e2.length;
         }
       }, i: t2, o: t2, d(t4) {
-        t4 && g(e2), y(l2, t4);
+        t4 && g(s2), y(l2, t4);
       }};
     }
-    function j2(t3, e2, s2) {
+    function j2(t3, s2, e2) {
       let l2;
-      return l(t3, o, (t4) => s2(0, l2 = t4)), l2.site && i.set({title: l2.site.title, slogan: l2.site.slogan}), [l2];
+      return l(t3, o, (t4) => e2(0, l2 = t4)), l2.site && i.set({title: l2.site.title, slogan: l2.site.slogan}), [l2];
     }
-    var index_06527d68_default = class extends ct {
+    var index_23bcef4b_default = class extends ct {
       constructor(t3) {
         super(), at(this, t3, j2, k2, i2, {});
       }
     };
-    var index_06527d68_default2 = index_06527d68_default;
+    var index_23bcef4b_default2 = index_23bcef4b_default;
   });
 
-  // dist/build/kassa-59eb8722.js
-  var require_kassa_59eb8722 = __commonJS((exports) => {
+  // dist/build/kassa-45d3bfb5.js
+  var require_kassa_45d3bfb5 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => kassa_59eb8722_default2
+      default: () => kassa_45d3bfb5_default2
     });
     function N2(t3, e2, n2) {
       const s2 = t3.slice();
@@ -715,7 +715,7 @@
       }
       let l2 = n2(t3), o4 = l2(t3);
       return {c() {
-        e2 = $("div"), o4.c(), k(e2, "id", "payment"), k(e2, "class", "tc");
+        e2 = $("div"), o4.c(), k(e2, "id", "payment"), k(e2, "class", "tc pad");
       }, m(t4, n3) {
         m(t4, e2, n3), o4.m(e2, null);
       }, p(t4, s2) {
@@ -727,7 +727,7 @@
     function V2(t3) {
       let e2, n2, l2;
       return {c() {
-        e2 = $("button"), e2.textContent = "Laske tomituskulut", k(e2, "id", "done"), k(e2, "class", "end"), k(e2, "name", "shipping");
+        e2 = $("button"), e2.textContent = "Laske tomituskulut", k(e2, "id", "done"), k(e2, "class", "end up"), k(e2, "name", "shipping");
       }, m(s2, a2) {
         m(s2, e2, a2), n2 || (l2 = v(e2, "click", t3[13]), n2 = true);
       }, p: t2, d(t4) {
@@ -737,7 +737,7 @@
     function Y2(t3) {
       let e2;
       return {c() {
-        e2 = $("button"), e2.textContent = "Vahvista tilaus", k(e2, "id", "done"), k(e2, "class", "end"), k(e2, "name", "done"), k(e2, "type", "submit");
+        e2 = $("button"), e2.textContent = "Vahvista tilaus", k(e2, "id", "done"), k(e2, "class", "end up"), k(e2, "name", "done"), k(e2, "type", "submit");
       }, m(t4, n2) {
         m(t4, e2, n2);
       }, p: t2, d(t4) {
@@ -790,19 +790,19 @@
         i3.customer[t4.name] = this.value, p.set(i3), n2(8, x2);
       }, () => h2("path=matka", {address: i3.customer.street + "+" + i3.customer.postal + "+" + i3.customer.area})];
     }
-    var kassa_59eb8722_default = class extends ct {
+    var kassa_45d3bfb5_default = class extends ct {
       constructor(t3) {
         super(), at(this, t3, D2, B2, i2, {});
       }
     };
-    var kassa_59eb8722_default2 = kassa_59eb8722_default;
+    var kassa_45d3bfb5_default2 = kassa_45d3bfb5_default;
   });
 
-  // dist/build/_layout-d2376e5b.js
-  var require_layout_d2376e5b = __commonJS((exports) => {
+  // dist/build/_layout-ceb9b603.js
+  var require_layout_ceb9b603 = __commonJS((exports) => {
     __markAsModule(exports);
     __export(exports, {
-      default: () => layout_d2376e5b_default2
+      default: () => layout_ceb9b603_default2
     });
     function K2(t3) {
       let e2, s2, p3, h2, g2, f2, v2, $2, w2, y2, b2, k2 = t3[0].amount + "";
@@ -1140,12 +1140,12 @@
         }
       }, [l2, n2, a2, c2, r2, i3, u2, o4];
     }
-    var layout_d2376e5b_default = class extends ct {
+    var layout_ceb9b603_default = class extends ct {
       constructor(t3) {
         super(), at(this, t3, ut2, ot2, i2, {});
       }
     };
-    var layout_d2376e5b_default2 = layout_d2376e5b_default;
+    var layout_ceb9b603_default2 = layout_ceb9b603_default;
   });
 
   // dist/build/main.js
@@ -2268,7 +2268,7 @@
   }
   var Ae = {...Le, restoreDefaults: ({tree: t3}) => Se(t3), assignAPI: Ne};
 
-  // dist/build/store-e4f31793.js
+  // dist/build/store-55486434.js
   var t = xt("http://foodis.dataline.fi/pw/");
   var o = vt({});
   var i = vt({});
@@ -2282,7 +2282,7 @@
   }
 
   // dist/build/main.js
-  var Re = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => Promise.resolve().then(() => require_fallback_dd21a702()).then((t3) => t3.default)}, {isDir: true, children: [{isDir: true, ext: "", children: [{isIndex: true, isPage: true, path: "/:cat/:slug/index", id: "__cat__slug_index", component: () => Promise.resolve().then(() => require_index_c787834e()).then((t3) => t3.default)}], path: "/:cat/:slug"}, {isIndex: true, isPage: true, path: "/:cat/index", id: "__cat_index", component: () => Promise.resolve().then(() => require_index_f1e37d24()).then((t3) => t3.default)}], isLayout: true, path: "/:cat", id: "__cat__layout", component: () => Promise.resolve().then(() => require_layout_d8b4af71()).then((t3) => t3.default)}, {isIndex: true, isPage: true, path: "/index", id: "_index", component: () => Promise.resolve().then(() => require_index_06527d68()).then((t3) => t3.default)}, {isPage: true, path: "/kassa", id: "_kassa", component: () => Promise.resolve().then(() => require_kassa_59eb8722()).then((t3) => t3.default)}], isLayout: true, path: "/", id: "__layout", component: () => Promise.resolve().then(() => require_layout_d2376e5b()).then((t3) => t3.default)};
+  var Re = {root: true, children: [{isFallback: true, path: "/_fallback", component: () => Promise.resolve().then(() => require_fallback_99f01b66()).then((t3) => t3.default)}, {isDir: true, children: [{isDir: true, ext: "", children: [{isIndex: true, isPage: true, path: "/:cat/:slug/index", id: "__cat__slug_index", component: () => Promise.resolve().then(() => require_index_12124a5b()).then((t3) => t3.default)}], path: "/:cat/:slug"}, {isIndex: true, isPage: true, path: "/:cat/index", id: "__cat_index", component: () => Promise.resolve().then(() => require_index_ff6772a6()).then((t3) => t3.default)}], isLayout: true, path: "/:cat", id: "__cat__layout", component: () => Promise.resolve().then(() => require_layout_7af0807e()).then((t3) => t3.default)}, {isIndex: true, isPage: true, path: "/index", id: "_index", component: () => Promise.resolve().then(() => require_index_23bcef4b()).then((t3) => t3.default)}, {isPage: true, path: "/kassa", id: "_kassa", component: () => Promise.resolve().then(() => require_kassa_45d3bfb5()).then((t3) => t3.default)}], isLayout: true, path: "/", id: "__layout", component: () => Promise.resolve().then(() => require_layout_ceb9b603()).then((t3) => t3.default)};
   var {tree: Me, routes: Ce} = function(t3) {
     const e2 = ["restoreDefaults", "setParamKeys", "setRegex", "setShortPath", "setRank", "assignLayout", "setPrototype", "addMetaChildren", "assignRelations", "setIsIndexable", "assignIndex", "assignAPI", "createFlatList"], n2 = {tree: t3, routes: []};
     for (let t4 of e2) {

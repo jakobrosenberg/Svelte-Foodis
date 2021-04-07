@@ -307,13 +307,18 @@ thead {
 	overflow-x: hidden
 }
 
-.pad {
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-}
+.pad { padding-top: 3rem }
 
 footer .container {
-	max-width: 800px
+	max-width: 800px;
+	padding-bottom: 2rem
+}
+
+#payment button {
+	height: 48px;
+	width: 250px;
+	background-color: transparent;
+	border: 2px solid var(--bor);
 }
 
 @media screen and (min-width: 1200px) {

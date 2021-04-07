@@ -1,14 +1,17 @@
+
+
 :root {
-	 --orange: #f74c17;
-	 --white: #fff;
-	 --black: #000;
-	 --bor: #999;
+	--orange: #f74c17;
+	--white: #fff;
+	--black: #000;
+	--bor: #999;
 }
 
-html, body {
-	 position: relative;
-	 width: 100%;
-	 height: 100%;
+html,
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
 
 body,
@@ -21,81 +24,138 @@ header {
 }
 
 body,
-header a { color: #333 }
+header a {
+	color: #333
+}
 
 body,
 .m0,
-figure { margin: 0 }
+figure {
+	margin: 0
+}
 
-body, #menu ul { padding: 0 }
+body,
+#menu ul {
+	padding: 0
+}
 
 main a,
 header a:hover,
 #menu a.active,
-.orange { color: var(--orange) }
+.orange {
+	color: var(--orange)
+}
 
-.bgw { background-color: var(--white) }
+.bgw {
+	background-color: var(--white)
+}
 
-.bgo { background-color: var(--orange) }
+.bgo {
+	background-color: var(--orange)
+}
 
-.bold { font-weight: 700 }
-.block, label, img { display: block }
-.grid { display: grid }
-.tc { text-align: center }
-.tl { text-align: left }
-.tr { text-align: right }
+.bold {
+	font-weight: 700
+}
+
+.block,
+label,
+img {
+	display: block
+}
+
+.grid {
+	display: grid
+}
+
+.tc {
+	text-align: center
+}
+
+.tl {
+	text-align: left
+}
+
+.tr {
+	text-align: right
+}
+
 .grid.cell {
 	height: 100%;
 	place-content: center;
 }
 
 .cell,
-.w100, img { width: 100% }
+.w100,
+img {
+	width: 100%
+}
 
-.up { text-transform: uppercase }
+.up {
+	text-transform: uppercase
+}
 
-a { text-decoration: none }
+a {
+	text-decoration: none
+}
 
 a,
 button,
-select { cursor: pointer }
+select {
+	cursor: pointer
+}
 
-p a:hover { text-decoration: underline }
+p a:hover {
+	text-decoration: underline
+}
 
 header {
-	 top: 0;
-	 left: 0;
-	 transition: transform 300ms linear;
+	top: 0;
+	left: 0;
+	transition: transform 300ms linear;
 }
 
 header .content {
-	 position: relative;
-	 max-width: 1200px;
-	 margin: 0 auto;
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
-.abs { position: absolute }
+.abs {
+	position: absolute
+}
 
-.rel { position: relative }
+.rel {
+	position: relative
+}
 
-#products { grid-gap: 2rem }
+#products {
+	grid-gap: 2rem
+}
 
-#products figcaption { padding: 10px }
+#products figcaption {
+	padding: 10px
+}
 
-#product { grid-gap: 3em }
+#product {
+	grid-gap: 3em
+}
 
 #products .title {
 	font-size: 1.2rem;
 	padding: 0.5rem 1.5rem;
 }
+
 #products .extra {
 	margin-top: 0.5rem;
 }
+
 #products .inl {
 	display: inline-block;
 	vertical-align: center;
 	margin: 5px;
 }
+
 #products .inl .cell {
 	width: 32px;
 	height: 32px;
@@ -103,23 +163,26 @@ header .content {
 	border: 1px solid var(--orange);
 	border-radius: 50%;
 }
- #price {
-	 margin-bottom: 2rem;
-	 font-size: 1.4rem;
+
+#price {
+	margin-bottom: 2rem;
+	font-size: 1.4rem;
 }
- #cartIt {
-	 grid-template-columns: 80px 1fr;
-	 grid-gap: 1rem;
-	 max-width: 400px;
+
+#cartIt {
+	grid-template-columns: 80px 1fr;
+	grid-gap: 1rem;
+	max-width: 400px;
 }
+
 #docs ul,
 #extra ul {
-	 padding-left: 15px;
+	padding-left: 15px;
 }
 
 .noBor {
-	 border: none;
-	 background-color: transparent;
+	border: none;
+	background-color: transparent;
 }
 
 #tables {
@@ -128,13 +191,21 @@ header .content {
 }
 
 th,
-td { padding: 5px }
+td {
+	padding: 5px
+}
 
-td input { width: 65px }
+td input {
+	width: 65px
+}
 
-td span { display: none }
+td span {
+	display: none
+}
 
-thead { background-color: #f2f2f2 }
+thead {
+	background-color: #f2f2f2
+}
 
 #client .grid {
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -154,7 +225,9 @@ thead { background-color: #f2f2f2 }
 	height: 48px;
 }
 
-.abs { position: absolute }
+.abs {
+	position: absolute
+}
 
 #icons {
 	grid-template-columns: 48px 48px;
@@ -172,6 +245,7 @@ thead { background-color: #f2f2f2 }
 	top: -3px;
 	overflow: hidden;
 }
+
 #cartIt input,
 #cartIt button {
 	border: 1px ridge var(--black);
@@ -180,21 +254,34 @@ thead { background-color: #f2f2f2 }
 	padding: 10px 15px;
 }
 
-#icons svg { fill: var(--orange) }
+#icons svg {
+	fill: var(--orange)
+}
 
-#productList td { padding: 10px }
+#productList td {
+	padding: 10px
+}
 
-#productList th { padding: 5px 10px }
+#productList th {
+	padding: 5px 10px
+}
 
-#productList input { padding: 5px }
+#productList input {
+	padding: 5px
+}
 
-#productList button { border: 0 }
+#productList button {
+	border: 0
+}
 
 #client input {
 	padding: 0.5rem;
 	border: 1px solid var(--bor);
 }
-#checkout button { border: 1px solid var(--black) }
+
+#checkout button {
+	border: 1px solid var(--black)
+}
 
 #searchForm {
 	top: 100%;
@@ -202,11 +289,17 @@ thead { background-color: #f2f2f2 }
 	width: 250px
 }
 
-#searchForm input { padding: .5rem }
+#searchForm input {
+	padding: .5rem
+}
 
-#results a { padding: .5rem 1rem }
+#results a {
+	padding: .5rem 1rem
+}
 
-#results a + a { border-top: 1px solid #bbb }
+#results a+a {
+	border-top: 1px solid #bbb
+}
 
 #results {
 	max-height: 400px;
@@ -214,16 +307,35 @@ thead { background-color: #f2f2f2 }
 	overflow-x: hidden
 }
 
+.pad {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+footer .container {
+	max-width: 800px
+}
+
 @media screen and (min-width: 1200px) {
 	header {
 		position: fixed;
 		text-align: right;
 	}
-	#menuToggle { display: none }
-	#menu { margin-right: 120px }
-	#menu li { display: inline-block }
-	#menu a { padding: 20px 10px }
-	#hero { padding-top: 96px }
+	#menuToggle {
+		display: none
+	}
+	#menu {
+		margin-right: 120px
+	}
+	#menu li {
+		display: inline-block
+	}
+	#menu a {
+		padding: 20px 10px
+	}
+	#hero {
+		padding-top: 96px
+	}
 	header.small #logo {
 		width: 80px;
 		top: 8px
@@ -238,137 +350,165 @@ thead { background-color: #f2f2f2 }
 		left: 0;
 	}
 }
- @media screen and (max-width: 1200px) {
-	 #menuToggle, #menu.active {
-		 display: block;
+
+@media screen and (max-width: 1200px) {
+	#menuToggle,
+	#menu.active {
+		display: block;
 	}
-	 #menu:not(.active) {
-		 display: none;
+	#menu:not(.active) {
+		display: none;
 	}
-	 #menu.active {
-		 margin-top: 1rem;
+	#menu.active {
+		margin-top: 1rem;
 	}
-	 #menu li {
-		 display: block;
+	#menu li {
+		display: block;
 	}
-	 #menu a {
-		 padding: 1rem 1.5rem;
-		 border-top: 1px solid var(--bor);
+	#menu a {
+		padding: 1rem 1.5rem;
+		border-top: 1px solid var(--bor);
 	}
-	 #menuToggle {
-		 width: 48px;
-		 height: 48px;
-		 position: absolute;
-		 top: 0.5rem;
-		 right: 0;
+	#menuToggle {
+		width: 48px;
+		height: 48px;
+		position: absolute;
+		top: 0.5rem;
+		right: 0;
 	}
-	 #menuToggle svg {
-		 fill: var(--orange);
+	#menuToggle svg {
+		fill: var(--orange);
 	}
-	 header {
-		 position: absolute;
-		 padding: 0.5rem 1.5rem;
+	header {
+		position: absolute;
+		padding: 0.5rem 1.5rem;
 	}
-	 #logo {
-		 width: 100px;
+	#logo {
+		width: 100px;
 	}
-	 #hero {
-		 padding-top: 78px;
+	#hero {
+		padding-top: 78px;
 	}
-	#icons { right: 90px }
-}
- @media screen and (min-width: 650px) {
-	 #hero {
-		 height: 410px;
-	}
-	 #product {
-		 grid-template-columns: 1fr 1fr;
+	#icons {
+		right: 90px
 	}
 }
- @media screen and (max-width: 650px) {
-	 #hero {
-		 height: 350px;
+
+@media screen and (min-width: 650px) {
+	#hero {
+		height: 410px;
+	}
+	#product {
+		grid-template-columns: 1fr 1fr;
 	}
 }
- @media screen and (min-width: 400px) {
-	 #products {
-		 grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-	}
-	 .py {
-		 padding-top: 3rem;
-		 padding-bottom: 3rem;
+
+@media screen and (max-width: 650px) {
+	#hero {
+		height: 350px;
 	}
 }
- main {
-	 background-position: left top;
-	 background-repeat: no-repeat;
-	 background-size: cover;
-	 background-attachment: fixed;
+
+@media screen and (min-width: 400px) {
+	#products {
+		grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+	}
+	.py {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
 }
- .container {
-	 max-width: 1200px;
-	 width: 90%;
+
+main {
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
- .mx {
-	 margin-left: auto;
-	 margin-right: auto;
+
+.container:not(.pad) {
+	max-width: 1200px
 }
- #hero {
-	 padding-top: 96px;
-	 place-content: center;
+
+.container {
+	width: 90%
 }
- #hero h1, #hero h3 {
-	 margin: 0;
-	 line-height: 1.2;
+
+.mx {
+	margin-left: auto;
+	margin-right: auto;
 }
- #hero h1 {
-	 font-size: clamp(2rem, 3.8rem, 8vw);
-	 max-width: 750px;
+
+#hero {
+	padding-top: 96px;
+	place-content: center;
 }
- #hero h3 {
-	 font-size: clamp(1.4rem, 2rem, 8vw);
+
+#hero h1,
+#hero h3 {
+	margin: 0;
+	line-height: 1.2;
 }
- .tw {
-	 color: var(--white);
+
+#hero h1 {
+	font-size: clamp(2rem, 3.8rem, 8vw);
+	max-width: 750px;
 }
- #cart {
-	 width: 300px;
-	 grid-template-columns: 1fr 120px;
-	 padding: 1rem;
-	 background: var(--white);
-	 border: 2px solid var(--orange);
-	 position: fixed;
-	 bottom: 15px;
-	 right: 10px;
-	 z-index: 100;
+
+#hero h3 {
+	font-size: clamp(1.4rem, 2rem, 8vw)
 }
- #cart a {
-	 place-content: center;
-	 background-color: var(--orange);
-	 color: var(--white);
-	 text-transform: uppercase;
+
+.tw {
+	color: var(--white)
 }
- #tables {
-	 grid-template-columns: 1fr 400px;
-	 grid-gap: 3rem;
+
+#cart {
+	width: 300px;
+	grid-template-columns: 1fr 120px;
+	padding: 1rem;
+	background: var(--white);
+	border: 2px solid var(--orange);
+	position: fixed;
+	bottom: 15px;
+	right: 10px;
+	z-index: 100;
 }
- th, td {
-	 padding: 5px;
+
+#cart a {
+	place-content: center;
+	background-color: var(--orange);
+	color: var(--white);
+	text-transform: uppercase;
 }
- td input {
-	 width: 65px;
+
+#tables {
+	grid-template-columns: 1fr 400px;
+	grid-gap: 3rem;
 }
- td span {
-	 display: none;
+
+th,
+td {
+	padding: 5px;
 }
- #client .grid {
-	 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	 grid-gap: 1.5rem;
+
+td input {
+	width: 65px;
 }
- #ready {
-	 margin-top: 3rem;
-	 color: var(--white);
-	 background-color: var(--orange);
-	 padding: 1rem 2rem;
-	 text-transform: uppercase;
+
+td span {
+	display: none;
+}
+
+#client .grid {
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 1.5rem;
+}
+
+#ready {
+	margin-top: 3rem;
+	color: var(--white);
+	background-color: var(--orange);
+	padding: 1rem 2rem;
+	text-transform: uppercase;
 }

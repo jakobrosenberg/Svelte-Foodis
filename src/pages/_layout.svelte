@@ -87,4 +87,19 @@
 			<a class="grid" href="/kassa" rel="nofollow">Kassalle</a>
 		</div>
 	{/if}
+	{#if $info.site && $info.site.payment}
+		<footer class="tc">
+			<div class="container mx pad">
+				<picture class="inl">
+					<source src={$info.site.payment[1]} type="image/webp" />
+					<source src={$info.site.payment[0]} type="image/jpeg" />
+					<img
+						class="inl"
+						src={$info.site.payment[0]}
+						alt="Visma Pay"
+					/>
+				</picture>
+			</div>
+		</footer>
+	{/if}
 {/if}

@@ -16,6 +16,10 @@
 	$: if ($params.cat) getResult('path=' + $params.cat);
 </script>
 
+{#if $data.body}
+	<div id="body">{@html $data.body}</div>
+{/if}
+
 {#if $data.items}
 	<div id="products" class="tc grid bold">
 		{#each $data.items as item}

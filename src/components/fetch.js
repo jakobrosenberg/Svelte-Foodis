@@ -1,5 +1,4 @@
 async function postData(url = "", data = "", token = "") {
-	if (url) url = "?" + url
 	const response = await fetch(`http://foodis.dataline.fi/pw/${url}`, {
 		method: data ? 'POST' : 'GET',
 		mode: 'cors',

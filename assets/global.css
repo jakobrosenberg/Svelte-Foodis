@@ -279,10 +279,6 @@ thead {
 	border: 1px solid var(--bor);
 }
 
-#checkout button {
-	border: 1px solid var(--black)
-}
-
 #searchForm {
 	top: 100%;
 	right: 0;
@@ -325,6 +321,7 @@ footer .container {
 	header {
 		position: fixed;
 		text-align: right;
+		z-index: 1250
 	}
 	#menuToggle {
 		display: none

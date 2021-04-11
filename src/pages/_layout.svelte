@@ -1,9 +1,11 @@
 <script>
-	import { api, info, data, cart } from '../components/store.js';
+	import { info, data, cart } from '../components/store.js';
 	import postData from '../components/fetch.js';
 	import { metatags, params, page } from '@roxi/routify';
 	import Header from '../components/Header.svelte';
 	import { onMount } from 'svelte';
+
+	cart.useLocalStorage();
 
 	onMount(async () => {
 		postData().then((e) => {
@@ -34,12 +36,12 @@
 		Object.values($cart.products).forEach((val) => {
 			// Has many discounts
 			if (val.discounts) {
-				val.price2 = val.price;
+				val.current = val.price;
 				val.discounts.forEach(function (e) {
-					if (e.amount <= val.amount) val.price2 = e.price;
+					if (e.amount <= val.amount) val.current = e.price;
 				});
 			}
-			t[0] += val.total = val.price2 * val.amount;
+			t[0] += val.total = val.current * val.amount;
 			t[1] += val.amount;
 		});
 		if (t[1] == 0 || t[1] == null) {
@@ -48,11 +50,6 @@
 			$cart.total = t[0];
 			$cart.amount = t[1];
 		}
-
-		fetch($api + '?path=cart', {
-			method: 'POST',
-			body: JSON.stringify($cart),
-		});
 	}
 </script>
 
@@ -78,7 +75,7 @@
 			</div>
 		</div>
 	</main>
-	{#if $cart.amount > 0 && $page.path != '/kassa'}
+	{#if $cart.amount > 0 && $page.path != '/kassa' && $page.path != '/maksu'}
 		<div id="cart" class="grid">
 			<div>
 				<div id="cartAmount">Tuotteita: {$cart.amount} kpl</div>

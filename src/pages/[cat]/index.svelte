@@ -13,7 +13,7 @@
 				console.log(err);
 			});
 	}
-	$: if ($params.cat) getResult('path=' + $params.cat);
+	$: if ($params.cat) getResult($params.cat);
 </script>
 
 {#if $data.body}

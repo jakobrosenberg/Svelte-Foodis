@@ -6,7 +6,7 @@
 	$: amount = 1;
 	$: min = 1;
 	$: price = $data.price;
-	$: total = 0;
+	$: total = amount * price;
 
 	function getResult(e) {
 		postData(e)
@@ -26,18 +26,18 @@
 			id: $data.id,
 			title: $data.title,
 			price: $data.price,
-			price2: price,
+			current: price,
 			amount: amount,
+			vat: 14,
 			total: total,
 		};
 		if ($data.amountDiscounts) item.amountDiscounts;
-		$cart.price += price;
 		$cart.total += total;
 		$cart.amount += amount;
 		$cart.products.push(item);
 	}
 
-	$: if ($params.slug) getResult('path=' + $params.slug);
+	$: if ($params.slug) getResult($params.slug);
 
 	$: if ($data && amount) {
 		// Has many discounts

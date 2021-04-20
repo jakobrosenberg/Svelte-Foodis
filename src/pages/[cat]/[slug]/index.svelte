@@ -74,48 +74,50 @@
 					{/if}
 				</div>
 			{/if}
-			<div id="cartIt" class="border grid">
-				<div>
-					<input
-						name="amount"
-						type="number"
-						bind:value={amount}
-						{min}
-						step="1"
-						required
-					/>
+			<div class="content">
+				<div id="cartIt" class="border grid">
+					<div>
+						<input
+							name="amount"
+							type="number"
+							bind:value={amount}
+							{min}
+							step="1"
+							required
+						/>
+					</div>
+					<div>
+						<button class="w100" on:click={cartIt}>
+							Lisää ostoskoriin
+						</button>
+					</div>
 				</div>
-				<div>
-					<button class="w100" on:click={cartIt}>
-						Lisää ostoskoriin
-					</button>
-				</div>
+				{#if $data.body}
+					<div id="body">{@html $data.body}</div>
+				{/if}
+				{#if $data.docs}
+					<div id="docs">
+						<ul>
+							{#each $data.docs as item}
+								<li>
+									<a href={item.value} rel="nofollow"
+										>{item.label}</a
+									>
+								</li>
+							{/each}
+						</ul>
+					</div>
+				{/if}
+				{#if $data.extra}
+					<div id="extra">
+						<ul>
+							{#each $data.extra as item}
+								<li>{@html item.name}</li>
+							{/each}
+						</ul>
+					</div>
+				{/if}
 			</div>
-			{#if $data.body}
-				<div id="body">{@html $data.body}</div>
-			{/if}
-			{#if $data.docs}
-				<div id="docs">
-					<ul>
-						{#each $data.docs as item}
-							<li>
-								<a href={item.value} rel="nofollow"
-									>{item.label}</a
-								>
-							</li>
-						{/each}
-					</ul>
-				</div>
-			{/if}
-			{#if $data.extra}
-				<div id="extra">
-					<ul>
-						{#each $data.extra as item}
-							<li>{@html item.name}</li>
-						{/each}
-					</ul>
-				</div>
-			{/if}
 		</div>
 	</div>
 {/if}

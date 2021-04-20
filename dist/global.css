@@ -164,9 +164,19 @@ header .content {
 	border-radius: 50%;
 }
 
+#productInfo .content { padding: 1.5rem }
+
+#productInfo,
+#product img {
+	border-radius: 6px;
+	box-shadow: 2px 2px 8px 0 rgba(0,0,0,.2);
+	overflow: hidden
+}
+
 #price {
-	margin-bottom: 2rem;
 	font-size: 1.4rem;
+	border-bottom: 1px solid #999;
+	padding: 1rem 1.5rem;
 }
 
 #cartIt {
@@ -254,7 +264,7 @@ thead {
 
 #cartIt input,
 #cartIt button {
-	border: 1px ridge var(--black);
+	border: 1px ridge var(--bor);
 	background-color: transparent;
 	color: var(--black);
 	padding: 10px 15px;

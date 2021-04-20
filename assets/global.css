@@ -173,6 +173,12 @@ header .content {
 	grid-template-columns: 80px 1fr;
 	grid-gap: 1rem;
 	max-width: 400px;
+	margin-bottom: 2rem
+}
+
+#cartIt button:hover {
+	background-color: var(--orange);
+	color: var(--white)
 }
 
 #docs ul,

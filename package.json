@@ -33,7 +33,7 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.2.10",
     "postcss-import": "^14.0.1",
-    "rollup": "^2.45.1",
+    "rollup": "^2.45.2",
     "rollup-plugin-hot": "^0.1.1",
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-svelte": "^7.1.0",
@@ -43,7 +43,7 @@
     "spank": "^1.7.0",
     "spassr": "^2.5.0",
     "svelte": "^3.37.0",
-    "svelte-preprocess": "^4.7.0",
+    "svelte-preprocess": "^4.7.2",
     "tossr": "^1.4.2"
   },
   "routify": {
@@ -56,6 +56,6 @@
     ]
   },
   "dependencies": {
-    "sass": "^1.32.8"
+    "sass": "^1.32.11"
   }
 }

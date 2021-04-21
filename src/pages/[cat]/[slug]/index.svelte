@@ -74,7 +74,7 @@
 					{/if}
 				</div>
 			{/if}
-			<div class="content">
+			<div id="inputs">
 				<div id="cartIt" class="border grid">
 					<div>
 						<input
@@ -92,6 +92,8 @@
 						</button>
 					</div>
 				</div>
+			</div>
+			<div class="content">
 				{#if $data.body}
 					<div id="body">{@html $data.body}</div>
 				{/if}
@@ -100,9 +102,9 @@
 						<ul>
 							{#each $data.docs as item}
 								<li>
-									<a href={item.value} rel="nofollow"
-										>{item.label}</a
-									>
+									<a href={item.value} rel="nofollow">
+										{item.label} &rarr;
+									</a>
 								</li>
 							{/each}
 						</ul>

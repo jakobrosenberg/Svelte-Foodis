@@ -7,6 +7,12 @@
 	--bor: #999;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 html,
 body {
 	position: relative;
@@ -109,6 +115,10 @@ p a:hover {
 	text-decoration: underline
 }
 
+p + p,
+#docs,
+#extra { margin-top: 15px }
+
 header {
 	top: 0;
 	left: 0;
@@ -173,17 +183,18 @@ header .content {
 	overflow: hidden
 }
 
-#price {
-	font-size: 1.4rem;
-	border-bottom: 1px solid #999;
+#price { font-size: 1.4rem }
+
+#price,
+#inputs {
 	padding: 1rem 1.5rem;
+	border-bottom: 1px solid #ddd
 }
 
 #cartIt {
 	grid-template-columns: 80px 1fr;
 	grid-gap: 1rem;
-	max-width: 400px;
-	margin-bottom: 2rem
+	max-width: 400px
 }
 
 #cartIt button:hover {

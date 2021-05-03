@@ -18,7 +18,7 @@
 			};
 		}
 
-		$postData('payment', body).then(function (result) {
+		postData('payment', body).then(function (result) {
 			if (result.redirect || result.message) {
 				if (typeof result.redirect !== 'undefined')
 					window.location.replace(result.redirect);

@@ -1,7 +1,10 @@
 <script>
+	import { ready } from '@roxi/routify'
 	import { info, data } from '../components/store.js';
-	if ($info.site)
+	if ($info.site){
 		data.set({ title: $info.site.title, slogan: $info.site.slogan });
+		$ready();
+	}
 </script>
 
 <div id="products" class="tc grid up bold">

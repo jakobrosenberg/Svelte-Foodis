@@ -24,14 +24,16 @@
 	}
 
 	$: slug = $params.slug.replace(/<\/?[^>]+(>|$)/g, '');
+	
 	let check;
 
 	$: if (slug != check) {
 		check = slug;
-		$postData(slug).then(function (result) {
+		postData(slug).then(function (result) {
 			data.set(result);
 			if ($data.amountDiscounts && $data.amountDiscounts[0])
 				amount = min = $data.amountDiscounts[0].amount;
+			$ready()
 		});
 	}
 

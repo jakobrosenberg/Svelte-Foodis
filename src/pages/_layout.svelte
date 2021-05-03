@@ -8,7 +8,7 @@
 	}
 
 	if (!$info.site) {
-		$postData().then(function (result) {
+		postData().then(function (result) {
 			info.set(result);
 		});
 	}

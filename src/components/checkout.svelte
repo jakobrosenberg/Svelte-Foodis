@@ -74,7 +74,7 @@
 	}
 
 	function getResult(e, body) {
-		$postData(e, body).then(function (result) {
+		postData(e, body).then(function (result) {
 			if (result.error) error = result.error;
 			else if (result.distance)
 				delivery.distance = {

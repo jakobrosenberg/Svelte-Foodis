@@ -1,7 +1,6 @@
 import { readable, writable, derived } from 'svelte/store'
 import { ready } from '@roxi/routify';
 
-export const api = readable("http://foodis.dataline.fi/pw/");
 export const site = readable("Foodis");
 export const info = writable({});
 export const data = writable({});

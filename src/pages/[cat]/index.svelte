@@ -1,6 +1,6 @@
 <script>
 	import { params } from '@roxi/routify';
-	import { api, data, postData } from '../../components/store.js';
+	import { data, postData } from '../../components/store.js';
 
 	$: slug = $params.cat.replace(/<\/?[^>]+(>|$)/g, '');
 	let check;

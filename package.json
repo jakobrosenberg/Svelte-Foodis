@@ -43,7 +43,7 @@
 		"spank": "^1.7.0",
 		"spassr": "^2.6.0",
 		"svelte": "^3.38.1",
-		"svelte-preprocess": "^4.7.2",
+		"svelte-preprocess": "^4.7.3",
 		"tossr": "^1.4.2"
 	},
 	"routify": {

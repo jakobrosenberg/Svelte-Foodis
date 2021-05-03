@@ -1,25 +1,11 @@
 <script>
 	import { params, ready } from '@roxi/routify';
-	import { data, cart } from '../../../components/store.js';
-	import postData from '../../../components/fetch.js';
+	import { data, cart, postData } from '../../../components/store.js';
 
 	$: amount = 1;
 	$: min = 1;
 	$: price = $data.price;
 	$: total = amount * price;
-
-	function getResult(e) {
-		postData(e)
-			.then((e) => {
-				data.set(e);
-				if ($data.amountDiscounts && $data.amountDiscounts[0])
-					amount = min = $data.amountDiscounts[0].amount;
-				$ready();
-			})
-			.catch((err) => {
-				console.log(err);
-			});
-	}
 
 	function cartIt() {
 		let item = {
@@ -37,7 +23,17 @@
 		$cart.products.push(item);
 	}
 
-	$: if ($params.slug) getResult($params.slug);
+	$: slug = $params.slug.replace(/<\/?[^>]+(>|$)/g, '');
+	let check;
+
+	$: if (slug != check) {
+		check = slug;
+		$postData(slug).then(function (result) {
+			data.set(result);
+			if ($data.amountDiscounts && $data.amountDiscounts[0])
+				amount = min = $data.amountDiscounts[0].amount;
+		});
+	}
 
 	$: if ($data && amount) {
 		// Has many discounts

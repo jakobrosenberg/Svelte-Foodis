@@ -1,17 +1,17 @@
 <script>
-	import { info, data, cart } from '../components/store.js';
-	import postData from '../components/fetch.js';
+	import { info, data, cart, postData } from '../components/store.js';
 	import { metatags, params, page } from '@roxi/routify';
 	import Header from '../components/Header.svelte';
-	import { onMount } from 'svelte';
 
-	cart.useLocalStorage();
+	if (window) {
+		cart.useLocalStorage();
+	}
 
-	onMount(async () => {
-		postData().then((e) => {
-			info.set(e);
+	if (!$info.site) {
+		$postData().then(function (result) {
+			info.set(result);
 		});
-	});
+	}
 
 	$: if ($params) {
 		if ($info.site || $data.title) {

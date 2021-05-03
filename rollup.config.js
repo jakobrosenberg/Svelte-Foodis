@@ -83,6 +83,6 @@ export default {
     ],
     watch: {
         clearScreen: false,
-        buildDelay: 100,
+        buildDelay: 100
     }
 }

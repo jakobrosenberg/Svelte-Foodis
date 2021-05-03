@@ -1,19 +1,16 @@
 <script>
-	import { params, ready } from '@roxi/routify';
-	import { data } from '../../components/store.js';
-	import postData from '../../components/fetch.js';
+	import { params } from '@roxi/routify';
+	import { api, data, postData } from '../../components/store.js';
 
-	function getResult(e) {
-		postData(e)
-			.then((e) => {
-				data.set(e);
-				$ready();
-			})
-			.catch((err) => {
-				console.log(err);
-			});
+	$: slug = $params.cat.replace(/<\/?[^>]+(>|$)/g, '');
+	let check;
+
+	$: if (slug != check) {
+		check = slug;
+		$postData(slug).then(function (result) {
+			data.set(result);
+		});
 	}
-	$: if ($params.cat) getResult($params.cat);
 </script>
 
 {#if $data.body}
